@@ -1,0 +1,23 @@
+{"question": "세탁 시 온수 온도는 몇 도를 넘지 않아야 하나요?", "page": 1, "type": "spec_numeric"}
+{"question": "세탁기에서 이상한 소리나 연기가 나면 어떻게 해야 하나요?", "page": 1, "type": "troubleshooting"}
+{"question": "세탁기 부속품 중 접지선은 어떤 용도로 사용되나요?", "page": 2, "type": "how_to"}
+{"question": "세탁기 문은 언제 열 수 있나요?", "page": 3, "type": "how_to"}
+{"question": "세탁 예약은 최대 몇 시간까지 가능한가요?", "page": 3, "type": "spec_numeric"}
+{"question": "세제는 얼마만큼 넣어야 하나요?", "page": 4, "type": "spec_numeric"}
+{"question": "세제를 너무 많이 넣으면 어떤 문제가 발생할 수 있나요?", "page": 4, "type": "troubleshooting"}
+{"question": "표준 코스로 세탁하는 방법을 알려주세요.", "page": 5, "type": "how_to"}
+{"question": "표준 코스의 최대 세탁 용량은 얼마인가요?", "page": 5, "type": "spec_numeric"}
+{"question": "삶음 세탁은 어떻게 시작하나요?", "page": 6, "type": "how_to"}
+{"question": "울 코스의 최대 세탁 용량은 얼마인가요?", "page": 6, "type": "spec_numeric"}
+{"question": "찌든 때가 있는 빨래를 세탁하려면 어떻게 해야 하나요?", "page": 7, "type": "how_to"}
+{"question": "탈수만 하고 싶을 때 어떻게 해야 하나요?", "page": 7, "type": "how_to"}
+{"question": "세제통은 어떻게 청소하나요?", "page": 8, "type": "how_to"}
+{"question": "배수 필터는 어떻게 청소하나요?", "page": 8, "type": "how_to"}
+{"question": "제품 포장을 푼 후 반드시 제거해야 하는 것은 무엇인가요?", "page": 9, "type": "how_to"}
+{"question": "제거한 안전 장치는 어떻게 해야 하나요?", "page": 9, "type": "how_to"}
+{"question": "세탁기 수평을 맞추는 방법을 알려주세요.", "page": 10, "type": "how_to"}
+{"question": "세탁기 접지를 절대 하면 안 되는 곳은 어디인가요?", "page": 10, "type": "troubleshooting"}
+{"question": "급수호스 연결 시 물이 새면 어떻게 해야 하나요?", "page": 11, "type": "troubleshooting"}
+{"question": "싱크대로 배수할 때 배수호스 걸이는 바닥에서 얼마 높이로 설치해야 하나요?", "page": 12, "type": "spec_numeric"}
+{"question": "세탁기 화면에 [E4] 표시가 나타나면 무슨 뜻인가요?", "page": 13, "type": "error_code"}
+{"question": "정전 시 세탁기 문이 안 열릴 때 어떻게 해야 하나요?", "page": 13, "type": "troubleshooting"}

@@ -11,24 +11,30 @@ pydantic-settings
 python-dotenv
 python-multipart           # 음성 파일 업로드
 
-# ── 문서 처리 (PDF 파싱 · 청킹) ──
-pymupdf                    # PDF 텍스트/레이아웃 추출 (fitz)
-pypdf                      # 보조 파서
+# ── 문서 처리 (PDF 렌더 · OCR · 청킹) ──
+# 주의: 수집한 매뉴얼이 레거시 한국어 인코딩(KSCpc-EUC 등)이라 텍스트 레이어가
+#       깨져서 추출 불가. → 페이지를 이미지로 렌더 후 한국어 OCR로 텍스트를 얻는다.
+pymupdf                    # PDF 페이지 렌더링 (fitz)
+easyocr                    # 한국어 OCR — torch/CUDA 사용 (페이지 이미지 -> 텍스트)
+pillow                     # 이미지 처리 (OCR 입력)
+pypdf                      # 보조: 텍스트 레이어가 정상인 PDF용
 tiktoken                   # 토큰 단위 청킹
 
 # ── 임베딩 / Reranker ──
 sentence-transformers
 FlagEmbedding              # BGE-M3 임베딩 + reranker
-torch
+torch                      # ※ CUDA 빌드는 cu121 인덱스에서 따로 설치 (아래 README/지시 참고)
+torchvision                # easyocr 의존 — torch와 같은 cu121 빌드로 맞출 것
 
 # ── 검색 ──
 rank-bm25                  # BM25 키워드 검색
 chromadb                   # 벡터 DB (기본)
 faiss-cpu                  # 대안 벡터 인덱스 (faiss-gpu 가능)
 
-# ── LLM (답변 생성 / 평가셋 생성) ──
-openai
-anthropic
+# ── LLM (답변 생성 / 평가셋 생성) ── 기본: Gemini ──
+google-genai               # Gemini SDK (from google import genai)
+openai                     # 대안 제공자
+anthropic                  # 대안 제공자
 
 # ── STT / TTS ──
 faster-whisper             # 로컬 GPU Whisper
