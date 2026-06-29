@@ -28,9 +28,21 @@ class ChromaStore:
     def __init__(self, persist_dir: str = "data/index", collection: str = COLLECTION) -> None:
         import chromadb
 
+        self._name = collection
         self._client = chromadb.PersistentClient(path=persist_dir)
         self._col = self._client.get_or_create_collection(
             name=collection,
+            metadata={"hnsw:space": "cosine"},
+        )
+
+    def reset(self) -> None:
+        """컬렉션을 비우고 새로 만든다 (폴더 전체로 재구축할 때 사용)."""
+        try:
+            self._client.delete_collection(self._name)
+        except Exception:
+            pass
+        self._col = self._client.get_or_create_collection(
+            name=self._name,
             metadata={"hnsw:space": "cosine"},
         )
 

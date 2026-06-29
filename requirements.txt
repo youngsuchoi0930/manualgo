@@ -15,7 +15,8 @@ python-multipart           # 음성 파일 업로드
 # 주의: 수집한 매뉴얼이 레거시 한국어 인코딩(KSCpc-EUC 등)이라 텍스트 레이어가
 #       깨져서 추출 불가. → 페이지를 이미지로 렌더 후 한국어 OCR로 텍스트를 얻는다.
 pymupdf                    # PDF 페이지 렌더링 (fitz)
-easyocr                    # 한국어 OCR — torch/CUDA 사용 (페이지 이미지 -> 텍스트)
+pytesseract                # 로컬 Tesseract OCR 래퍼 (torch 불필요) — Tesseract 바이너리 별도 설치 필요
+easyocr                    # (대안) 한국어 OCR — torch/CUDA 사용
 pillow                     # 이미지 처리 (OCR 입력)
 pypdf                      # 보조: 텍스트 레이어가 정상인 PDF용
 tiktoken                   # 토큰 단위 청킹
