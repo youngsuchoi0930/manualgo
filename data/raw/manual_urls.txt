@@ -1,0 +1,34 @@
+# 매뉴얼 PDF 직링크 목록 — 한 줄에 하나 (name,url). '#'은 주석.
+# 아래는 LG 공식(lge.co.kr) 직접 PDF. collect_manuals.py가 %PDF 검사로 자동 필터.
+# 저작권/ToS·robots 존중, 개인·로컬 인덱싱 용도로만, 재배포 금지.
+# 일부 링크는 구형이라 옮겨졌을 수 있음 — 받아지는 것만 인덱싱하면 됨.
+
+# ── 세탁기 (드럼/통돌이) ──
+lg-washer-drum-mfl32605144,https://www.lge.co.kr/upload/PDF/DFZ/13239/0802191606_MFL32605144.pdf
+lg-washer-drum-fr4350eaz,https://www.lge.co.kr/upload/PDF/DFZ/20917/1011100846_MFL48165917.pdf
+lg-washer-tong-t1203,https://www.lge.co.kr/upload/PDF/DFZ/21800/1101110942_MFL42224718.pdf
+lg-washer-tong-mfl32605116,https://www.lge.co.kr/upload/PDF/DFZ/21728/1101040953_MFL32605116.pdf
+lg-washer-mfl47377718,https://www.lge.co.kr/upload/PDF/DFZ/22747/1104280827_MFL47377718.pdf
+lg-washer-d1220mf,https://www.lge.co.kr/upload/PDF/DFZ/19892/1003301322_MFL47377705.pdf
+
+# ── 냉장고 ──
+lg-fridge-t751-mfl62093510,https://www.lge.co.kr/upload/PDF/CNZ/22244/1103020933_MFL62093510_T751.pdf
+
+# ── 전자레인지 ──
+lg-microwave-mw231uw,https://www.lge.co.kr/upload/PDF/CVZ/22812/1105040911_MFL67233108.pdf
+lg-microwave-mw201,https://www.lge.co.kr/upload/PDF/CVZ/22669/1104210952_MFL30378995.pdf
+lg-microwave-mfl30378952,https://www.lge.co.kr/upload/PDF/CVZ/16710/0902261543_MFL30378952.pdf
+
+# ── 정수기 ──
+lg-waterpurifier-wqd74,https://www.lge.co.kr/upload/PDF/CVZ/22067/1102151821_MFL62077003.pdf
+lg-waterpurifier-mfl62077011,https://www.lge.co.kr/upload/PDF/CVZ/22647/1104200901_MFL62077011.pdf
+
+# ── 청소기 ──
+lg-vacuum-mfl67010601,https://www.lge.co.kr/upload/PDF/CVZ/21930/1101241400_MFL67010601.pdf
+
+# ── 에어컨 (동적 download.jsp — PDF 반환) ──
+lg-aircon-mfl67414804,https://www.lge.co.kr/common/download.jsp?path=/upload/PDF/DGZ/30173/&fileName=1402181549_MFL67414804.pdf&originFileName=1402181549_MFL67414804.pdf
+lg-aircon-mfl67733032,https://www.lge.co.kr/common/download.jsp?path=/upload/PDF/DGZ/30072/&fileName=1402050819_MFL67733032.pdf&originFileName=1402050819_MFL67733032.pdf
+
+# ── 제습기/기타 ──
+lg-dehumidifier-snc063,https://www.lge.co.kr/upload/PDF/DRZ/22383/1103101101_MFL42881522_SNC063BCW.AKOR.pdf

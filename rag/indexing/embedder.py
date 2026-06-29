@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import math
 import os
+import time
 
 DEFAULT_MODEL = "gemini-embedding-001"
 DEFAULT_DIM = 768
@@ -44,13 +45,29 @@ class Embedder:
         out: list[list[float]] = []
         for i in range(0, len(texts), batch_size):
             batch = texts[i : i + batch_size]
-            resp = self._client.models.embed_content(
-                model=self.model,
-                contents=batch,
-                config=types.EmbedContentConfig(
-                    task_type=task_type,
-                    output_dimensionality=self.dim,
-                ),
-            )
+            resp = self._embed_with_retry(types, batch, task_type)
             out.extend(_l2_normalize(e.values) for e in resp.embeddings)
         return out
+
+    def _embed_with_retry(self, types, batch: list[str], task_type: str, attempts: int = 5):
+        last_err: Exception | None = None
+        for attempt in range(attempts):
+            try:
+                return self._client.models.embed_content(
+                    model=self.model,
+                    contents=batch,
+                    config=types.EmbedContentConfig(
+                        task_type=task_type,
+                        output_dimensionality=self.dim,
+                    ),
+                )
+            except Exception as e:
+                last_err = e
+                msg = str(e)
+                if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                    time.sleep(20)  # 분당 한도 리셋 대기
+                elif "503" in msg or "UNAVAILABLE" in msg:
+                    time.sleep(min(60, 5 * (2**attempt)))
+                else:
+                    raise
+        raise RuntimeError(f"임베딩 실패(재시도 소진): {last_err}")

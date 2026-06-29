@@ -1,5 +1,6 @@
 """베이스라인 채점 — 평가셋으로 검색기를 돌려 Recall@k·MRR을 측정한다 (유형별 포함).
 
+정답은 (manual_id, page) 쌍으로 판정한다 — 매뉴얼이 여럿이라 page 번호만으론 모호하다.
 지금은 Naive 검색기. 이후 Hybrid+Reranker / Agentic을 같은 평가셋에 돌려 단계별로 비교한다.
 결과는 콘솔 표 + evaluation/results/<name>_eval.json 으로 저장한다.
 
@@ -13,7 +14,7 @@ from pathlib import Path
 from evaluation.metrics import recall_at_k, reciprocal_rank
 
 KS = (1, 3, 5)
-RETRIEVE_K = 10  # 청크를 넉넉히 뽑아 unique 페이지 순위를 만든다
+RETRIEVE_K = 10  # 청크를 넉넉히 뽑아 unique (매뉴얼,페이지) 순위를 만든다
 
 
 def _load_evalset(path: str) -> list[dict]:
@@ -26,12 +27,14 @@ def _load_evalset(path: str) -> list[dict]:
     return items
 
 
-def _unique_pages(chunks) -> list[int]:
-    pages: list[int] = []
+def _unique_keys(chunks) -> list[tuple[str, int]]:
+    """검색된 청크에서 (manual_id, page)를 순서 유지·중복 제거해 반환."""
+    keys: list[tuple[str, int]] = []
     for c in chunks:
-        if c.page not in pages:
-            pages.append(c.page)
-    return pages
+        k = (c.manual_id, c.page)
+        if k not in keys:
+            keys.append(k)
+    return keys
 
 
 def _mean(xs: list[float]) -> float:
@@ -49,16 +52,21 @@ def run_eval(
     if not evalset:
         print(f"[!] 평가셋이 비었습니다: {evalset_path} (먼저 generate_evalset 실행)")
         return
+    if "manual_id" not in evalset[0]:
+        print("[!] 평가셋에 manual_id가 없습니다(구버전). generate_evalset로 다시 만드세요.")
+        return
 
     retriever = NaiveRetriever()
     rows = []
     print(f"[*] '{name}' 검색기로 {len(evalset)}개 질문 평가 중...", flush=True)
     for item in evalset:
-        q, gold, typ = item["question"], int(item["page"]), item.get("type", "?")
-        pages = _unique_pages(retriever.retrieve(q, top_k=RETRIEVE_K))
-        row = {"type": typ, "gold": gold, "pred": pages, "mrr": reciprocal_rank(pages, gold)}
+        q = item["question"]
+        gold = (item["manual_id"], int(item["page"]))
+        typ = item.get("type", "?")
+        keys = _unique_keys(retriever.retrieve(q, top_k=RETRIEVE_K))
+        row = {"type": typ, "gold": gold, "pred": keys, "mrr": reciprocal_rank(keys, gold)}
         for k in KS:
-            row[f"r@{k}"] = recall_at_k(pages, gold, k)
+            row[f"r@{k}"] = recall_at_k(keys, gold, k)
         rows.append(row)
 
     metric_keys = [f"r@{k}" for k in KS] + ["mrr"]
