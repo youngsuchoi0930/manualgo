@@ -1,0 +1,51 @@
+# ============================================================
+#  매뉴얼 음성 도우미 — Python 의존성
+#  설치:  pip install -r requirements.txt
+# ============================================================
+
+# ── 백엔드 (API 서버) ──
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart           # 음성 파일 업로드
+
+# ── 문서 처리 (PDF 파싱 · 청킹) ──
+pymupdf                    # PDF 텍스트/레이아웃 추출 (fitz)
+pypdf                      # 보조 파서
+tiktoken                   # 토큰 단위 청킹
+
+# ── 임베딩 / Reranker ──
+sentence-transformers
+FlagEmbedding              # BGE-M3 임베딩 + reranker
+torch
+
+# ── 검색 ──
+rank-bm25                  # BM25 키워드 검색
+chromadb                   # 벡터 DB (기본)
+faiss-cpu                  # 대안 벡터 인덱스 (faiss-gpu 가능)
+
+# ── LLM (답변 생성 / 평가셋 생성) ──
+openai
+anthropic
+
+# ── STT / TTS ──
+faster-whisper             # 로컬 GPU Whisper
+requests                   # CLOVA Speech/Voice REST 호출
+
+# ── 평가 / 실패 클러스터링 ──
+numpy
+pandas
+scikit-learn               # 클러스터링 (KMeans 등)
+matplotlib
+seaborn
+
+# ── 유틸 ──
+tqdm
+loguru
+
+# ── 개발 / 노트북 ──
+jupyter
+pytest
+ruff

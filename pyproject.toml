@@ -1,0 +1,20 @@
+[project]
+name = "manualgo"
+version = "0.1.0"
+description = "매뉴얼 음성 도우미 — 가전·전자기기 사용법 음성 RAG 시스템"
+requires-python = ">=3.10"
+readme = "README.md"
+
+[tool.setuptools]
+# 아키텍처를 그대로 반영한 최상위 패키지들
+packages = ["backend", "rag", "speech", "evaluation"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

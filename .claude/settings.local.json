@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/82102_asozp43/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/bebebed6-a57d-4912-b70b-a34847227374/26a8d12e-dc99-40c0-86a8-7d614f9b875a/skills/docx/**)",
+      "Bash(python scripts/office/unpack.py \"C:\\\\Users\\\\82102_asozp43\\\\Downloads\\\\매뉴얼_음성_도우미_기획서.docx\" \"C:\\\\Users\\\\82102_~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-82102-asozp43-OneDrive-------manualgo\\\\789baf3c-fe40-41b7-85fd-8a19ffb6578b\\\\scratchpad\\\\manual_unpacked\")",
+      "Bash(pandoc \"C:\\\\Users\\\\82102_asozp43\\\\Downloads\\\\매뉴얼_음성_도우미_기획서.docx\" -t markdown -o \"C:\\\\Users\\\\82102_~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-82102-asozp43-OneDrive-------manualgo\\\\789baf3c-fe40-41b7-85fd-8a19ffb6578b\\\\scratchpad\\\\manual_plan.md\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(python -m compileall -q backend rag speech evaluation scripts tests)",
+      "Bash(python -m pytest tests/ -q)"
+    ]
+  }
+}

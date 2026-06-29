@@ -1,0 +1,56 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# ── 환경 변수 / 비밀키 ──
+.env
+.env.local
+*.key
+
+# ── 데이터 (원본/가공/인덱스는 버전관리 제외, 구조만 .gitkeep으로 유지) ──
+data/raw/manuals/*
+!data/raw/manuals/.gitkeep
+data/processed/chunks/*
+!data/processed/chunks/.gitkeep
+data/index/*
+!data/index/.gitkeep
+
+# 평가셋은 산출물이므로 기본 추적 — 용량이 크면 아래 주석 해제
+# data/eval/*
+# !data/eval/.gitkeep
+
+# ── 평가 결과 / 모델 캐시 ──
+evaluation/results/*
+!evaluation/results/.gitkeep
+models/
+*.faiss
+*.bin
+*.pt
+*.onnx
+
+# ── 음성 임시 파일 ──
+*.wav
+*.mp3
+*.m4a
+*.webm
+
+# ── 노트북 체크포인트 ──
+.ipynb_checkpoints/
+
+# ── 프론트엔드 ──
+frontend/node_modules/
+frontend/dist/
+
+# ── OS / 에디터 ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
