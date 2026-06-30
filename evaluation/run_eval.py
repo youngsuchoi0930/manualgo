@@ -41,13 +41,25 @@ def _mean(xs: list[float]) -> float:
     return sum(xs) / len(xs) if xs else 0.0
 
 
+def _make_retriever(name: str):
+    if name == "bm25":
+        from rag.retrieval.bm25 import BM25Retriever
+
+        return BM25Retriever()
+    if name == "hybrid":
+        from rag.retrieval.hybrid import HybridRetriever
+
+        return HybridRetriever()
+    from rag.retrieval.naive import NaiveRetriever
+
+    return NaiveRetriever()
+
+
 def run_eval(
     evalset_path: str = "data/eval/evalset.jsonl",
     results_dir: str = "evaluation/results",
     name: str = "naive",
 ) -> None:
-    from rag.retrieval.naive import NaiveRetriever
-
     evalset = _load_evalset(evalset_path)
     if not evalset:
         print(f"[!] 평가셋이 비었습니다: {evalset_path} (먼저 generate_evalset 실행)")
@@ -56,7 +68,7 @@ def run_eval(
         print("[!] 평가셋에 manual_id가 없습니다(구버전). generate_evalset로 다시 만드세요.")
         return
 
-    retriever = NaiveRetriever()
+    retriever = _make_retriever(name)
     rows = []
     print(f"[*] '{name}' 검색기로 {len(evalset)}개 질문 평가 중...", flush=True)
     for item in evalset:
@@ -94,4 +106,7 @@ def run_eval(
 
 
 if __name__ == "__main__":
-    run_eval()
+    import sys
+
+    # 사용법: python -m evaluation.run_eval [naive|bm25|hybrid]
+    run_eval(name=sys.argv[1] if len(sys.argv) > 1 else "naive")

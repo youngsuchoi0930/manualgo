@@ -1,23 +1,44 @@
-{"question": "세탁 시 온수 온도는 몇 도를 넘지 않아야 하나요?", "page": 1, "type": "spec_numeric"}
-{"question": "세탁기에서 이상한 소리나 연기가 나면 어떻게 해야 하나요?", "page": 1, "type": "troubleshooting"}
-{"question": "세탁기 부속품 중 접지선은 어떤 용도로 사용되나요?", "page": 2, "type": "how_to"}
-{"question": "세탁기 문은 언제 열 수 있나요?", "page": 3, "type": "how_to"}
-{"question": "세탁 예약은 최대 몇 시간까지 가능한가요?", "page": 3, "type": "spec_numeric"}
-{"question": "세제는 얼마만큼 넣어야 하나요?", "page": 4, "type": "spec_numeric"}
-{"question": "세제를 너무 많이 넣으면 어떤 문제가 발생할 수 있나요?", "page": 4, "type": "troubleshooting"}
-{"question": "표준 코스로 세탁하는 방법을 알려주세요.", "page": 5, "type": "how_to"}
-{"question": "표준 코스의 최대 세탁 용량은 얼마인가요?", "page": 5, "type": "spec_numeric"}
-{"question": "삶음 세탁은 어떻게 시작하나요?", "page": 6, "type": "how_to"}
-{"question": "울 코스의 최대 세탁 용량은 얼마인가요?", "page": 6, "type": "spec_numeric"}
-{"question": "찌든 때가 있는 빨래를 세탁하려면 어떻게 해야 하나요?", "page": 7, "type": "how_to"}
-{"question": "탈수만 하고 싶을 때 어떻게 해야 하나요?", "page": 7, "type": "how_to"}
-{"question": "세제통은 어떻게 청소하나요?", "page": 8, "type": "how_to"}
-{"question": "배수 필터는 어떻게 청소하나요?", "page": 8, "type": "how_to"}
-{"question": "제품 포장을 푼 후 반드시 제거해야 하는 것은 무엇인가요?", "page": 9, "type": "how_to"}
-{"question": "제거한 안전 장치는 어떻게 해야 하나요?", "page": 9, "type": "how_to"}
-{"question": "세탁기 수평을 맞추는 방법을 알려주세요.", "page": 10, "type": "how_to"}
-{"question": "세탁기 접지를 절대 하면 안 되는 곳은 어디인가요?", "page": 10, "type": "troubleshooting"}
-{"question": "급수호스 연결 시 물이 새면 어떻게 해야 하나요?", "page": 11, "type": "troubleshooting"}
-{"question": "싱크대로 배수할 때 배수호스 걸이는 바닥에서 얼마 높이로 설치해야 하나요?", "page": 12, "type": "spec_numeric"}
-{"question": "세탁기 화면에 [E4] 표시가 나타나면 무슨 뜻인가요?", "page": 13, "type": "error_code"}
-{"question": "정전 시 세탁기 문이 안 열릴 때 어떻게 해야 하나요?", "page": 13, "type": "troubleshooting"}
+{"manual_id": "lg-dehumidifier-snc063", "page": 29, "question": "정상적인 사용상태에서 발생한 성능, 기능상의 고장이 동일 하자에 대하여 3회째 재발했을 경우 보상 내역은 무엇인가요?", "type": "troubleshooting"}
+{"manual_id": "lg-dehumidifier-snc063", "page": 24, "question": "제습기 운전이 전혀 되지 않을 때 무엇을 확인해야 하나요?", "type": "troubleshooting"}
+{"manual_id": "lg-dehumidifier-snc063", "page": 26, "question": "제습기 무상 서비스 기간 내라도 유상 서비스로 처리되는 경우는 어떤 것들이 있나요?", "type": "how_to"}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 46, "question": "냉장고의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 37, "question": "냉장고 문 높낮이가 다를 경우 어떻게 수평을 맞출 수 있나요?", "type": "how_to"}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 51, "question": "R-1T751LB**/VBx* 모델 냉장고의 총 유효 내용적은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-microwave-mfl30378952", "page": 26, "question": "전자레인지 구입 후 10일 이내에 중요한 수리를 요하는 경우 보상 내역은 무엇인가요?", "type": "troubleshooting"}
+{"manual_id": "lg-microwave-mfl30378952", "page": 16, "question": "전자레인지로 계란찜을 자동 조리하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-microwave-mfl30378952", "page": 27, "question": "MW209DS 전자레인지 모델의 정격 고주파 출력은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-microwave-mw201", "page": 26, "question": "전자레인지의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-microwave-mw201", "page": 16, "question": "전자레인지로 젖병을 소독하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-microwave-mw201", "page": 27, "question": "MW201CF 전자레인지 모델의 정격 소비전력은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-microwave-mw231uw", "page": 20, "question": "전자레인지 마그네트론의 핵심 부품 보증 기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-microwave-mw231uw", "page": 2, "question": "전자레인지의 잠금 기능을 설정하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-microwave-mw231uw", "page": 12, "question": "전자레인지로 쇠고기 500g을 해동하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 15, "question": "진공청소기의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 4, "question": "청소기 사용 중 도시가스 누출이 있을 때 어떻게 조치해야 하나요?", "type": "error_code"}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 13, "question": "청소기 흡입력이 약해지고 떨리는 소리가 날 때 어떻게 조치해야 하나요?", "type": "troubleshooting"}
+{"manual_id": "lg-washer-d1220mf", "page": 33, "question": "세탁기의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-d1220mf", "page": 19, "question": "세탁기에서 듀얼세척 코스를 선택하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-washer-d1220mf", "page": 22, "question": "세탁기의 살균건조 코스 소요 시간은 약 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 3, "question": "이 세탁기의 스마트 진단 기능은 무엇인가요?", "type": "how_to"}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 52, "question": "세탁기에서 발생한 성능, 기능상의 고장이 여러 부위에서 총 5회째 재발했을 경우 보상 내역은 무엇인가요?", "type": "troubleshooting"}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 53, "question": "이 세탁기의 최대 세탁 용량은 몇 kg인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 4, "question": "세탁기의 통살균 기능은 무엇인가요?", "type": "how_to"}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 44, "question": "이 세탁기의 냉수 세탁 시 소비 전력은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-mfl47377718", "page": 41, "question": "세탁기 모터의 핵심 부품 보증 기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-mfl47377718", "page": 39, "question": "식기세척기에서 '딩동, 딩동' 부저가 연속해서 울리고 거품이 생겼다면 어떻게 해야 하나요?", "type": "troubleshooting"}
+{"manual_id": "lg-washer-mfl47377718", "page": 21, "question": "식기세척기의 UV 살균 코스는 어떤 기능인가요?", "type": "how_to"}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 33, "question": "세탁기 모터의 핵심 부품 보증 기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 8, "question": "세탁기에 액체 세제를 사용할 때 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 14, "question": "세탁기로 이불 코스를 사용하여 세탁할 때 어떤 주의사항이 있나요?", "type": "how_to"}
+{"manual_id": "lg-washer-tong-t1203", "page": 38, "question": "세탁기 모터의 핵심 부품 보증 기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-washer-tong-t1203", "page": 10, "question": "세탁기에서 물살 세기를 조절하려면 어떻게 해야 하나요?", "type": "how_to"}
+{"manual_id": "lg-washer-tong-t1203", "page": 7, "question": "세탁기의 울/섬세 코스는 어떤 의류를 세탁할 때 사용하나요?", "type": "how_to"}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 29, "question": "정수기의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 28, "question": "WQD7IRW1 정수기의 총 탱크 용량은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 26, "question": "정수기 물맛이 이상할 때 무엇을 확인해야 하나요?", "type": "troubleshooting"}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 29, "question": "정수기의 주요 부품 보유기간은 몇 년인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 28, "question": "WQD74RL9IR 정수기의 냉수 소비 전력은 얼마인가요?", "type": "spec_numeric"}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 26, "question": "정수량(정수기)이 갑자기 적어졌을 때 무엇을 확인해야 하나요?", "type": "troubleshooting"}
+{"manual_id": "sew-650dw", "page": 6, "question": "세탁기의 삶음 코스 최대 세탁 용량은 몇 kg인가요?", "type": "spec_numeric"}
+{"manual_id": "sew-650dw", "page": 13, "question": "세탁기에 'door' 표시가 나타나면 어떻게 해야 하나요?", "type": "error_code"}
+{"manual_id": "sew-650dw", "page": 5, "question": "세탁기에서 표준 코스를 자동으로 세탁하려면 어떻게 해야 하나요?", "type": "how_to"}
