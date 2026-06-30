@@ -141,28 +141,54 @@ def render_page_png(page: "fitz.Page", dpi: int = 200) -> bytes:
     return page.get_pixmap(matrix=matrix).tobytes("png")
 
 
+# 정상 한국어 본문에 흔한 토큰들 — 텍스트 레이어가 살아있는지 판정에 사용
+_KR_MARKERS = ("니다", "사용", "주의", "하세요", "설명", "전원", "버튼", "기능", "세요", "있")
+
+
+def _kr_score(text: str) -> int:
+    return sum(text.count(m) for m in _KR_MARKERS)
+
+
+def _doc_text_usable(doc: "fitz.Document", sample_pages: int = 6, threshold: int = 10) -> bool:
+    """앞 몇 쪽을 추출해 '정상 텍스트 레이어'인지 판정. 깨진 인코딩이면 단어가 거의 안 잡힌다."""
+    n = min(sample_pages, doc.page_count)
+    text = "".join(doc[i].get_text("text") for i in range(n))
+    return len(text) >= 50 and _kr_score(text) >= threshold
+
+
 def parse_pdf(
     path: str,
     manual_id: str,
     ocr: OcrEngine | None = None,
-    dpi: int = 200,
+    dpi: int = 300,
     skip_errors: bool = False,
+    min_page_chars: int = 30,
 ) -> list[ParsedPage]:
-    """PDF를 페이지 단위로 OCR해 ``ParsedPage`` 리스트를 반환한다.
+    """PDF를 페이지 단위로 파싱한다 — **텍스트 추출 우선, 깨졌거나 이미지면 OCR 폴백**.
 
-    skip_errors=True면 한 쪽 OCR이 실패해도 빈 텍스트로 두고 계속한다(전체 중단 방지).
+    - 텍스트 레이어가 정상인 PDF: pymupdf로 직접 추출(빠르고 정확, OCR 노이즈 없음)
+    - 레이어가 깨진(레거시 인코딩) PDF: 문서 전체를 OCR
+    - 정상 PDF 안의 이미지-only 쪽: 그 쪽만 OCR 폴백
+    skip_errors=True면 OCR 폴백 실패 시 빈 텍스트로 두고 계속한다.
     """
-    ocr = ocr or EasyOcrEngine()
     doc = fitz.open(path)
+    use_text = _doc_text_usable(doc)
+    print(f"        ({'텍스트 레이어 추출' if use_text else '깨진 레이어 → OCR'})", flush=True)
+
+    ocr_engine: OcrEngine | None = ocr  # 필요할 때만 생성
     pages: list[ParsedPage] = []
     for i, page in enumerate(doc):
-        png = render_page_png(page, dpi=dpi)
-        try:
-            text = ocr.image_to_text(png).strip()
-        except Exception as e:
-            if not skip_errors:
-                raise
-            print(f"  [!] {i + 1}쪽 OCR 실패 → 건너뜀: {e}", flush=True)
-            text = ""
+        text = page.get_text("text").strip() if use_text else ""
+        if len(text) < min_page_chars:  # 깨진 문서 또는 텍스트 문서 내 이미지 쪽 → OCR 폴백
+            try:
+                if ocr_engine is None:
+                    ocr_engine = TesseractOcrEngine()
+                ocr_text = ocr_engine.image_to_text(render_page_png(page, dpi=dpi)).strip()
+                if len(ocr_text) > len(text):
+                    text = ocr_text
+            except Exception as e:
+                if not skip_errors:
+                    raise
+                print(f"  [!] {i + 1}쪽 OCR 폴백 실패 → 건너뜀: {e}", flush=True)
         pages.append(ParsedPage(manual_id=manual_id, page=i + 1, text=text))
     return pages

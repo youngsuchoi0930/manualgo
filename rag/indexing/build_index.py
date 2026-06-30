@@ -22,8 +22,8 @@ def build_index(manuals_dir: str = "data/raw/manuals", index_dir: str = "data/in
         print(f"[!] PDF가 없습니다: {manuals_dir}")
         return
 
-    print(f"[*] {len(pdfs)}개 PDF 인덱싱 (Tesseract OCR + Gemini 임베딩, torch 미사용·무제한)...", flush=True)
-    ocr = TesseractOcrEngine()
+    print(f"[*] {len(pdfs)}개 PDF 인덱싱 (텍스트 추출 우선 + 깨지면 Tesseract OCR 폴백, Gemini 임베딩)...", flush=True)
+    ocr = TesseractOcrEngine()  # 텍스트가 깨진/이미지 PDF의 폴백
     embedder = Embedder()
 
     # 먼저 메모리에 전부 수집 → 데이터가 확보된 뒤에만 인덱스를 덮어쓴다
@@ -35,7 +35,7 @@ def build_index(manuals_dir: str = "data/raw/manuals", index_dir: str = "data/in
 
     for pdf in pdfs:
         manual_id = pdf.stem
-        print(f"[parse] {pdf.name} — Tesseract OCR 중 (로컬, DPI 300)...", flush=True)
+        print(f"[parse] {pdf.name} 파싱 중...", flush=True)
         pages = parse_pdf(str(pdf), manual_id, ocr=ocr, dpi=300, skip_errors=True)
         empty = sum(1 for p in pages if not p.text.strip())
         chunks = chunk_pages(pages)
