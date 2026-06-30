@@ -23,6 +23,8 @@ OCR로 추출되어 오타가 있을 수 있으니 문맥으로 이해하라.
 - type은 다음 중 하나: {types}
   (error_code=에러코드, how_to=사용법, spec_numeric=사양·수치, troubleshooting=문제해결)
 - 전체적으로 유형을 골고루. 내용이 빈약해 좋은 질문이 안 나오는 블록은 건너뛴다.
+- 보증·부품 보유기간·소비자 보상 같은 '법정 고지' 내용으로는 질문을 만들지 마라
+  (매뉴얼마다 거의 동일해 어느 제품인지 변별이 안 됨). 제품 고유의 사용법·기능·에러·사양 위주로.
 - 출력은 JSON 배열만:
 [{{"id": "lg-washer-d1220mf", "page": 9, "question": "...", "type": "how_to"}}]
 
@@ -48,16 +50,30 @@ def _load_pages(index_dir: str) -> dict[tuple[str, int], str]:
     return {k: "\n".join(t).strip() for k, t in pages.items()}
 
 
+# 매뉴얼 공통 법정고지(보증/부품/보상) — 거의 동일해 변별력 낮음 → 평가셋에서 제외
+_BOILERPLATE = ("보증", "보유기간", "부품 보유", "소비자", "보상", "분쟁", "무상", "유상", "품질보증", "서비스 기간")
+
+
+def _is_boilerplate(text: str) -> bool:
+    return sum(1 for k in _BOILERPLATE if k in text) >= 2
+
+
 def _sample(pages: dict[tuple[str, int], str], per_manual: int, min_chars: int) -> list[tuple[str, int, str]]:
-    """매뉴얼별로 본문이 긴(충실한) 쪽을 per_manual개씩 고른다."""
+    """매뉴얼별로 제품 고유 페이지를 페이지 순으로 고르게 per_manual개 고른다(보일러플레이트 제외)."""
     by_manual: dict[str, list[tuple[int, str]]] = {}
     for (mid, page), text in pages.items():
-        if len(text) >= min_chars:
+        if len(text) >= min_chars and not _is_boilerplate(text):
             by_manual.setdefault(mid, []).append((page, text))
     sampled: list[tuple[str, int, str]] = []
     for mid, items in by_manual.items():
-        items.sort(key=lambda x: len(x[1]), reverse=True)  # 본문 긴 쪽 우선
-        for page, text in items[:per_manual]:
+        items.sort(key=lambda x: x[0])  # 페이지 순
+        n = len(items)
+        if n <= per_manual:
+            picks = items
+        else:
+            step = n / per_manual
+            picks = [items[int(i * step)] for i in range(per_manual)]  # 앞·중간·뒤 고르게 분산
+        for page, text in picks:
             sampled.append((mid, page, text))
     return sampled
 
@@ -65,7 +81,7 @@ def _sample(pages: dict[tuple[str, int], str], per_manual: int, min_chars: int) 
 def generate_evalset(
     index_dir: str = "data/index",
     out_path: str = "data/eval/evalset.jsonl",
-    per_manual: int = 3,
+    per_manual: int = 4,
     min_chars: int = 200,
 ) -> None:
     from dotenv import load_dotenv
