@@ -40,9 +40,13 @@ class BM25Retriever:
         self.metas: list[dict] = data["metadatas"]
         self._bm25 = BM25Okapi([tokenize_ko(d) for d in self.docs])
 
-    def retrieve(self, query: str, top_k: int = 5) -> list[RetrievedChunk]:
+    def retrieve(self, query: str, top_k: int = 5, manual_ids=None) -> list[RetrievedChunk]:
         scores = self._bm25.get_scores(tokenize_ko(query))
-        order = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_k]
+        idxs = range(len(scores))
+        if manual_ids:
+            allowed = set(manual_ids)
+            idxs = [i for i in idxs if (self.metas[i] or {}).get("manual_id") in allowed]
+        order = sorted(idxs, key=lambda i: scores[i], reverse=True)[:top_k]
         out: list[RetrievedChunk] = []
         for i in order:
             md = self.metas[i] or {}
