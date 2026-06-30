@@ -55,10 +55,40 @@ def _make_retriever(name: str):
     return NaiveRetriever()
 
 
+_CATEGORY_KEYWORDS = {
+    "washer": ("washer", "sew"),
+    "microwave": ("microwave",),
+    "fridge": ("fridge",),
+    "vacuum": ("vacuum",),
+    "waterpurifier": ("waterpurifier",),
+    "dehumidifier": ("dehumidifier",),
+    "aircon": ("aircon",),
+}
+
+
+def _category_of(mid: str) -> str:
+    m = (mid or "").lower()
+    for cat, kws in _CATEGORY_KEYWORDS.items():
+        if any(k in m for k in kws):
+            return cat
+    return "etc"
+
+
+def _all_manual_ids(index_dir: str = "data/index") -> list[str]:
+    import chromadb
+
+    from rag.vectorstore.store import COLLECTION
+
+    col = chromadb.PersistentClient(path=index_dir).get_or_create_collection(COLLECTION)
+    metas = col.get(include=["metadatas"])["metadatas"]
+    return sorted({(m or {}).get("manual_id") for m in metas if m and m.get("manual_id")})
+
+
 def run_eval(
     evalset_path: str = "data/eval/evalset.jsonl",
     results_dir: str = "evaluation/results",
     name: str = "naive",
+    scope: str | None = None,  # None | "manual" | "category" — oracle 스코핑
 ) -> None:
     evalset = _load_evalset(evalset_path)
     if not evalset:
@@ -69,13 +99,25 @@ def run_eval(
         return
 
     retriever = _make_retriever(name)
+    cat_groups: dict[str, list[str]] = {}
+    if scope == "category":
+        for mid in _all_manual_ids():
+            cat_groups.setdefault(_category_of(mid), []).append(mid)
+
     rows = []
-    print(f"[*] '{name}' 검색기로 {len(evalset)}개 질문 평가 중...", flush=True)
+    label = name + (f" (scope={scope})" if scope else "")
+    print(f"[*] '{label}' 검색기로 {len(evalset)}개 질문 평가 중...", flush=True)
     for item in evalset:
         q = item["question"]
         gold = (item["manual_id"], int(item["page"]))
         typ = item.get("type", "?")
-        keys = _unique_keys(retriever.retrieve(q, top_k=RETRIEVE_K))
+        if scope == "manual":
+            scope_ids = [item["manual_id"]]
+        elif scope == "category":
+            scope_ids = cat_groups.get(_category_of(item["manual_id"]))
+        else:
+            scope_ids = None
+        keys = _unique_keys(retriever.retrieve(q, top_k=RETRIEVE_K, manual_ids=scope_ids))
         row = {"type": typ, "gold": gold, "pred": keys, "mrr": reciprocal_rank(keys, gold)}
         for k in KS:
             row[f"r@{k}"] = recall_at_k(keys, gold, k)
@@ -98,7 +140,7 @@ def run_eval(
         print(f"{t:<16}{s['n']:>4}" + "".join(f"{s[m]:>8.3f}" for m in metric_keys))
 
     Path(results_dir).mkdir(parents=True, exist_ok=True)
-    out = Path(results_dir) / f"{name}_eval.json"
+    out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}_eval.json"
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"name": name, "overall": overall, "by_type": by_type, "rows": rows}, f,
                   ensure_ascii=False, indent=2)
@@ -108,5 +150,8 @@ def run_eval(
 if __name__ == "__main__":
     import sys
 
-    # 사용법: python -m evaluation.run_eval [naive|bm25|hybrid]
-    run_eval(name=sys.argv[1] if len(sys.argv) > 1 else "naive")
+    # 사용법: python -m evaluation.run_eval [naive|bm25|hybrid] [manual|category]
+    run_eval(
+        name=sys.argv[1] if len(sys.argv) > 1 else "naive",
+        scope=sys.argv[2] if len(sys.argv) > 2 else None,
+    )

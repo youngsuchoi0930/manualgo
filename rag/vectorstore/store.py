@@ -55,11 +55,15 @@ class ChromaStore:
     ) -> None:
         self._col.add(ids=ids, embeddings=vectors, metadatas=metadatas, documents=documents)
 
-    def search(self, query_vector: list[float], top_k: int = 5) -> list[dict]:
+    def search(self, query_vector: list[float], top_k: int = 5, manual_ids=None) -> list[dict]:
+        kwargs = {}
+        if manual_ids:
+            kwargs["where"] = {"manual_id": {"$in": list(manual_ids)}}
         res = self._col.query(
             query_embeddings=[query_vector],
             n_results=top_k,
             include=["metadatas", "documents", "distances"],
+            **kwargs,
         )
         hits: list[dict] = []
         for i in range(len(res["ids"][0])):

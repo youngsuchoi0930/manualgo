@@ -20,8 +20,11 @@ class HybridRetriever:
         self.rrf_k = rrf_k      # RRF 상수 (관례상 60)
         self.pool = pool        # 각 검색기에서 가져올 후보 수
 
-    def retrieve(self, query: str, top_k: int = 5) -> list[RetrievedChunk]:
-        lists = [self.bm25.retrieve(query, top_k=self.pool), self.dense.retrieve(query, top_k=self.pool)]
+    def retrieve(self, query: str, top_k: int = 5, manual_ids=None) -> list[RetrievedChunk]:
+        lists = [
+            self.bm25.retrieve(query, top_k=self.pool, manual_ids=manual_ids),
+            self.dense.retrieve(query, top_k=self.pool, manual_ids=manual_ids),
+        ]
         rrf: dict[str, float] = {}
         objs: dict[str, RetrievedChunk] = {}
         for ranked in lists:

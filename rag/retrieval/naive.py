@@ -15,9 +15,9 @@ class NaiveRetriever:
         self.embedder = embedder or Embedder()
         self.store = store or ChromaStore()
 
-    def retrieve(self, query: str, top_k: int = 5) -> list[RetrievedChunk]:
+    def retrieve(self, query: str, top_k: int = 5, manual_ids=None) -> list[RetrievedChunk]:
         query_vec = self.embedder.encode([query], task_type="RETRIEVAL_QUERY")[0]
-        hits = self.store.search(query_vec, top_k=top_k)
+        hits = self.store.search(query_vec, top_k=top_k, manual_ids=manual_ids)
         return [
             RetrievedChunk(
                 chunk_id=h["chunk_id"],
