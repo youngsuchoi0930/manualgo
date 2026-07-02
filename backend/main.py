@@ -5,10 +5,13 @@
 """
 from pathlib import Path
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from backend.api import routes_ask, routes_health
+load_dotenv()  # AZURE_SPEECH_* / GOOGLE_API_KEY 등 — 라우터 import 전에 로드
+
+from backend.api import routes_ask, routes_health  # noqa: E402
 
 app = FastAPI(title="매뉴얼 음성 도우미", version="0.1.0")
 

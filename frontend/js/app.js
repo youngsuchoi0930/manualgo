@@ -191,12 +191,12 @@ if (SpeechRecognition) {
 }
 
 micBtn.addEventListener("click", () => {
-  if (state === "speaking") { speechSynthesis.cancel(); setState("idle"); return; }
+  if (state === "speaking") { stopSpeaking(); setState("idle"); return; }
   if (state === "listening") { recognition.stop(); return; }
-  if (state === "idle" && recognition) { speechSynthesis.cancel(); setState("listening"); recognition.start(); }
+  if (state === "idle" && recognition) { stopSpeaking(); setState("listening"); recognition.start(); }
 });
 statusEl.addEventListener("click", () => {
-  if (state === "speaking") { speechSynthesis.cancel(); setState("idle"); }
+  if (state === "speaking") { stopSpeaking(); setState("idle"); }
 });
 
 // ── 텍스트 입력 ────────────────────────────────────────────
@@ -212,7 +212,7 @@ textForm.addEventListener("submit", (e) => {
 let thinkingBubble = null;
 
 async function ask(text) {
-  speechSynthesis.cancel();
+  stopSpeaking();
   addBubble(text, "user");
   showThinking();
   setState("thinking");
@@ -249,17 +249,40 @@ function hideThinking() {
   thinkingBubble = null;
 }
 
-// ── TTS ────────────────────────────────────────────────────
-function speak(text) {
+// ── TTS: Azure(자연스러운 뉴럴 보이스) 우선, 실패 시 브라우저 폴백 ──
+let currentAudio = null;
+
+function stopSpeaking() {
   speechSynthesis.cancel();
+  if (currentAudio) { currentAudio.pause(); currentAudio = null; }
+}
+
+async function speak(text) {
+  stopSpeaking();
   const spoken = text.replace(/\(출처[^)]*\)/g, "").trim(); // 출처 표기는 칩으로 보이므로 낭독 생략
-  const u = new SpeechSynthesisUtterance(spoken);
-  u.lang = "ko-KR";
-  u.rate = 1.05;
-  u.onend = () => { if (state === "speaking") setState("idle"); };
-  u.onerror = () => { if (state === "speaking") setState("idle"); };
+  if (!spoken) { setState("idle"); return; }
   setState("speaking");
-  speechSynthesis.speak(u);
+  try {
+    const res = await fetch("/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text: spoken }),
+    });
+    if (!res.ok) throw new Error("azure tts unavailable");
+    const blob = await res.blob();
+    currentAudio = new Audio(URL.createObjectURL(blob));
+    currentAudio.onended = () => { if (state === "speaking") setState("idle"); };
+    currentAudio.onerror = () => { if (state === "speaking") setState("idle"); };
+    await currentAudio.play();
+  } catch {
+    // 폴백: 브라우저 내장 TTS
+    const u = new SpeechSynthesisUtterance(spoken);
+    u.lang = "ko-KR";
+    u.rate = 1.05;
+    u.onend = () => { if (state === "speaking") setState("idle"); };
+    u.onerror = () => { if (state === "speaking") setState("idle"); };
+    speechSynthesis.speak(u);
+  }
 }
 
 // ── 렌더링 ─────────────────────────────────────────────────

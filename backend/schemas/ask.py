@@ -7,6 +7,10 @@ class AskRequest(BaseModel):
     manual_ids: list[str] | None = None    # 스코핑: 모델 1개 or 카테고리(여러 개), 없으면 전체
 
 
+class TtsRequest(BaseModel):
+    text: str                              # 합성할 답변 텍스트
+
+
 class Source(BaseModel):
     manual_id: str
     page: int
