@@ -33,11 +33,10 @@ body {
 .app__subtitle { color: var(--muted); margin-top: 0.25rem; font-size: 0.85rem; }
 
 /* ── 칩 공통 (카테고리 / 모델 / 추천질문) ─────────────────── */
+/* 가로 스크롤 대신 줄바꿈 — 모든 칩이 항상 보이고 마우스로도 접근 가능 */
 .chips {
-  display: flex; gap: 0.4rem; overflow-x: auto; padding: 0.3rem 0;
-  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.3rem 0;
 }
-.chips::-webkit-scrollbar { display: none; }
 
 .chip {
   flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.3rem;

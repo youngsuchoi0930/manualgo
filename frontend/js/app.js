@@ -54,6 +54,9 @@ function categoryOf(id) {
   return "etc";
 }
 const shortName = (id) => id.replace(/^lg-/, "");
+// 모델 칩용 짧은 라벨: 카테고리 접두어까지 제거 (washer-drum-fr4350eaz → drum-fr4350eaz)
+const modelLabel = (id) =>
+  shortName(id).replace(/^(washer|microwave|waterpurifier|vacuum|fridge|dehumidifier|aircon)-/, "");
 
 let manualsByCat = {};   // { washer: [id, ...], ... }
 let selectedCat = "all";
@@ -109,7 +112,7 @@ function renderModelChips() {
   for (const id of models) {
     const chip = document.createElement("button");
     chip.className = "chip" + (id === selectedModel ? " selected" : "");
-    chip.textContent = shortName(id);
+    chip.textContent = modelLabel(id);
     chip.addEventListener("click", () => { selectedModel = id; renderModelChips(); });
     modelChipsEl.appendChild(chip);
   }
