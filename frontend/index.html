@@ -13,18 +13,34 @@
       <p class="app__subtitle">가전 사용법, 음성으로 물어보세요</p>
     </header>
 
-    <!-- 인식된 질문 / 답변 표시 -->
-    <section class="conversation" id="conversation" aria-live="polite"></section>
-
-    <!-- 출처 매뉴얼 -->
-    <section class="sources" id="sources" hidden>
-      <h2>출처</h2>
-      <ul id="sources-list"></ul>
+    <!-- 제품 선택: 카테고리 칩 → 모델 칩 (스코핑 검색) -->
+    <section class="product">
+      <div id="category-chips" class="chips" role="tablist" aria-label="제품 카테고리"></div>
+      <div id="model-chips" class="chips chips--models" hidden aria-label="모델 선택"></div>
     </section>
 
-    <!-- 마이크 버튼 -->
+    <!-- 대화 -->
+    <section class="conversation" id="conversation" aria-live="polite"></section>
+
+    <!-- 추천 질문 (콜드스타트) -->
+    <section id="suggestions" class="chips chips--suggest" aria-label="추천 질문"></section>
+
+    <!-- 입력 + 음성 상태 -->
     <footer class="app__footer">
-      <button id="mic-btn" class="mic-btn" aria-label="질문 녹음">🎙️</button>
+      <!-- 듣는 중 파형 + 실시간 인식 텍스트 -->
+      <div id="listen-panel" class="listen" hidden>
+        <div class="wave" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p id="interim" class="listen__interim">&nbsp;</p>
+      </div>
+
+      <form id="text-form" class="text-form">
+        <input id="text-input" class="text-form__input" type="text"
+               placeholder="또는 질문을 입력하세요" autocomplete="off" />
+        <button type="submit" class="text-form__btn" aria-label="질문 보내기">➤</button>
+      </form>
+      <button id="mic-btn" class="mic-btn" aria-label="음성으로 질문">🎙️</button>
       <p id="status" class="status">버튼을 누르고 질문하세요</p>
     </footer>
   </main>
