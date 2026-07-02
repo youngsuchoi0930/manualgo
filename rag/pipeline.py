@@ -14,6 +14,6 @@ class RagPipeline:
         self.retriever = retriever
         self.generator = generator or AnswerGenerator()
 
-    def run(self, question: str, top_k: int = 5) -> dict:
-        contexts = self.retriever.retrieve(question, top_k=top_k)
+    def run(self, question: str, top_k: int = 5, manual_ids: list[str] | None = None) -> dict:
+        contexts = self.retriever.retrieve(question, top_k=top_k, manual_ids=manual_ids)
         return self.generator.generate(question, contexts)
