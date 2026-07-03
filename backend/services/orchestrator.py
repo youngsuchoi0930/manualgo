@@ -16,15 +16,16 @@ class Orchestrator:
         if self._pipeline is not None:
             return
         from rag.pipeline import RagPipeline
-        from rag.retrieval.hybrid import HybridRetriever
+        from rag.retrieval.agentic import AgenticRetriever
 
-        self._retriever = HybridRetriever()
+        # Agentic: 칩 선택 시 그 매뉴얼로, 미선택 시 질문에서 제품 자동 식별해 스코핑
+        self._retriever = AgenticRetriever()
         self._pipeline = RagPipeline(self._retriever)
 
     def list_manuals(self) -> list[str]:
         """인덱스에 있는 매뉴얼 id 목록 (제품 선택 UI용)."""
         self._ensure_loaded()
-        metas = self._retriever.bm25.metas
+        metas = self._retriever.hybrid.bm25.metas
         return sorted({(m or {}).get("manual_id") for m in metas if m and m.get("manual_id")})
 
     def handle(self, *, text: str, manual_ids: list[str] | None = None) -> dict:
