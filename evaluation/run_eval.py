@@ -50,6 +50,10 @@ def _make_retriever(name: str):
         from rag.retrieval.hybrid import HybridRetriever
 
         return HybridRetriever()
+    if name == "agentic":
+        from rag.retrieval.agentic import AgenticRetriever
+
+        return AgenticRetriever()
     from rag.retrieval.naive import NaiveRetriever
 
     return NaiveRetriever()
