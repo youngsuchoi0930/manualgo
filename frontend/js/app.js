@@ -387,6 +387,58 @@ function closePagePanel() {
 pageClose.addEventListener("click", closePagePanel);
 pageBackdrop.addEventListener("click", closePagePanel);
 
+// ── 페이지 이미지 확대 (라이트박스, FLIP: 탭한 자리에서 화면 가득 커짐) ──
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+function openLightbox() {
+  if (pageImg.hidden || !pageImg.naturalWidth) return;
+  const from = pageImg.getBoundingClientRect();
+  lightboxImg.src = pageImg.src;
+  lightbox.classList.remove("closing");
+  lightbox.hidden = false;
+  const to = lightboxImg.getBoundingClientRect();
+  if (to.width > 0) {
+    // 시작 위치·크기 = 시트 안 썸네일 → 목표 = 화면 중앙 (FLIP)
+    const dx = from.left + from.width / 2 - (to.left + to.width / 2);
+    const dy = from.top + from.height / 2 - (to.top + to.height / 2);
+    const scale = from.width / to.width;
+    lightboxImg.style.transition = "none";
+    lightboxImg.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+    void lightboxImg.offsetWidth; // 리플로우로 시작값 확정
+    lightboxImg.style.transition = "transform 0.32s cubic-bezier(0.2, 0.8, 0.3, 1)";
+    lightboxImg.style.transform = "none";
+  }
+}
+
+function closeLightbox() {
+  if (lightbox.hidden || lightbox.classList.contains("closing")) return;
+  const from = pageImg.getBoundingClientRect();
+  const to = lightboxImg.getBoundingClientRect();
+  const dx = from.left + from.width / 2 - (to.left + to.width / 2);
+  const dy = from.top + from.height / 2 - (to.top + to.height / 2);
+  const scale = to.width > 0 ? from.width / to.width : 0.5;
+  lightboxImg.style.transition = "transform 0.24s ease-in";
+  lightboxImg.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`; // 원래 자리로 줄어듦
+  lightbox.classList.add("closing");
+  lightbox.addEventListener(
+    "animationend",
+    () => {
+      lightbox.hidden = true;
+      lightbox.classList.remove("closing");
+      lightboxImg.style.transition = "none";
+      lightboxImg.style.transform = "none";
+    },
+    { once: true },
+  );
+}
+
+pageImg.addEventListener("click", openLightbox);
+lightbox.addEventListener("click", closeLightbox);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") { closeLightbox(); closePagePanel(); }
+});
+
 // ── 시작 ───────────────────────────────────────────────────
 loadManuals();
 setState("idle");
