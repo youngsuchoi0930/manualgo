@@ -13,6 +13,9 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* hidden 속성이 display:flex 등 명시 규칙에 지지 않도록 (X 안 닫히던 버그의 원인) */
+[hidden] { display: none !important; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
   background: var(--bg);
@@ -60,7 +63,14 @@ body {
 
 /* ── 대화 ──────────────────────────────────────────────── */
 .conversation { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; padding: 0.75rem 0; }
-.bubble { padding: 0.75rem 1rem; border-radius: 1rem; max-width: 88%; line-height: 1.55; font-size: 0.95rem; }
+.bubble {
+  padding: 0.75rem 1rem; border-radius: 1rem; max-width: 88%; line-height: 1.55; font-size: 0.95rem;
+  animation: bubble-in 0.28s cubic-bezier(0.2, 0.8, 0.3, 1); /* 카톡처럼 부드럽게 떠오름 */
+}
+@keyframes bubble-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
 .bubble--user { align-self: flex-end; background: var(--green); color: #fff; border-radius: 1rem 1rem 0.25rem 1rem; }
 .bubble--bot { align-self: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 1rem 1rem 1rem 0.25rem; }
 .bubble--error { align-self: flex-start; background: #fdf0ef; border: 1px solid #f0c9c4; color: #8a2f25; }
@@ -134,3 +144,64 @@ body {
   0%, 100% { box-shadow: 0 4px 16px rgba(15, 110, 86, 0.35); }
   50% { box-shadow: 0 4px 28px rgba(15, 110, 86, 0.7); }
 }
+
+/* ── 온보딩 히어로 (첫 질문 후 숨김) ───────────────────── */
+.hero { text-align: center; padding: 2.5rem 1rem 1rem; }
+.hero__icon { font-size: 2.5rem; }
+.hero__title { color: var(--ink); font-size: 1.15rem; margin-top: 0.75rem; }
+.hero__desc { color: var(--muted); font-size: 0.88rem; line-height: 1.6; margin-top: 0.5rem; }
+
+/* ── 답변 카드: 핵심 헤드라인 ──────────────────────────── */
+.bubble__headline {
+  display: block; color: var(--green); font-size: 1.35rem; font-weight: 700;
+  line-height: 1.3; margin-bottom: 0.35rem;
+}
+.bubble__detail { font-size: 0.92rem; }
+
+/* 출처 칩을 버튼처럼 */
+.src-chip { cursor: pointer; }
+.src-chip:active { transform: scale(0.96); }
+
+/* ── 출처 페이지 미리보기 (바텀시트) ───────────────────── */
+.page-backdrop {
+  position: fixed; inset: 0; background: rgba(28, 28, 26, 0.45); z-index: 40;
+  animation: fade-in 0.25s ease-out;
+}
+.page-panel {
+  position: fixed; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: 100%; max-width: 480px; max-height: 82dvh; z-index: 50;
+  background: #fff; border-radius: 1rem 1rem 0 0; box-shadow: 0 -8px 32px rgba(0,0,0,0.18);
+  display: flex; flex-direction: column;
+  animation: sheet-up 0.32s cubic-bezier(0.2, 0.8, 0.3, 1); /* 열릴 때 부드럽게 슬라이드업 */
+}
+@keyframes sheet-up { from { transform: translate(-50%, 100%); } to { transform: translate(-50%, 0); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+/* 닫을 때: 슬라이드다운 후 hidden 처리 (JS에서 animationend 대기) */
+.page-panel.closing { animation: sheet-down 0.24s ease-in forwards; }
+.page-backdrop.closing { animation: fade-out 0.24s ease-in forwards; }
+@keyframes sheet-down { to { transform: translate(-50%, 105%); } }
+@keyframes fade-out { to { opacity: 0; } }
+.page-panel__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.9rem 1rem 0.6rem; border-bottom: 1px solid var(--line);
+}
+.page-panel__title { font-size: 0.9rem; font-weight: 600; color: var(--green-deep); }
+.page-panel__close {
+  border: none; background: #f4f3ef; border-radius: 50%; width: 30px; height: 30px;
+  font-size: 0.85rem; color: var(--muted); cursor: pointer;
+}
+.page-panel__body { overflow-y: auto; padding: 0.75rem 1rem; text-align: center; }
+.page-panel__img { width: 100%; border: 1px solid var(--line); border-radius: 0.5rem; }
+.page-panel__loading { color: var(--muted); font-size: 0.85rem; padding: 2rem 0; }
+.page-panel__srcs { padding: 0.5rem 1rem 1rem; }
+
+/* ── 음성 몰입 모드: 듣는 중엔 파형 크게 + 나머지 흐리게 ── */
+.app.is-listening .conversation,
+.app.is-listening .product,
+.app.is-listening .chips--suggest,
+.app.is-listening .hero { opacity: 0.25; pointer-events: none; }
+.app.is-listening .wave { height: 64px; }
+.app.is-listening .wave span { width: 7px; }
+.app.is-listening .wave span { animation-name: wave-big; }
+@keyframes wave-big { 0%, 100% { height: 12px; } 50% { height: 58px; } }
+.app.is-listening .listen__interim { font-size: 1.1rem; font-weight: 500; }

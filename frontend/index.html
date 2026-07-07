@@ -19,6 +19,13 @@
       <div id="model-chips" class="chips chips--models" hidden aria-label="모델 선택"></div>
     </section>
 
+    <!-- 첫 진입 온보딩 (첫 질문 후 사라짐) -->
+    <section id="hero" class="hero">
+      <div class="hero__icon">🎙️</div>
+      <h2 class="hero__title">무엇이든 물어보세요</h2>
+      <p class="hero__desc">제품을 고르면 더 정확해져요.<br />답변엔 근거 매뉴얼 페이지가 함께 나와요.</p>
+    </section>
+
     <!-- 대화 -->
     <section class="conversation" id="conversation" aria-live="polite"></section>
 
@@ -44,6 +51,20 @@
       <p id="status" class="status">버튼을 누르고 질문하세요</p>
     </footer>
   </main>
+
+  <!-- 출처 페이지 미리보기 (바텀시트) -->
+  <div id="page-backdrop" class="page-backdrop" hidden></div>
+  <aside id="page-panel" class="page-panel" hidden aria-label="출처 페이지 미리보기">
+    <header class="page-panel__head">
+      <span id="page-title" class="page-panel__title"></span>
+      <button id="page-close" class="page-panel__close" aria-label="닫기">✕</button>
+    </header>
+    <div class="page-panel__body">
+      <img id="page-img" class="page-panel__img" alt="출처 매뉴얼 페이지" />
+      <p id="page-loading" class="page-panel__loading">페이지 불러오는 중…</p>
+    </div>
+    <div id="page-srcs" class="chips page-panel__srcs"></div>
+  </aside>
 
   <script src="js/app.js" type="module"></script>
 </body>

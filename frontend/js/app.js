@@ -12,6 +12,15 @@ const listenPanel = document.getElementById("listen-panel");
 const interimEl = document.getElementById("interim");
 const textForm = document.getElementById("text-form");
 const textInput = document.getElementById("text-input");
+const heroEl = document.getElementById("hero");
+const appEl = document.querySelector(".app");
+const pagePanel = document.getElementById("page-panel");
+const pageBackdrop = document.getElementById("page-backdrop");
+const pageTitle = document.getElementById("page-title");
+const pageImg = document.getElementById("page-img");
+const pageLoading = document.getElementById("page-loading");
+const pageSrcs = document.getElementById("page-srcs");
+const pageClose = document.getElementById("page-close");
 
 const IDLE_MSG = "버튼을 누르고 질문하세요";
 
@@ -136,6 +145,7 @@ let state = "idle"; // idle | listening | thinking | speaking
 
 function setState(next) {
   state = next;
+  appEl.classList.toggle("is-listening", next === "listening"); // 몰입 모드
   micBtn.classList.toggle("listening", next === "listening");
   micBtn.classList.toggle("speaking", next === "speaking");
   micBtn.disabled = next === "thinking" || (!recognition && next === "idle" && micDisabled);
@@ -213,6 +223,7 @@ let thinkingBubble = null;
 
 async function ask(text) {
   stopSpeaking();
+  heroEl.hidden = true; // 첫 질문 후 온보딩 숨김
   addBubble(text, "user");
   showThinking();
   setState("thinking");
@@ -228,8 +239,8 @@ async function ask(text) {
     }
     const data = await res.json();
     hideThinking();
-    addAnswer(data.answer, data.sources);
-    speak(data.answer);
+    addAnswer(data.headline, data.answer, data.sources);
+    speak([data.headline, data.answer].filter(Boolean).join(". "));
   } catch (err) {
     hideThinking();
     addBubble(`⚠️ ${err.message}`, "error");
@@ -297,24 +308,84 @@ function addBubble(text, who) {
   return div;
 }
 
-function addAnswer(answer, sources = []) {
-  const div = addBubble(answer, "bot");
-  if (!sources.length) return;
-  const wrap = document.createElement("div");
-  wrap.className = "src-chips";
-  const topManual = sources[0]?.manual_id;
-  sources.slice(0, 3).forEach((s, i) => {
-    const chip = document.createElement("span");
-    chip.className = "src-chip" + (i === 0 ? " src-chip--top" : "");
-    const label = i === 0 || s.manual_id !== topManual
-      ? `${shortName(s.manual_id)} · ${s.page}쪽`
-      : `${s.page}쪽`;
-    chip.innerHTML = `<span class="src-chip__num">${i + 1}</span> ${label}`;
-    wrap.appendChild(chip);
-  });
-  div.appendChild(wrap);
+function addAnswer(headline, answer, sources = []) {
+  const div = document.createElement("div");
+  div.className = "bubble bubble--bot";
+  if (headline) {
+    const h = document.createElement("strong");
+    h.className = "bubble__headline";
+    h.textContent = headline;
+    div.appendChild(h);
+  }
+  const detail = document.createElement("span");
+  detail.className = "bubble__detail";
+  detail.textContent = answer;
+  div.appendChild(detail);
+  conversationEl.appendChild(div);
+
+  const shown = sources.slice(0, 3);
+  if (shown.length) {
+    const wrap = document.createElement("div");
+    wrap.className = "src-chips";
+    const topManual = shown[0]?.manual_id;
+    shown.forEach((s, i) => {
+      const chip = document.createElement("button");
+      chip.className = "src-chip" + (i === 0 ? " src-chip--top" : "");
+      const label = i === 0 || s.manual_id !== topManual
+        ? `${shortName(s.manual_id)} · ${s.page}쪽`
+        : `${s.page}쪽`;
+      chip.innerHTML = `<span class="src-chip__num">${i + 1}</span> ${label} 🔍`;
+      chip.addEventListener("click", () => openPagePanel(shown, i));
+      wrap.appendChild(chip);
+    });
+    div.appendChild(wrap);
+  }
   div.scrollIntoView({ behavior: "smooth", block: "end" });
 }
+
+// ── 출처 페이지 미리보기 (바텀시트) ─────────────────────────
+function openPagePanel(sources, idx) {
+  const s = sources[idx];
+  pageTitle.textContent = `${shortName(s.manual_id)} · ${s.page}쪽`;
+  pageImg.hidden = true;
+  pageLoading.hidden = false;
+  pageImg.onload = () => { pageImg.hidden = false; pageLoading.hidden = true; };
+  pageImg.onerror = () => { pageLoading.textContent = "페이지를 불러오지 못했어요"; };
+  pageLoading.textContent = "페이지 불러오는 중…";
+  pageImg.src = `/page/${encodeURIComponent(s.manual_id)}/${s.page}`;
+
+  pageSrcs.innerHTML = "";
+  if (sources.length > 1) {
+    sources.forEach((src, i) => {
+      const chip = document.createElement("button");
+      chip.className = "chip" + (i === idx ? " selected" : "");
+      chip.textContent = `${i + 1} · ${src.page}쪽`;
+      chip.addEventListener("click", () => openPagePanel(sources, i));
+      pageSrcs.appendChild(chip);
+    });
+  }
+  pagePanel.classList.remove("closing");
+  pageBackdrop.classList.remove("closing");
+  pagePanel.hidden = false;
+  pageBackdrop.hidden = false;
+}
+function closePagePanel() {
+  if (pagePanel.hidden || pagePanel.classList.contains("closing")) return;
+  pagePanel.classList.add("closing");
+  pageBackdrop.classList.add("closing");
+  pagePanel.addEventListener(
+    "animationend",
+    () => {
+      pagePanel.hidden = true;
+      pageBackdrop.hidden = true;
+      pagePanel.classList.remove("closing");
+      pageBackdrop.classList.remove("closing");
+    },
+    { once: true },
+  );
+}
+pageClose.addEventListener("click", closePagePanel);
+pageBackdrop.addEventListener("click", closePagePanel);
 
 // ── 시작 ───────────────────────────────────────────────────
 loadManuals();

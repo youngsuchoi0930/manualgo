@@ -19,6 +19,7 @@ class Source(BaseModel):
 
 
 class AskResponse(BaseModel):
-    question: str           # 질문 텍스트
-    answer: str             # 근거 기반 생성 답변
-    sources: list[Source]   # 출처 매뉴얼 위치
+    question: str                  # 질문 텍스트
+    headline: str | None = None    # 핵심 답 한 구절 (예: "최대 24시간")
+    answer: str                    # 부연 설명 (근거 기반)
+    sources: list[Source]          # 출처 매뉴얼 위치
