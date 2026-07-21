@@ -54,6 +54,17 @@ def _make_retriever(name: str):
         from rag.retrieval.agentic import AgenticRetriever
 
         return AgenticRetriever()
+    if name in ("rerank", "hybrid-rerank"):
+        from rag.retrieval.hybrid import HybridRetriever
+        from rag.retrieval.reranker import Reranker
+
+        return HybridRetriever(reranker=Reranker())
+    if name == "agentic-rerank":
+        from rag.retrieval.agentic import AgenticRetriever
+        from rag.retrieval.hybrid import HybridRetriever
+        from rag.retrieval.reranker import Reranker
+
+        return AgenticRetriever(hybrid=HybridRetriever(reranker=Reranker()))
     from rag.retrieval.naive import NaiveRetriever
 
     return NaiveRetriever()
