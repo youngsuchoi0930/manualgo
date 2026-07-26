@@ -12,41 +12,74 @@ from rag.retrieval.base import RetrievedChunk
 
 # 질문 텍스트 → 카테고리 키워드
 QUESTION_KEYWORDS: dict[str, tuple[str, ...]] = {
-    "washer": ("세탁", "빨래", "헹굼", "탈수", "통돌이", "드럼", "세제", "섬유유연제"),
-    "dishwasher": ("식기", "그릇", "식기세척", "노즐"),
-    "microwave": ("전자레인지", "렌지", "데우", "해동", "조리", "오븐", "찌개"),
-    "purifier": ("정수기", "정수", "냉수", "온수", "물맛", "코크"),
-    "vacuum": ("청소기", "흡입", "먼지통", "먼지", "브러시", "헤파"),
-    "fridge": ("냉장고", "냉동", "냉장", "성에", "탈취", "제빙"),
-    "dehumidifier": ("제습", "습도", "응축수"),
-    "aircon": ("에어컨", "냉방", "실외기", "리모컨", "운전 선택", "정전보상", "제상"),
+    "washer": ("세탁", "빨래", "헹굼", "탈수", "통돌이", "세제", "섬유유연제"),
+    "dryer": ("건조기", "건조 코스", "먼지 필터", "응축", "터보건조"),
+    "dishwasher": ("식기", "그릇", "식기세척", "예비세척", "린스"),
+    "styler": ("의류관리기", "스타일러", "구김", "살균 코스", "옷걸이", "무빙행어"),
+    "fridge": ("냉장고", "냉동", "냉장", "성에", "탈취", "제빙", "김치냉장고", "야채실"),
+    "microwave": ("전자레인지", "렌지", "데우", "해동", "찌개", "광파"),
+    "oven": ("인덕션", "전기레인지", "하이라이트", "화구", "쿡탑", "오븐"),
+    "purifier": ("정수기", "정수", "냉수", "온수", "물맛", "코크", "얼음"),
+    "airpurifier": ("공기청정기", "공기청정", "미세먼지", "청정도", "탈취필터"),
+    "humidifier": ("가습기", "가습", "수조", "분무"),
+    "dehumidifier": ("제습기", "제습", "습도", "응축수", "물통"),
+    "aircon": ("에어컨", "냉방", "실외기", "운전 선택", "정전보상", "제상", "열대야"),
+    "vacuum": ("청소기", "흡입", "먼지통", "브러시", "헤파", "침구"),
+    "tv": ("티비", "티브이", "텔레비전", "화면", "채널", "리모컨", "방송", "HDMI", "볼륨"),
+    "audio": ("사운드바", "홈시어터", "스피커", "블루레이", "우퍼", "프로젝터", "빔"),
+    "massagechair": ("안마의자", "안마", "마사지", "등받이", "다리부"),
+    "bidet": ("비데", "노즐 세정", "세정", "온수 세정", "변좌"),
+    "ricecooker": ("밥솥", "취사", "보온", "내솥", "압력", "만능찜"),
 }
-# 파일명 접두어가 washer지만 실제로는 식기세척기인 매뉴얼
-_DISHWASHER_IDS = {"lg-washer-d1220mf", "lg-washer-mfl47377718"}
-# 파일명은 dehumidifier지만 실제 내용은 시스템 에어컨 매뉴얼 (평가셋 오분류로 발견)
-_AIRCON_IDS = {"lg-dehumidifier-snc063"}
+
+# 파일명 접두어가 실제 제품과 다른 매뉴얼 (내용 확인으로 밝혀진 예외)
+_ID_OVERRIDES = {
+    # MFL473777xx 계열은 LG 식기세척기 문서군인데 파일명이 washer로 붙었다
+    "lg-washer-d1220mf": "dishwasher",
+    "lg-washer-mfl47377718": "dishwasher",
+    # 파일명은 dehumidifier지만 본문 2쪽이 "사용설명서 에어컨 / 벽걸이형"
+    "lg-dehumidifier-snc063": "aircon",
+}
+
+# manual_id에 포함된 문자열 → 카테고리. **순서가 중요**하다:
+# airpurifier가 purifier보다, kimchi가 fridge보다, waterpurifier가 purifier보다 먼저 와야 한다.
+_ID_PATTERNS: tuple[tuple[str, str], ...] = (
+    ("airpurifier", "airpurifier"),
+    ("waterpurifier", "purifier"),
+    ("kimchifridge", "fridge"),
+    ("dishwasher", "dishwasher"),
+    ("ricecooker", "ricecooker"),
+    ("massagechair", "massagechair"),
+    ("dehumidifier", "dehumidifier"),
+    ("humidifier", "humidifier"),
+    ("hometheater", "audio"),
+    ("soundbar", "audio"),
+    ("projector", "audio"),
+    ("induction", "oven"),
+    ("cooktop", "oven"),
+    ("microwave", "microwave"),
+    ("styler", "styler"),
+    ("dryer", "dryer"),
+    ("bidet", "bidet"),
+    ("vacuum", "vacuum"),
+    ("fridge", "fridge"),
+    ("aircon", "aircon"),
+    ("purifier", "purifier"),
+    ("washer", "washer"),
+    ("oven", "oven"),
+    ("tv", "tv"),
+    ("sew", "washer"),
+)
 
 
 def manual_category(mid: str) -> str:
-    if mid in _DISHWASHER_IDS:
-        return "dishwasher"
-    if mid in _AIRCON_IDS:
-        return "aircon"
+    """manual_id에서 제품 카테고리를 판정한다 (예외 → 패턴 순서대로)."""
+    if mid in _ID_OVERRIDES:
+        return _ID_OVERRIDES[mid]
     m = (mid or "").lower()
-    if "washer" in m or "sew" in m:
-        return "washer"
-    if "microwave" in m:
-        return "microwave"
-    if "waterpurifier" in m:
-        return "purifier"
-    if "vacuum" in m:
-        return "vacuum"
-    if "fridge" in m:
-        return "fridge"
-    if "aircon" in m:
-        return "aircon"
-    if "dehumidifier" in m:
-        return "dehumidifier"
+    for pat, cat in _ID_PATTERNS:
+        if pat in m:
+            return cat
     return "etc"
 
 
