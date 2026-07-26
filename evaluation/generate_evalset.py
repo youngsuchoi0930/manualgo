@@ -37,10 +37,10 @@ def _load_pages(index_dir: str) -> dict[tuple[str, int], str]:
     """Chroma에서 (manual_id, page) -> 합쳐진 본문 텍스트."""
     import chromadb
 
-    from rag.vectorstore.store import COLLECTION
+    from rag.indexing.backend import collection_name
 
     client = chromadb.PersistentClient(path=index_dir)
-    col = client.get_or_create_collection(COLLECTION)
+    col = client.get_or_create_collection(collection_name())
     data = col.get(include=["documents", "metadatas"])
     pages: dict[tuple[str, int], list[str]] = {}
     for doc, md in zip(data["documents"], data["metadatas"]):
