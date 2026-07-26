@@ -16,12 +16,12 @@ sys.path.insert(0, str(ROOT))
 def main() -> None:
     import chromadb
 
-    from rag.vectorstore.store import COLLECTION
+    from rag.indexing.backend import collection_name
 
     evalset_path = ROOT / "data" / "eval" / "evalset.jsonl"
     evalset = [json.loads(line) for line in evalset_path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
-    col = chromadb.PersistentClient(path=str(ROOT / "data" / "index")).get_or_create_collection(COLLECTION)
+    col = chromadb.PersistentClient(path=str(ROOT / "data" / "index")).get_or_create_collection(collection_name())
     data = col.get(include=["documents", "metadatas"])
     page_text: dict[tuple, list[str]] = {}
     for doc, md in zip(data["documents"], data["metadatas"]):

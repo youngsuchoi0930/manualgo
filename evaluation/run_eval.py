@@ -70,31 +70,23 @@ def _make_retriever(name: str):
     return NaiveRetriever()
 
 
-_CATEGORY_KEYWORDS = {
-    "washer": ("washer", "sew"),
-    "microwave": ("microwave",),
-    "fridge": ("fridge",),
-    "vacuum": ("vacuum",),
-    "waterpurifier": ("waterpurifier",),
-    "dehumidifier": ("dehumidifier",),
-    "aircon": ("aircon",),
-}
-
-
 def _category_of(mid: str) -> str:
-    m = (mid or "").lower()
-    for cat, kws in _CATEGORY_KEYWORDS.items():
-        if any(k in m for k in kws):
-            return cat
-    return "etc"
+    """카테고리 판정은 agentic.manual_category 하나만 쓴다.
+
+    (예전엔 여기 별도 키워드 표가 있어 식기세척기·에어컨 오버라이드가 빠졌고,
+     category 스코핑과 Agentic 자동분류가 서로 다른 그룹을 만들었다.)
+    """
+    from rag.retrieval.agentic import manual_category
+
+    return manual_category(mid)
 
 
 def _all_manual_ids(index_dir: str = "data/index") -> list[str]:
     import chromadb
 
-    from rag.vectorstore.store import COLLECTION
+    from rag.indexing.backend import collection_name
 
-    col = chromadb.PersistentClient(path=index_dir).get_or_create_collection(COLLECTION)
+    col = chromadb.PersistentClient(path=index_dir).get_or_create_collection(collection_name())
     metas = col.get(include=["metadatas"])["metadatas"]
     return sorted({(m or {}).get("manual_id") for m in metas if m and m.get("manual_id")})
 
@@ -154,10 +146,17 @@ def run_eval(
     for t, s in by_type.items():
         print(f"{t:<16}{s['n']:>4}" + "".join(f"{s[m]:>8.3f}" for m in metric_keys))
 
+    # 결과 파일명에 임베딩 백엔드를 넣는다 — 넣지 않으면 임베더가 다른 실행이 서로를 덮어쓰고,
+    # compare.py가 서로 다른 벡터공간의 결과를 짝지어 비교해도 알아챌 수 없다.
+    from rag.indexing.backend import backend_name, collection_name
+
+    backend = backend_name()
     Path(results_dir).mkdir(parents=True, exist_ok=True)
-    out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}_eval.json"
+    out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}__{backend}_eval.json"
     with open(out, "w", encoding="utf-8") as f:
-        json.dump({"name": name, "overall": overall, "by_type": by_type, "rows": rows}, f,
+        json.dump({"name": name, "scope": scope, "backend": backend,
+                   "collection": collection_name(), "evalset": evalset_path,
+                   "overall": overall, "by_type": by_type, "rows": rows}, f,
                   ensure_ascii=False, indent=2)
     print(f"\n[완료] 저장 → {out}", flush=True)
 

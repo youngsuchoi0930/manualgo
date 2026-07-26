@@ -24,9 +24,25 @@ B = 10000  # 부트스트랩 재표본 수
 SEED = 0   # 재현성
 
 
+def _load_doc(stem: str) -> dict:
+    """결과 JSON을 읽는다. 새 이름(<stem>__<backend>_eval.json)과 구 이름을 모두 받는다."""
+    d = Path(RESULTS_DIR)
+    p = d / f"{stem}_eval.json"
+    if not p.exists():
+        cands = sorted(d.glob(f"{stem}__*_eval.json"))
+        if len(cands) > 1:
+            raise SystemExit(
+                f"[!] '{stem}'에 여러 백엔드 결과가 있습니다: {[c.name for c in cands]}\n"
+                f"    stem에 백엔드를 붙여 지정하세요 (예: {cands[0].name.replace('_eval.json', '')})"
+            )
+        if not cands:
+            raise FileNotFoundError(p)
+        p = cands[0]
+    return json.load(open(p, encoding="utf-8"))
+
+
 def _load(stem: str) -> list[dict]:
-    path = Path(RESULTS_DIR) / f"{stem}_eval.json"
-    return json.load(open(path, encoding="utf-8"))["rows"]
+    return _load_doc(stem)["rows"]
 
 
 def _paired_bootstrap(diffs: np.ndarray, rng) -> tuple[float, float, float]:
@@ -51,7 +67,14 @@ def _mcnemar_exact(base: np.ndarray, treat: np.ndarray) -> tuple[int, int, float
 
 
 def compare(base_stem: str, treat_stem: str) -> None:
-    base, treat = _load(base_stem), _load(treat_stem)
+    bdoc, tdoc = _load_doc(base_stem), _load_doc(treat_stem)
+    # 서로 다른 임베딩 백엔드/평가셋을 비교하면 A/B가 아니라 사과-오렌지가 된다
+    for field, label in (("backend", "임베딩 백엔드"), ("evalset", "평가셋")):
+        b, t = bdoc.get(field), tdoc.get(field)
+        if b and t and b != t:
+            print(f"[!] {label}가 다릅니다: {base_stem}={b} vs {treat_stem}={t} — 비교 중단.")
+            return
+    base, treat = bdoc["rows"], tdoc["rows"]
     if len(base) != len(treat):
         print(f"[!] 표본 크기 불일치: {base_stem}={len(base)} vs {treat_stem}={len(treat)} — 같은 평가셋이 아님")
         return

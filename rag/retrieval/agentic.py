@@ -15,18 +15,23 @@ QUESTION_KEYWORDS: dict[str, tuple[str, ...]] = {
     "washer": ("세탁", "빨래", "헹굼", "탈수", "통돌이", "드럼", "세제", "섬유유연제"),
     "dishwasher": ("식기", "그릇", "식기세척", "노즐"),
     "microwave": ("전자레인지", "렌지", "데우", "해동", "조리", "오븐", "찌개"),
-    "purifier": ("정수기", "정수", "필터", "냉수", "온수", "물맛"),
-    "vacuum": ("청소기", "흡입", "먼지통", "먼지"),
+    "purifier": ("정수기", "정수", "냉수", "온수", "물맛", "코크"),
+    "vacuum": ("청소기", "흡입", "먼지통", "먼지", "브러시", "헤파"),
     "fridge": ("냉장고", "냉동", "냉장", "성에", "탈취", "제빙"),
-    "dehumidifier": ("제습", "습도", "실외기", "응축수"),
+    "dehumidifier": ("제습", "습도", "응축수"),
+    "aircon": ("에어컨", "냉방", "실외기", "리모컨", "운전 선택", "정전보상", "제상"),
 }
 # 파일명 접두어가 washer지만 실제로는 식기세척기인 매뉴얼
 _DISHWASHER_IDS = {"lg-washer-d1220mf", "lg-washer-mfl47377718"}
+# 파일명은 dehumidifier지만 실제 내용은 시스템 에어컨 매뉴얼 (평가셋 오분류로 발견)
+_AIRCON_IDS = {"lg-dehumidifier-snc063"}
 
 
 def manual_category(mid: str) -> str:
     if mid in _DISHWASHER_IDS:
         return "dishwasher"
+    if mid in _AIRCON_IDS:
+        return "aircon"
     m = (mid or "").lower()
     if "washer" in m or "sew" in m:
         return "washer"
@@ -38,6 +43,8 @@ def manual_category(mid: str) -> str:
         return "vacuum"
     if "fridge" in m:
         return "fridge"
+    if "aircon" in m:
+        return "aircon"
     if "dehumidifier" in m:
         return "dehumidifier"
     return "etc"
