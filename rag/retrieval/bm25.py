@@ -30,10 +30,10 @@ class BM25Retriever:
         import chromadb
         from rank_bm25 import BM25Okapi
 
-        from rag.vectorstore.store import COLLECTION
+        from rag.indexing.backend import collection_name
 
         client = chromadb.PersistentClient(path=index_dir)
-        col = client.get_or_create_collection(COLLECTION)
+        col = client.get_or_create_collection(collection_name())
         data = col.get(include=["documents", "metadatas"])
         self.ids: list[str] = data["ids"]
         self.docs: list[str] = data["documents"]

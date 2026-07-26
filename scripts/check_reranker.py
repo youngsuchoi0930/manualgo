@@ -17,7 +17,7 @@ def main() -> None:
     q = "예약 세탁은 최대 몇 시간까지 돼?"
     s = r.scores(q, ["예약 버튼을 누르면 최대 24시간까지 예약 가능합니다", "정수기 필터는 6개월마다 교체하세요"])
     print(f"[판별] 관련 {s[0]:.3f} | 무관 {s[1]:.3f}  ->  {'OK' if s[0] > s[1] else 'FAIL'}")
-    print(f"[로드] {load_s:.1f}s")
+    print(f"[로드] {load_s:.1f}s  (provider={r.provider})")
 
     # 데모 프록시: 20후보 재정렬 지연 (워밍업 1회 후 3회 평균)
     passages = [f"세탁기 사용 설명 {i}. " + "예약 헹굼 탈수 코스 온도 조절 동작 일시정지 " * 20 for i in range(20)]

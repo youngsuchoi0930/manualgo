@@ -21,7 +21,11 @@ def main() -> None:
     import chromadb
 
     from rag.indexing.embedder import Embedder
-    from rag.vectorstore.store import COLLECTION  # "manuals_gemini"
+
+    # 이 스크립트는 이름 그대로 **Gemini 전용** 일회성 마이그레이션이다.
+    # 컬렉션 이름을 EMBED_BACKEND에서 받아오면 안 된다 — onnx로 설정된 셸에서 실행하면
+    # 1024d ONNX 컬렉션을 지우고 768d Gemini 벡터로 덮어써 검색이 조용히 깨진다.
+    COLLECTION = "manuals_gemini"
 
     client = chromadb.PersistentClient(path="data/index")
 

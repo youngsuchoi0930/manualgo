@@ -6,9 +6,11 @@ from __future__ import annotations
 
 
 def main() -> None:
+    from rag.indexing.backend import backend_name, collection_name
     from rag.vectorstore.store import ChromaStore
 
     store = ChromaStore()
+    print(f"[0] 백엔드={backend_name()} · 컬렉션={collection_name()}")
     print("[1] store.count() =", store.count())
 
     # 저장된 청크 일부 들여다보기
@@ -19,10 +21,11 @@ def main() -> None:
     if docs:
         print("    peek doc[0]:", (docs[0] or "")[:80])
 
-    # 임베딩 + 검색 직접 호출
-    from rag.indexing.embedder import Embedder
+    # 임베딩 + 검색 직접 호출 — 임베더는 컬렉션과 짝이 맞아야 한다(백엔드가 정함).
+    # Embedder를 직접 쓰면 onnx 컬렉션(1024d)에 768d 질의를 던져 정상 인덱스를 고장으로 오진한다.
+    from rag.indexing.backend import make_embedder
 
-    emb = Embedder()
+    emb = make_embedder()
     qv = emb.encode(["예약은 최대 몇 시간까지 돼?"])[0]
     print("[3] query vec dim =", len(qv))
 

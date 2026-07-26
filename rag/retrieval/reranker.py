@@ -7,26 +7,44 @@ BGE-reranker-v2-m3(다국어, 한국어 강함)의 사전 export ONNX(onnx-commu
 """
 from __future__ import annotations
 
+import os
+
 from rag.retrieval.base import RetrievedChunk
 
 _REPO = "onnx-community/bge-reranker-v2-m3-ONNX"
 
 
-def _download_onnx(repo: str, prefer_quantized: bool):
+def _open_session(repo: str, prefer_quantized: bool, gpu: bool, provs):
+    """후보 가중치를 받아서 **실제로 열어보고** 성공한 것을 쓴다.
+
+    저장소에 손상된 변형이 섞여 있을 수 있어(opset 누락 등) 다운로드 성공만으로 판단하면 안 된다.
+    """
+    import onnxruntime as ort
     from huggingface_hub import hf_hub_download
 
+    from rag.onnx_runtime import weight_candidates
+
     names = (
-        ["onnx/model_quantized.onnx", "onnx/model_int8.onnx", "onnx/model.onnx"]
-        if prefer_quantized
+        weight_candidates(gpu) if prefer_quantized
         else ["onnx/model.onnx", "onnx/model_quantized.onnx"]
     )
-    last = None
+    errors: list[str] = []
     for f in names:
         try:
-            return hf_hub_download(repo, f)
+            path = hf_hub_download(repo, f)
         except Exception as e:
-            last = e
-    raise RuntimeError(f"ONNX 모델 파일을 찾지 못했습니다: {last}")
+            errors.append(f"{f}: 다운로드 실패 {type(e).__name__}")
+            continue
+        for side in (f + "_data", f + ".data"):
+            try:
+                hf_hub_download(repo, side)
+            except Exception:
+                pass
+        try:
+            return ort.InferenceSession(path, providers=provs), os.path.basename(path)
+        except Exception as e:
+            errors.append(f"{f}: 로드 실패 {str(e)[:80]}")
+    raise RuntimeError("사용 가능한 ONNX 리랭커 가중치가 없습니다:\n  " + "\n  ".join(errors))
 
 
 class Reranker:
@@ -37,13 +55,15 @@ class Reranker:
         from huggingface_hub import hf_hub_download
         from tokenizers import Tokenizer
 
+        from rag.onnx_runtime import on_gpu, providers
+
         self.model_name = repo
         tok = Tokenizer.from_file(hf_hub_download(repo, "tokenizer.json"))
         tok.enable_truncation(max_length=max_length)
         self._tok = tok
-        self._sess = ort.InferenceSession(
-            _download_onnx(repo, quantized), providers=["CPUExecutionProvider"]
-        )
+        provs = providers()
+        self._sess, self.weights = _open_session(repo, quantized, on_gpu(provs), provs)
+        self.provider = self._sess.get_providers()[0]
         self._inputs = {i.name for i in self._sess.get_inputs()}
 
     def scores(self, query: str, passages: list[str]) -> list[float]:
