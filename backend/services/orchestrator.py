@@ -9,8 +9,15 @@ TTS도 브라우저(speechSynthesis)가 처리하므로 서버는 텍스트만 �
 리랭커(RERANK=1, 기본 켜짐)
   n=640 평가에서 R@1을 유의하게 끌어올린다(매뉴얼 스코프 0.744→0.820, McNemar p<0.0001).
   후보 수 기본 10 — pool 20과 R@1 차이가 유의하지 않은데(p=0.25) 재정렬 지연은 절반이라
-  라이브에선 10을 쓴다(재정렬 772ms · 검색 총 907ms, 생성까지 합쳐 ~2.4s).
+  라이브에선 10을 쓴다(재정렬 772ms · 검색 총 907ms, 생성까지 합쳐 ~3s).
   GPU가 없으면 재정렬이 8초를 넘어 음성 UX가 불가하니 RERANK=0으로 끄는 것이 낫다.
+
+스코핑: 칩으로 제품을 고르면 그 매뉴얼로 좁히고(R@1 0.820), 안 고르면 **글로벌**로 찾는다.
+  질문에서 카테고리를 추정해 자동으로 좁히는 AgenticRetriever는 쓰지 않는다 — 코퍼스가
+  96종·18카테고리로 넓어지자 키워드 분류가 76%로 떨어졌고, 그 조건에서 자동 스코핑은
+  글로벌보다 유의하게 나빴다(R@1 0.423 vs 0.442, CI[+0.002,+0.036]). 카테고리를 틀리면
+  정답 매뉴얼이 후보에서 아예 배제돼 확정 실패인데, 맞혀도 이득은 작은 비대칭 때문이다.
+  (AgenticRetriever는 평가용으로 남겨 둔다 — evaluation.run_eval agentic)
 """
 from __future__ import annotations
 
@@ -25,7 +32,6 @@ class Orchestrator:
         if self._pipeline is not None:
             return
         from rag.pipeline import RagPipeline
-        from rag.retrieval.agentic import AgenticRetriever
         from rag.retrieval.hybrid import HybridRetriever
 
         reranker = None
@@ -40,15 +46,14 @@ class Orchestrator:
                 print(f"[orchestrator] 리랭커 비활성화: {e}", flush=True)
 
         pool = int(os.environ.get("RERANK_POOL") or 10)
-        hybrid = HybridRetriever(reranker=reranker, rerank_pool=pool)
-        # Agentic: 칩 선택 시 그 매뉴얼로, 미선택 시 질문에서 제품 자동 식별해 스코핑
-        self._retriever = AgenticRetriever(hybrid=hybrid)
+        # 칩 선택(manual_ids)이 있으면 그 매뉴얼로, 없으면 글로벌 — 자동 카테고리 추정은 안 한다
+        self._retriever = HybridRetriever(reranker=reranker, rerank_pool=pool)
         self._pipeline = RagPipeline(self._retriever)
 
     def list_manuals(self) -> list[str]:
         """인덱스에 있는 매뉴얼 id 목록 (제품 선택 UI용)."""
         self._ensure_loaded()
-        metas = self._retriever.hybrid.bm25.metas
+        metas = self._retriever.bm25.metas
         return sorted({(m or {}).get("manual_id") for m in metas if m and m.get("manual_id")})
 
     def handle(self, *, text: str, manual_ids: list[str] | None = None) -> dict:

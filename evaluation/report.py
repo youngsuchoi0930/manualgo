@@ -17,11 +17,13 @@ import numpy as np
 
 from evaluation.compare import _load, _mcnemar_exact, _paired_bootstrap
 
-# (라벨, 기준_stem, 처리_stem)
+# (라벨, 기준_stem, 처리_stem) — stem에 백엔드를 명시한다.
+# 생략하면 pool 변형 등 여러 파일에 매칭돼 compare가 (의도적으로) 중단한다.
 PAIRS = [
-    ("manual  (오라클: 정확한 매뉴얼)", "hybrid_manual", "rerank_manual"),
-    ("category(오라클: 제품군)", "hybrid_category", "rerank_category"),
-    ("auto    (agentic 자동 스코핑)", "agentic", "agentic-rerank"),
+    ("manual  (칩 선택: 정확한 매뉴얼)", "hybrid_manual__onnx", "rerank_manual__onnx"),
+    ("global  (칩 미선택: 전체 검색)", "hybrid__onnx", "rerank__onnx"),
+    ("category(오라클: 제품군)", "hybrid_category__onnx", "rerank_category__onnx"),
+    ("auto    (agentic 자동 스코핑)", "agentic__onnx", "agentic-rerank__onnx"),
 ]
 METRICS = ("r@1", "r@3", "r@5", "mrr")
 CHI2_CRIT = 3.841  # χ²_1, α=0.05
