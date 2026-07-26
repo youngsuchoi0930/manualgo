@@ -54,17 +54,22 @@ def _make_retriever(name: str):
         from rag.retrieval.agentic import AgenticRetriever
 
         return AgenticRetriever()
+    # RERANK_POOL로 리랭커에 넘길 후보 수를 조절한다 — 라이브 지연이 후보 수에 거의 비례해서,
+    # "후보를 줄이면 정확도를 얼마나 잃는가"를 같은 평가셋으로 재야 트레이드오프를 정할 수 있다.
+    import os
+
+    pool = int(os.environ.get("RERANK_POOL") or 20)
     if name in ("rerank", "hybrid-rerank"):
         from rag.retrieval.hybrid import HybridRetriever
         from rag.retrieval.reranker import Reranker
 
-        return HybridRetriever(reranker=Reranker())
+        return HybridRetriever(reranker=Reranker(), rerank_pool=pool)
     if name == "agentic-rerank":
         from rag.retrieval.agentic import AgenticRetriever
         from rag.retrieval.hybrid import HybridRetriever
         from rag.retrieval.reranker import Reranker
 
-        return AgenticRetriever(hybrid=HybridRetriever(reranker=Reranker()))
+        return AgenticRetriever(hybrid=HybridRetriever(reranker=Reranker(), rerank_pool=pool))
     from rag.retrieval.naive import NaiveRetriever
 
     return NaiveRetriever()
@@ -151,10 +156,16 @@ def run_eval(
     from rag.indexing.backend import backend_name, collection_name
 
     backend = backend_name()
+    # 리랭커 후보 수가 기본과 다르면 파일명에 남긴다 (pool 변형끼리 덮어쓰지 않도록)
+    import os as _os
+
+    pool_env = _os.environ.get("RERANK_POOL")
+    tag = f"__pool{pool_env}" if pool_env and "rerank" in name else ""
     Path(results_dir).mkdir(parents=True, exist_ok=True)
-    out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}__{backend}_eval.json"
+    out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}{tag}__{backend}_eval.json"
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"name": name, "scope": scope, "backend": backend,
+                   "rerank_pool": int(pool_env) if pool_env else None,
                    "collection": collection_name(), "evalset": evalset_path,
                    "overall": overall, "by_type": by_type, "rows": rows}, f,
                   ensure_ascii=False, indent=2)

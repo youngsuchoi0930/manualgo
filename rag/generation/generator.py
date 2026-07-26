@@ -2,6 +2,11 @@
 
 답변은 검색된 '근거'에만 기반하도록 강제하고, 출처(매뉴얼·페이지)를 함께 반환해
 환각 여부를 사용자가 검증할 수 있게 한다. API 키는 GOOGLE_API_KEY 환경변수에서 읽는다.
+
+지연: 단계별 계측 결과 생성이 전체의 81%(검색 1.1s vs 생성 4.9s)였다. Gemini 2.5 Flash는
+기본으로 thinking이 켜져 있는데, 이 작업은 '근거에 적힌 값을 찾아 옮기는' 추출형이라
+추론 예산이 크게 도움되지 않는다. THINKING_BUDGET으로 조절한다(기본 0=끔).
+품질이 걱정되면 THINKING_BUDGET=-1(자동)로 되돌릴 수 있다.
 """
 from __future__ import annotations
 
@@ -41,14 +46,19 @@ class AnswerGenerator:
         from google.genai import types
 
         prompt = _build_prompt(question, contexts)
+        cfg = dict(
+            system_instruction=SYSTEM_INSTRUCTION,
+            temperature=0.2,
+            response_mime_type="application/json",
+        )
+        # thinking 예산: 0=끔(빠름), -1=모델 자동, 그 외=토큰 수. 지원 안 되는 모델이면 무시된다.
+        budget = int(os.environ.get("THINKING_BUDGET", "0"))
+        try:
+            cfg["thinking_config"] = types.ThinkingConfig(thinking_budget=budget)
+        except Exception:
+            pass
         resp = self._client.models.generate_content(
-            model=self.model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_INSTRUCTION,
-                temperature=0.2,
-                response_mime_type="application/json",
-            ),
+            model=self.model, contents=prompt, config=types.GenerateContentConfig(**cfg)
         )
         headline, answer = None, (resp.text or "").strip()
         try:  # JSON 실패 시 원문을 answer로 폴백
