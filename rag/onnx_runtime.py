@@ -5,6 +5,7 @@
 
   ONNX_PROVIDER=auto(기본) → CUDA > DirectML > CPU 순으로 가능한 것 사용
   ONNX_PROVIDER=cpu|cuda|dml → 강제 지정
+  ONNX_PROVIDER_EMBED / ONNX_PROVIDER_RERANK → 컴포넌트별 덮어쓰기(VRAM 분배용)
 
 가중치 선택도 provider에 맞춘다: GPU에서는 int8 양자화가 미지원/저속인 연산자가 많아
 fp16이 유리하고, CPU에서는 int8이 가장 빠르다.
@@ -20,12 +21,18 @@ _PREF = {
 }
 
 
-def providers() -> list[str]:
-    """이 환경에서 실제로 쓸 provider 목록 (앞이 우선). 항상 CPU를 마지막 폴백으로 둔다."""
+def providers(kind: str | None = None) -> list[str]:
+    """이 환경에서 실제로 쓸 provider 목록 (앞이 우선). 항상 CPU를 마지막 폴백으로 둔다.
+
+    kind("embed"/"rerank")를 주면 ONNX_PROVIDER_EMBED / ONNX_PROVIDER_RERANK를 먼저 본다.
+    임베더와 리랭커를 동시에 GPU에 올리면 6GB VRAM에 여유가 거의 없어(실측 5.8/6.1GB),
+    한쪽만 GPU로 두고 다른 쪽을 CPU로 내릴 수 있어야 한다.
+    """
     import onnxruntime as ort
 
     have = set(ort.get_available_providers())
-    want = (os.environ.get("ONNX_PROVIDER") or "auto").strip().lower()
+    want = os.environ.get(f"ONNX_PROVIDER_{kind.upper()}") if kind else None
+    want = (want or os.environ.get("ONNX_PROVIDER") or "auto").strip().lower()
     if want != "auto":
         if want not in _PREF:
             raise ValueError(f"ONNX_PROVIDER는 auto/{'/'.join(_PREF)} 중 하나여야 합니다 (받은 값: {want!r})")
@@ -48,8 +55,12 @@ def on_gpu(provs: list[str] | None = None) -> bool:
     return bool(provs) and provs[0] != "CPUExecutionProvider"
 
 
-def weight_candidates(gpu: bool) -> list[str]:
+def weight_candidates(gpu: bool, kind: str | None = None) -> list[str]:
     """provider에 맞는 ONNX 가중치 파일 우선순위 (onnx-community 저장소 관례 기준).
+
+    ONNX_WEIGHTS(_EMBED/_RERANK)로 특정 파일을 고정할 수 있다. 인덱스를 fp32로 만들었다면
+    질의 임베딩도 fp32여야 한다 — provider를 CPU로 내리면 기본값이 int8로 바뀌어
+    양자화가 어긋나므로(캐시 키도 달라짐) 그때 고정이 필요하다.
 
     GPU에서 fp32(model.onnx)를 먼저 쓴다 — 실측 근거:
       이 머신(GTX 1660 SUPER, Turing TU116)은 **텐서코어가 없어** fp16 이득이 없고,
@@ -58,5 +69,14 @@ def weight_candidates(gpu: bool) -> list[str]:
     텐서코어가 있는 GPU(RTX 계열)로 옮기면 fp16을 먼저 시도하도록 되돌릴 가치가 있다.
     """
     if gpu:
-        return ["onnx/model.onnx", "onnx/model_fp16.onnx", "onnx/model_quantized.onnx"]
-    return ["onnx/model_int8.onnx", "onnx/model_quantized.onnx", "onnx/model.onnx"]
+        order = ["onnx/model.onnx", "onnx/model_fp16.onnx", "onnx/model_quantized.onnx"]
+    else:
+        order = ["onnx/model_int8.onnx", "onnx/model_quantized.onnx", "onnx/model.onnx"]
+
+    pin = os.environ.get(f"ONNX_WEIGHTS_{kind.upper()}") if kind else None
+    pin = (pin or os.environ.get("ONNX_WEIGHTS") or "").strip()
+    if pin:
+        if not pin.startswith("onnx/"):
+            pin = f"onnx/{pin}"
+        order = [pin] + [f for f in order if f != pin]  # 고정본을 먼저, 실패 시 기본 순서로 폴백
+    return order

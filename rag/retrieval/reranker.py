@@ -25,7 +25,7 @@ def _open_session(repo: str, prefer_quantized: bool, gpu: bool, provs):
     from rag.onnx_runtime import weight_candidates
 
     names = (
-        weight_candidates(gpu) if prefer_quantized
+        weight_candidates(gpu, "rerank") if prefer_quantized
         else ["onnx/model.onnx", "onnx/model_quantized.onnx"]
     )
     errors: list[str] = []
@@ -61,7 +61,7 @@ class Reranker:
         tok = Tokenizer.from_file(hf_hub_download(repo, "tokenizer.json"))
         tok.enable_truncation(max_length=max_length)
         self._tok = tok
-        provs = providers()
+        provs = providers("rerank")
         self._sess, self.weights = _open_session(repo, quantized, on_gpu(provs), provs)
         self.provider = self._sess.get_providers()[0]
         self._inputs = {i.name for i in self._sess.get_inputs()}

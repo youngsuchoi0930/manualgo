@@ -29,7 +29,7 @@ def _open_session(repo: str, quantized: bool, gpu: bool, opts, provs):
 
     from rag.onnx_runtime import weight_candidates
 
-    names = weight_candidates(gpu) if quantized else ["onnx/model.onnx"]
+    names = weight_candidates(gpu, "embed") if quantized else ["onnx/model.onnx"]
     errors: list[str] = []
     for f in names:
         try:
@@ -80,7 +80,7 @@ class OnnxEmbedder:
 
         from rag.onnx_runtime import on_gpu, providers
 
-        provs = providers()
+        provs = providers("embed")
         gpu = on_gpu(provs)
         opts = ort.SessionOptions()
         if not gpu:
