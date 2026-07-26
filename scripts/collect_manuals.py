@@ -12,6 +12,7 @@
 """
 from __future__ import annotations
 
+import sys
 import time
 from pathlib import Path
 
@@ -20,12 +21,18 @@ URLS_FILE = ROOT / "data" / "raw" / "manual_urls.txt"
 OUT_DIR = ROOT / "data" / "raw" / "manuals"
 HEADERS = {"User-Agent": "manualgo/0.1 (personal manual collector)"}
 DELAY = 2.0  # 요청 간격(초) — 서버 예의
+MAX_BYTES = 120 * 1024 * 1024  # 파일당 상한 (0이면 무제한) — 이상치 폭주 방지
 
 
 def _entries(path: Path):
     for raw in path.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
         if not line or line.startswith("#"):
+            continue
+        # 줄 끝 인라인 주석 제거 (' # 25MB' 같은 메모가 URL에 붙어 404 나는 것 방지).
+        # URL 프래그먼트('...#page=3')는 공백 없이 붙으므로 영향 없다.
+        line = line.split(" #", 1)[0].split("\t#", 1)[0].strip()
+        if not line:
             continue
         if "," in line:
             name, url = line.split(",", 1)
@@ -47,6 +54,12 @@ def _safe_name(name: str) -> str:
 def main() -> None:
     import requests
 
+    # 파이프/파일로 출력할 때 cp949 기본 인코딩이면 한글·em dash에서 UnicodeEncodeError가 난다
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
     if not URLS_FILE.exists():
         print(f"[!] URL 목록이 없습니다: {URLS_FILE}")
         print("    한 줄에 하나씩 'name,url' 또는 'url' 형식으로 적은 뒤 다시 실행하세요.")
@@ -59,31 +72,49 @@ def main() -> None:
         return
 
     ok = skip = fail = 0
+    total_bytes = 0
     for i, (name, url) in enumerate(entries):
         target = OUT_DIR / f"{_safe_name(name)}.pdf"
         if target.exists():
-            print(f"[skip] {target.name} (이미 있음)")
+            print(f"[skip] {target.name} (이미 있음)", flush=True)
             skip += 1
             continue
+        part = target.with_suffix(".pdf.part")
         try:
             if i:
                 time.sleep(DELAY)  # 서버 예의
-            resp = requests.get(url, headers=HEADERS, timeout=60)
-            resp.raise_for_status()
-            content = resp.content
-            if not content.startswith(b"%PDF"):
-                ctype = resp.headers.get("content-type", "?")
-                print(f"[fail] {name}: PDF 아님 (content-type={ctype}) — 직접 PDF 링크인지 확인")
-                fail += 1
-                continue
-            target.write_bytes(content)
-            print(f"[ok]   {target.name}  ({len(content) // 1024} KB)")
+            # 스트리밍 — 대용량(수십 MB) 매뉴얼을 메모리에 전부 올리지 않는다
+            with requests.get(url, headers=HEADERS, timeout=120, stream=True) as resp:
+                resp.raise_for_status()
+                got = 0
+                first = b""
+                with open(part, "wb") as f:
+                    for chunk in resp.iter_content(chunk_size=256 * 1024):
+                        if not chunk:
+                            continue
+                        if not first:
+                            first = chunk[:5]
+                            if not first.startswith(b"%PDF"):  # 앞바이트로 조기 중단
+                                ctype = resp.headers.get("content-type", "?")
+                                raise ValueError(f"PDF 아님 (content-type={ctype}, 앞바이트={first!r})")
+                        f.write(chunk)
+                        got += len(chunk)
+                        if MAX_BYTES and got > MAX_BYTES:
+                            raise ValueError(f"용량 초과 (>{MAX_BYTES // 1024 // 1024}MB) — 건너뜀")
+                # 본문이 비었으면 %PDF 검사가 한 번도 안 돌아간다 → 0바이트 파일 승격 방지
+                if not first.startswith(b"%PDF"):
+                    raise ValueError(f"PDF 아님 (본문 {got}바이트, 매직바이트 확인 불가)")
+            part.replace(target)
+            total_bytes += got
+            print(f"[ok]   {target.name}  ({got / 1024 / 1024:.1f} MB)", flush=True)
             ok += 1
         except Exception as e:
-            print(f"[fail] {name}: {e}")
+            part.unlink(missing_ok=True)  # 부분 파일 정리
+            print(f"[fail] {name}: {e}", flush=True)
             fail += 1
 
-    print(f"\n완료 — 받음 {ok} · 건너뜀 {skip} · 실패 {fail}  (위치: {OUT_DIR})")
+    print(f"\n완료 — 받음 {ok} ({total_bytes / 1024 / 1024:.0f} MB) · 건너뜀 {skip} · 실패 {fail}"
+          f"  (위치: {OUT_DIR})", flush=True)
     if ok:
         print("다음: python -m rag.indexing.build_index")
 

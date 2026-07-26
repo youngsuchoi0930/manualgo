@@ -26,9 +26,132 @@ lg-waterpurifier-mfl62077011,https://www.lge.co.kr/upload/PDF/CVZ/22647/11042009
 # ── 청소기 ──
 lg-vacuum-mfl67010601,https://www.lge.co.kr/upload/PDF/CVZ/21930/1101241400_MFL67010601.pdf
 
-# ── 에어컨 (동적 download.jsp — PDF 반환) ──
-lg-aircon-mfl67414804,https://www.lge.co.kr/common/download.jsp?path=/upload/PDF/DGZ/30173/&fileName=1402181549_MFL67414804.pdf&originFileName=1402181549_MFL67414804.pdf
-lg-aircon-mfl67733032,https://www.lge.co.kr/common/download.jsp?path=/upload/PDF/DGZ/30072/&fileName=1402050819_MFL67733032.pdf&originFileName=1402050819_MFL67733032.pdf
+# ── 에어컨 ──
+# download.jsp 형식은 404가 됨 → jsp 쿼리의 path+fileName을 직링크로 변환해 복구
+lg-aircon-mfl67414804,https://www.lge.co.kr/upload/PDF/DGZ/30173/1402181549_MFL67414804.pdf
+lg-aircon-mfl67733032,https://www.lge.co.kr/upload/PDF/DGZ/30072/1402050819_MFL67733032.pdf
 
 # ── 제습기/기타 ──
 lg-dehumidifier-snc063,https://www.lge.co.kr/upload/PDF/DRZ/22383/1103101101_MFL42881522_SNC063BCW.AKOR.pdf
+
+# ====================================================================
+# 확장 수집분 — 79종 (719 MB)
+# 전량 probe_manual_urls.py로 %PDF 검증 완료. LG는 gscs-b2c(신규)·upload/PDF(레거시) 혼용.
+# gscs-b2c/코웨이 URL은 확장자가 없어도 정상 PDF(Content-Disposition에 실제 파일명).
+# %5B1%5D·한글 %-인코딩 URL은 그대로 두세요 (건드리면 깨집니다).
+# ====================================================================
+
+# ── 에어컨 ──
+lg-aircon-mfl31428517,https://www.lge.co.kr/upload/PDF/DGZ/24460/1201191910_MFL31428517.pdf
+lg-aircon-mfl31428519,https://www.lge.co.kr/upload/PDF/DGZ/24615/1202061835_MFL31428519.pdf
+lg-aircon-mfl67082317,https://www.lge.co.kr/upload/PDF/DGZ/25128/1203281905_MFL67082317.pdf
+lg-aircon-mfl71898054,https://gscs-b2c.lge.com/open/downloadFile?fileId=dwUdw7Uef1WzoWEQI000Q
+lg-aircon-mfl71898057,https://gscs-b2c.lge.com/open/downloadFile?fileId=Squ2mSleGrHJrdsdbqFfrQ
+winia-aircon-portable-qaoec08twa,https://www.q-aid.co.kr/file/download?fileId=F000002054914&fileSeq=2054944
+winia-aircon-stand-ddq48jplis,https://www.q-aid.co.kr/file/download?fileId=F000001848177&fileSeq=1848179   # 81MB
+winix-aircon-ewih067mmk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/USEMANUAL/202504/250418141754291-fadb7fb6fc8044bfb6457871116c1118.pdf
+
+# ── 공기청정기 ──
+coway-airpurifier-ap2318d,https://www.coway.com/core/product/fmanual/download/80
+lg-airpurifier-laq111-mfl61887903,https://www.lge.co.kr/upload/PDF/CVZ/19789/1004201019_MFL61887903.pdf
+lg-airpurifier-las064-mfl31566607,https://www.lge.co.kr/upload/PDF/CVZ/22621/1104180917_MFL31566607.pdf
+lg-airpurifier-lat110-mfl66979802,https://www.lge.co.kr/upload/PDF/CVZ/21544/1011100820_MFL66979802_%EC%8B%9C%EB%B0%A9.pdf
+lg-airpurifier-mfl67408007,https://gscs-b2c.lge.com/open/downloadFile?fileId=1DAYdXx6J7sds9sQDJabYw
+lg-airpurifier-mfl68181323,https://gscs-b2c.lge.com/open/downloadFile?fileId=GL9UZdNFj8L6DTQU9C5x4g
+winix-airpurifier-azsh434kyk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/manual/202412/241217072923942-d76a05f3a8b24f77b3cc7d6d3263526f.pdf
+
+# ── 제습기 ──
+coway-dehumidifier-ad1615a,https://www.coway.com/core/product/fmanual/download/88
+lg-dehumidifier-3828a20803u,https://www.lge.co.kr/upload/PDF/DRZ/22928/1105201121_3828A20803U.pdf
+lg-dehumidifier-mfl05866401,https://gscs-b2c.lge.com/open/downloadFile?fileId=nFauiSC4BaEFs87t9Znhzg
+winix-dehumidifier-dn3e170lwk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/USEMANUAL/202507/250722113134769-fda7b64aed6640d89b2ffa74f3220707.pdf
+
+# ── 식기세척기 ──
+lg-dishwasher-d1265mf1-mfl47377725,https://www.lge.co.kr/upload/PDF/DFZ/29474/1504141418_MFL47377725-04-14.pdf
+lg-dishwasher-mfl70282475,https://gscs-b2c.lge.com/open/downloadFile?fileId=smI3RV6l5b8hxXpiBQituA
+
+# ── 건조기 ──
+lg-dryer-mfl71671288,https://gscs-b2c.lge.com/open/downloadFile?fileId=KpbZ6sLjezRomKgqlxJJQ
+winix-dryer-hgxm190kvk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/manual/202412/241217073812248-8d425110e25146bcb05cfb5fed81ed61.pdf
+
+# ── 기타(밥솥·비데 등) ──
+coway-bidet-ba20c,https://www.coway.com/core/product/fmanual/download/123
+cuckoo-ricecooker-crp-chp1060fsm,https://cdn.cuckoo.co.kr/upload_cuckoo/_bo_rep/manual/file_fdc05f18-3710-4218-8f84-cdec41cc8079.pdf
+cuckoo-ricecooker-crp-ut1010fgg,https://cdn.cuckoo.co.kr/upload_cuckoo/_bo_rep/manual/file_3c40b80f-35e8-40fa-b761-3ed2bf8799b0.pdf   # 34MB
+samsung-soundbar-hwq990c-kor,https://downloadcenter.samsung.com/content/UM/202303/20230322054044001/AH81-16775H-00_FM_HW-Q990C_KR_KOR_230224.0.pdf
+
+# ── 냉장고/김치냉장고 ──
+lg-fridge-kimchi-mfl67319801,https://www.lge.co.kr/upload/PDF/CNZ/23900/1110271355_MFL67319801_OM.pdf
+lg-fridge-kimchi-mfl67706202,https://gscs-b2c.lge.com/open/downloadFile?fileId=Nwa14Bl6nhIUIMaapPOaA
+lg-fridge-mfl62093510,https://www.lge.co.kr/upload/PDF/CNZ/23186/1106291551_MFL62093510_Supreme.pdf
+lg-fridge-mfl67567740,https://gscs-b2c.lge.com/open/downloadFile?fileId=Dfz2M68TxakUl3W761eQSw
+lg-fridge-mfl67706201,https://www.lge.co.kr/upload/PDF/CNZ/26942/1211150830_MFL67706201_579.pdf
+lg-fridge-mfl71439509,https://gscs-b2c.lge.com/open/downloadFile?fileId=NVyq4RZJZQjhLxSgEKNPg
+lg-fridge-rb464gm-mfl39938752,https://www.lge.co.kr/upload/PDF/CNZ/17142/0903311454_MFL39938752.pdf
+lg-kimchifridge-rd316-mfl67121601,https://www.lge.co.kr/upload/PDF/CNZ/22315/1103041756_MFL67121601_Victoria_0209.pdf
+
+# ── 홈시어터 ──
+lg-hometheater-bh9520tw,https://www.lge.co.kr/upload/PDF/PNZ/25470/1204241119_BH9520TW_OM_KOR.pdf
+
+# ── 가습기 ──
+winix-humidifier-wltm750jwk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/manual/202412/241217073859891-32ac3cec2bef40ad94a6c920134221b2.pdf
+
+# ── 안마의자 ──
+lg-massagechair-bm100rb-mfl58377902,https://www.lge.co.kr/upload/PDF/CWZ/25772/1209261813_MFL58377902.pdf
+lg-massagechair-bm101rb-mfl58377903,https://www.lge.co.kr/upload/PDF/CWZ/20253/1005171648_MFL58377903.pdf
+
+# ── 전자레인지 ──
+lg-microwave-ma921mbs-mfl30378985,https://www.lge.co.kr/upload/PDF/CVZ/22511/1104011628_MFL30378985.pdf
+lg-microwave-mfl67233119,https://www.lge.co.kr/upload/PDF/CVZ/23989/1111090828_MFL67233119%5B1%5D.pdf
+lg-microwave-mfl68822533,https://gscs-b2c.lge.com/open/downloadFile?fileId=dK5FlSmySSzQBa7TIXBuIQ
+lg-microwave-mp920j-mfl30378968,https://www.lge.co.kr/upload/PDF/CVZ/19365/1103291332_MFL30378968.pdf
+lg-microwave-mz943tl-3828w5a8234,https://www.lge.co.kr/upload/PDF/CVZ/26831/1504170830_150417_3828W5A8234_37.pdf
+
+# ── 오븐/전기레인지 ──
+coway-cooktop-cer03,https://www.coway.com/core/product/fmanual/download/171
+coway-induction-cip30w,https://www.coway.com/core/product/fmanual/download/247
+cuckoo-induction-cir-js301fw,https://cdn.cuckoo.co.kr/upload_cuckoo/_bo_rep/manual/file_44831c1e-eba3-4977-b55c-24518c2f80b3.pdf
+lg-oven-gwangpa-mfl68822505,https://www.lge.co.kr/upload/PDF/CVZ/33578/1504231541_150423_MFL68822505_00.pdf
+
+# ── 프로젝터 ──
+lg-projector-hx300g-mfl63282804,https://www.lge.co.kr/upload/PDF/GSZ/19764/1008241431_MFL63282804_2.pdf
+
+# ── 정수기 ──
+chungho-purifier-chp-4030d,https://www.chungho.co.kr/common/inc/down_file?filename=20180206215543696723.pdf&fld_nm=product
+chungho-purifier-newicetree,https://m.chungho.co.kr/newch/uploads/ext/61-2398-3%20%EC%B2%AD%ED%98%B8%EB%82%98%EC%9D%B4%EC%8A%A4%20%EC%A0%95%EC%88%98%EA%B8%B0%20%EB%89%B4%EC%95%84%EC%9D%B4%EC%8A%A4%ED%8A%B8%EB%A6%AC_MANUAL%20FULL_250219.pdf
+coway-purifier-chp-cp7210n,https://s3.ap-northeast-2.amazonaws.com/coway-app/coway/MANUAL/CHP_CP-7210N.pdf
+coway-purifier-chpi6500l,https://www.coway.com/core/product/fmanual/download/24
+cuckoo-purifier-cp-ss011wsv,https://cdn.cuckoo.co.kr/upload_cuckoo/_bo_rep/manual/file_438f13e7-3260-4a8e-9aff-ce2a85b3d65d.pdf
+lg-purifier-mfl71874402,https://gscs-b2c.lge.com/open/downloadFile?fileId=2nCjuQxexrPKKEy8EWKRVQ
+lg-purifier-mfl72092301,https://gscs-b2c.lge.com/open/downloadFile?fileId=0iPRrG9pdayREqnS4ntpQ
+winix-purifier-pq1000s,https://kr.object.ncloudstorage.com/w2r-commerce-winix/USEMANUAL/202511/251110141742610-32dbed9598384dc28876e43243573a3e.pdf
+
+# ── 의류관리기 ──
+coway-styler-fad01s,https://www.coway.com/core/product/fmanual/download/120   # 25MB
+lg-styler-cs4001-mfl66101211,https://www.lge.co.kr/upload/PDF/DFZ/27175/1211071417_MFL66101211_121024%5B1%5D.pdf   # 49MB
+lg-styler-mfl66101203,https://www.lge.co.kr/upload/PDF/DFZ/23748/1109300937_MFL66101203.pdf   # 25MB
+lg-styler-mfl71825955,https://gscs-b2c.lge.com/open/downloadFile?fileId=8wuaV9y2vZ1JJGD6RW0mjw
+
+# ── TV ──
+lg-tv-19mn43d,https://www.lge.co.kr/upload/PDF/GMZ/33968/1507020806_19MN43D.pdf
+lg-tv-32lb555b-mfl67984502,https://www.lge.co.kr/upload/PDF/GLZ/31221/1506190941_MFL67984502_08.pdf
+lg-tv-32lv3400-sac35014704,https://www.lge.co.kr/upload/PDF/GSZ/22286/1112181638_SAC35014704_5.pdf
+lg-tv-42lm5900-mfl67361219,https://www.lge.co.kr/upload/PDF/GLZ/26040/1206281138_MFL67361219_2.pdf
+lg-tv-mfl05847803,https://gscs-b2c.lge.com/open/downloadFile?fileId=r4JvWCoMF6CHvZruUXYw
+lg-tv-sac34134130,https://www.lge.co.kr/upload/PDF/GSZ/20724/1008120901_SAC34134130_2.pdf   # 24MB
+samsung-tv-oscar-kor,https://downloadcenter.samsung.com/content/UM/202106/20210617093921934/OSNATSCA-6.0.0_EM_OSCAR_KOR_KOR_210608.0.pdf
+
+# ── 청소기 ──
+lg-vacuum-bedding-vh9000-mfl67120901,https://www.lge.co.kr/upload/PDF/CVZ/22563/1104080840_Alice_MFL67120901_0407.pdf
+lg-vacuum-bedding-vh9010-mfl67120904,https://www.lge.co.kr/upload/PDF/CVZ/23790/1201181141_MFL67120904.pdf
+lg-vacuum-mfl69826115,https://gscs-b2c.lge.com/open/downloadFile?fileId=bJrhki6FjmzzQmgzxMjA
+lg-vacuum-mfl71751942,https://gscs-b2c.lge.com/open/downloadFile?fileId=8Er1Thtj1GJf45SfgU4sQ
+lg-vacuum-vk7901-mfl62546611,https://www.lge.co.kr/upload/PDF/CVZ/19343/1001291058_MFL62546611.pdf
+
+# ── 세탁기 ──
+lg-washer-f2350naz-mfl48165918,https://www.lge.co.kr/upload/PDF/DFZ/21431/1010250908_MFL48165918.pdf
+lg-washer-fr2658-mfl62526870,https://www.lge.co.kr/upload/PDF/DFZ/21862/1101171912_MFL62526870.pdf
+lg-washer-mfl68881001,https://gscs-b2c.lge.com/open/downloadFile?fileId=KD4Qdo2naH7aPTBbuyC1eQ
+lg-washer-mfl71792807,https://gscs-b2c.lge.com/open/downloadFile?fileId=Pcixtw20My0DqWPjTtiMw
+lg-washer-t2606-mfl42224719,https://www.lge.co.kr/upload/PDF/DFZ/22785/1104291324_MFL42224719.pdf
+winix-washer-tmwe250kvk,https://kr.object.ncloudstorage.com/w2r-commerce-winix/manual/202412/241217073808273-b7e0355c342e408ca6401f7a5d947c0b.pdf

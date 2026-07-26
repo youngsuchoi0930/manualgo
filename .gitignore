@@ -30,10 +30,16 @@ data/index/*
 # ── 평가 결과 / 모델 캐시 ──
 evaluation/results/*
 !evaluation/results/.gitkeep
-# 쿼리 임베딩 디스크 캐시 (재현 가능한 아티팩트)
+# 쿼리/문서 임베딩 디스크 캐시 (재현 가능한 아티팩트)
 data/cache/
 # 평가셋 백업 스냅샷
 data/eval/*.bak.jsonl
+# 실행 로그 · URL 수집 중간 산출물 (재현 가능)
+logs_*.txt
+cands.json
+probe_list.txt
+probe_meta.json
+probe_sizes.json
 models/
 *.faiss
 *.bin
