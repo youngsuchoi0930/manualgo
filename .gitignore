@@ -64,3 +64,6 @@ frontend/dist/
 Thumbs.db
 .vscode/
 .idea/
+
+# 어휘 편향 실험 중간 산출물 (재현 가능)
+paraphrases.json

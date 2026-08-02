@@ -161,6 +161,10 @@ def run_eval(
 
     pool_env = _os.environ.get("RERANK_POOL")
     tag = f"__pool{pool_env}" if pool_env and "rerank" in name else ""
+    # 기본 평가셋이 아니면 파일명에 평가셋 이름을 넣는다 (표현만 바꾼 변형 등이 서로 덮어쓰지 않도록)
+    stem_es = Path(evalset_path).stem
+    if stem_es != "evalset":
+        tag += f"__{stem_es}"
     Path(results_dir).mkdir(parents=True, exist_ok=True)
     out = Path(results_dir) / f"{name}{('_' + scope) if scope else ''}{tag}__{backend}_eval.json"
     with open(out, "w", encoding="utf-8") as f:
@@ -173,10 +177,13 @@ def run_eval(
 
 
 if __name__ == "__main__":
+    import os
     import sys
 
-    # 사용법: python -m evaluation.run_eval [naive|bm25|hybrid] [manual|category]
+    # 사용법: python -m evaluation.run_eval [naive|bm25|hybrid|agentic|rerank|agentic-rerank] [manual|category]
+    # 평가셋은 EVALSET 환경변수로 바꿀 수 있다 (표현만 바꾼 변형과 비교할 때).
     run_eval(
+        evalset_path=os.environ.get("EVALSET") or "data/eval/evalset.jsonl",
         name=sys.argv[1] if len(sys.argv) > 1 else "naive",
         scope=sys.argv[2] if len(sys.argv) > 2 else None,
     )

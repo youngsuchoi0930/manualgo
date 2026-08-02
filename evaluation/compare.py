@@ -68,13 +68,23 @@ def _mcnemar_exact(base: np.ndarray, treat: np.ndarray) -> tuple[int, int, float
 
 def compare(base_stem: str, treat_stem: str) -> None:
     bdoc, tdoc = _load_doc(base_stem), _load_doc(treat_stem)
-    # 서로 다른 임베딩 백엔드/평가셋을 비교하면 A/B가 아니라 사과-오렌지가 된다
-    for field, label in (("backend", "임베딩 백엔드"), ("evalset", "평가셋")):
-        b, t = bdoc.get(field), tdoc.get(field)
-        if b and t and b != t:
-            print(f"[!] {label}가 다릅니다: {base_stem}={b} vs {treat_stem}={t} — 비교 중단.")
-            return
+    # 임베딩 백엔드가 다르면 벡터공간이 달라 A/B가 아니라 사과-오렌지가 된다 — 무조건 중단
+    bb, tb = bdoc.get("backend"), tdoc.get("backend")
+    if bb and tb and bb != tb:
+        print(f"[!] 임베딩 백엔드가 다릅니다: {base_stem}={bb} vs {treat_stem}={tb} — 비교 중단.")
+        return
+    # 평가셋 파일이 다른 경우: 정답(gold)이 완전히 같으면 '같은 질문을 다르게 물어본' 짝 비교로 본다
+    # (어휘 편향 측정처럼 표현만 바꾼 평가셋끼리는 이게 정당한 비교다). 다르면 중단.
+    be, te = bdoc.get("evalset"), tdoc.get("evalset")
+    cross_set = bool(be and te and be != te)
+
     base, treat = bdoc["rows"], tdoc["rows"]
+    if cross_set:
+        same_gold = len(base) == len(treat) and all(a["gold"] == b["gold"] for a, b in zip(base, treat))
+        if not same_gold:
+            print(f"[!] 평가셋이 다르고 정답도 일치하지 않습니다: {be} vs {te} — 비교 중단.")
+            return
+        print(f"[i] 서로 다른 평가셋이지만 정답이 완전히 동일 → 표현만 다른 짝 비교로 진행\n    {be}\n    {te}")
     if len(base) != len(treat):
         print(f"[!] 표본 크기 불일치: {base_stem}={len(base)} vs {treat_stem}={len(treat)} — 같은 평가셋이 아님")
         return

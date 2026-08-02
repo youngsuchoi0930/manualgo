@@ -1,0 +1,200 @@
+{"manual_id": "lg-microwave-mfl30378952", "page": 14, "question": "전자레인지로 밥 1인분(200g)을 자동 데우기 하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 8}
+{"manual_id": "lg-microwave-mw231uw", "page": 3, "question": "전자레인지 설치 시 멀티콘센트에 여러 기기를 동시에 사용하면 안 되는 이유는 무엇인가요?", "type": "troubleshooting", "qid": 13}
+{"manual_id": "lg-microwave-mw231uw", "page": 16, "question": "전자레인지로 냉장 상태의 피자 2조각을 수동 데우기 할 때 권장 조리 시간은 얼마인가요?", "type": "spec_numeric", "qid": 16}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 23, "question": "드럼세탁기의 시간 절약 세탁 코스는 표준 설정 시간보다 세탁 시간을 얼마나 줄여주나요?", "type": "spec_numeric", "qid": 28}
+{"manual_id": "lg-washer-mfl47377718", "page": 32, "question": "식기세척기 사용 중 정전이 발생했을 때 나타나는 ' ' 표시는 무엇을 의미하나요?", "type": "error_code", "qid": 33}
+{"manual_id": "lg-washer-tong-t1203", "page": 2, "question": "이 세탁기의 항균 세탁조는 어떤 특징을 가지고 있나요?", "type": "spec_numeric", "qid": 38}
+{"manual_id": "lg-washer-tong-t1203", "page": 21, "question": "통돌이 세탁기에서 불림 세탁을 할 수 없는 코스는 무엇인가요?", "type": "how_to", "qid": 40}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 8, "question": "정수기에서 이상한 소리, 타는 냄새, 연기 등이 나면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 42}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 22, "question": "정수기의 멤브레인 필터(R/O)는 몇 개월마다 교체하는 것이 예상 교체 주기인가요?", "type": "spec_numeric", "qid": 47}
+{"manual_id": "lg-dehumidifier-snc063", "page": 8, "question": "에어컨 사용 중 가스가 샐 때 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 54}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 3, "question": "이 냉장고를 110V 지역에서 사용하려면 어떻게 해야 하나요?", "type": "spec_numeric", "qid": 60}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 31, "question": "냉장고 표시창의 터치 버튼이 물기 때문에 둔감해지면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 65}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 7, "question": "청소기로 커튼, 벽면, 천정 등을 청소할 때 어떤 흡입구를 사용해야 하나요?", "type": "how_to", "qid": 91}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 8, "question": "청소기 먼지통은 언제 비워야 하나요?", "type": "how_to", "qid": 92}
+{"manual_id": "lg-washer-d1220mf", "page": 22, "question": "식기세척기의 급속 세척 코스 소요 시간은 약 몇 분인가요?", "type": "spec_numeric", "qid": 100}
+{"manual_id": "lg-washer-mfl47377718", "page": 37, "question": "식기세척기 운전 중 내부에서 달그락거리는 소리가 날 때 어떻게 조치해야 하나요?", "type": "troubleshooting", "qid": 123}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 15, "question": "란제리 코스 사용 시 세탁물은 최대 몇 kg까지 넣을 수 있나요?", "type": "spec_numeric", "qid": 126}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 27, "question": "세탁기 수평이 맞는지 어떻게 확인하나요?", "type": "how_to", "qid": 129}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 16, "question": "이 정수기는 몇 V, 몇 Hz 전용 제품인가요?", "type": "spec_numeric", "qid": 138}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 18, "question": "정수기 저장탱크를 청소하기 위해 저장탱크 덮개는 어떻게 열어야 하나요?", "type": "how_to", "qid": 142}
+{"manual_id": "sew-650dw", "page": 7, "question": "세탁기에서 탈수만 하고 싶을 때 어떻게 해야 하나요?", "type": "how_to", "qid": 146}
+{"manual_id": "sew-650dw", "page": 10, "question": "세탁기와 벽면과의 거리는 얼마나 띄워야 하나요?", "type": "spec_numeric", "qid": 148}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 1, "question": "CHP-4030D/CHP-4031D 정수기의 전원 사양은 어떻게 되나요?", "type": "spec_numeric", "qid": 151}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 9, "question": "제품 설치 후 전원 플러그를 꽂기 전에 얼마나 기다려야 하나요?", "type": "how_to", "qid": 153}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 16, "question": "취수구는 어떻게 청소하나요?", "type": "how_to", "qid": 155}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 20, "question": "필터 교환 후 원수를 공급했을 때 누수가 발생하면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 156}
+{"manual_id": "chungho-purifier-newicetree", "page": 19, "question": "취수 코크 청소 시 사용하면 안 되는 세제나 물질은 무엇인가요?", "type": "how_to", "qid": 161}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 25, "question": "측면 필터부 조립 순서는 어떻게 되나요?", "type": "how_to", "qid": 168}
+{"manual_id": "coway-bidet-ba20c", "page": 2, "question": "비데의 자동 배수 모드는 어떤 기능을 하나요?", "type": "how_to", "qid": 169}
+{"manual_id": "coway-bidet-ba20c", "page": 6, "question": "제품에서 이상한 소리나 타는 냄새, 연기가 나면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 170}
+{"manual_id": "coway-cooktop-cer03", "page": 6, "question": "세라믹 상판에 금이 가거나 깨졌을 경우 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 176}
+{"manual_id": "coway-cooktop-cer03", "page": 18, "question": "세라믹 상판 청소 시 사용하면 안 되는 청소 용구 및 세정제는 무엇인가요?", "type": "how_to", "qid": 179}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 2, "question": "제습기 물통에 물이 가득 차면 어떻게 되나요?", "type": "how_to", "qid": 181}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 5, "question": "전원코드가 파손된 경우 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 182}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 13, "question": "성에 제거 기능이 작동 중일 때 풍량 조절이 가능한가요?", "type": "how_to", "qid": 184}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 16, "question": "탈취필터는 몇 개월마다 교체해야 하나요?", "type": "spec_numeric", "qid": 185}
+{"manual_id": "coway-induction-cip30w", "page": 15, "question": "IH 인덕션 가열에 사용 가능한 냄비의 바닥면 지름은 몇 cm인가요?", "type": "spec_numeric", "qid": 188}
+{"manual_id": "coway-induction-cip30w", "page": 22, "question": "인덕션의 꺼짐 예약 기능을 해제하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 189}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 2, "question": "코웨이 정수기 CHP/CP-7210N 모델은 필터 교체가 어떻게 간편해졌나요?", "type": "how_to", "qid": 192}
+{"manual_id": "coway-purifier-chpi6500l", "page": 2, "question": "코웨이 얼음 냉온정수기 CHPI-6500L 모델의 '빛감지 센서를 이용한 스마트 절전기능'은 어떻게 작동하나요?", "type": "how_to", "qid": 197}
+{"manual_id": "coway-purifier-chpi6500l", "page": 21, "question": "코웨이 정수기에서 얼음이 나오지 않을 경우 어떤 표시등을 확인해야 하나요?", "type": "troubleshooting", "qid": 199}
+{"manual_id": "coway-purifier-chpi6500l", "page": 34, "question": "코웨이 정수기 CHPI-6500L 모델의 냉수 물통 용량은 얼마인가요?", "type": "spec_numeric", "qid": 201}
+{"manual_id": "coway-styler-fad01s", "page": 2, "question": "코웨이 의류청정기 FAD-01S 모델의 '의류 구김 완화' 기능은 어떻게 작동하나요?", "type": "how_to", "qid": 202}
+{"manual_id": "coway-styler-fad01s", "page": 45, "question": "코웨이 의류청정기에서 의류 케어 또는 공간 케어 중 도어를 열면 어떻게 되나요?", "type": "how_to", "qid": 206}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 9, "question": "쿠쿠 3구 인덕션 레인지 CIR-JS301FW 모델의 인덕션 화구1의 9단계 화력은 몇 W인가요?", "type": "spec_numeric", "qid": 209}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 23, "question": "쿠쿠 인덕션 레인지에서 용기 자동감지 기능을 설정하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 211}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 36, "question": "쿠쿠 인덕션 레인지의 기능 표시부에 마이컴 내부메모리 이상을 나타내는 표시가 점멸할 경우 어떻게 조치해야 하나요?", "type": "error_code", "qid": 213}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 2, "question": "쿠쿠 인스퓨어 냉온정 얼음 정수기 CP-SS011WSV 모델의 얼음 저장고는 어떻게 위생적으로 관리되나요?", "type": "how_to", "qid": 214}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 16, "question": "쿠쿠 정수기에서 냉수 기능을 켜고 나서 차가운 물을 취수하려면 얼마나 기다려야 하나요?", "type": "spec_numeric", "qid": 216}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 2, "question": "쿠쿠 밥솥 CRP-CHP1060FSM 모델을 사용할 때 전원코드를 열기구 가까이 두면 안 되는 이유는 무엇인가요?", "type": "troubleshooting", "qid": 220}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 8, "question": "쿠쿠 밥솥 CRP-CHP1060FSM 모델의 압력추 증기 배출구가 막혔을 때 어떻게 손질해야 하나요?", "type": "how_to", "qid": 222}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 15, "question": "쿠쿠 밥솥 CRP-CHP1060FSM 모델의 정격 소비전력은 얼마인가요?", "type": "spec_numeric", "qid": 225}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 27, "question": "쿠쿠 밥솥의 만능찜 요리 시간은 어떻게 설정하나요?", "type": "how_to", "qid": 228}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 46, "question": "쿠쿠 밥솥으로 스테이크를 만들 때 만능찜 시간은 몇 분으로 설정해야 하나요?", "type": "spec_numeric", "qid": 230}
+{"manual_id": "lg-aircon-mfl31428517", "page": 19, "question": "LG 에어컨의 파워풍 기능을 해제하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 235}
+{"manual_id": "lg-aircon-mfl31428519", "page": 8, "question": "LG 에어컨 청소 시 전원 플러그를 뽑아야 하나요?", "type": "how_to", "qid": 239}
+{"manual_id": "lg-aircon-mfl31428519", "page": 15, "question": "LG 에어컨 리모컨의 유효 수신 거리는 몇 미터인가요?", "type": "spec_numeric", "qid": 240}
+{"manual_id": "lg-aircon-mfl67082317", "page": 38, "question": "LG 에어컨 제품 내부의 습기 및 곰팡이를 제거하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 249}
+{"manual_id": "lg-aircon-mfl67414804", "page": 12, "question": "LG 에어컨 리모컨의 '파워냉방' 버튼은 어떤 기능을 하나요?", "type": "how_to", "qid": 251}
+{"manual_id": "lg-aircon-mfl67414804", "page": 20, "question": "LG 에어컨의 열대야 취침 예약 시간은 최소 몇 분부터 최대 몇 시간까지 설정할 수 있나요?", "type": "spec_numeric", "qid": 253}
+{"manual_id": "lg-aircon-mfl67733032", "page": 17, "question": "LG 에어컨 리모컨의 '전력량' 버튼은 어떤 기능을 하나요?", "type": "how_to", "qid": 257}
+{"manual_id": "lg-aircon-mfl67733032", "page": 38, "question": "LG 에어컨의 라이팅 기능 밝기는 몇 퍼센트로 조절할 수 있나요?", "type": "spec_numeric", "qid": 260}
+{"manual_id": "lg-aircon-mfl71898054", "page": 40, "question": "LG 에어컨의 무드 라이팅은 어떤 색상을 선택할 수 있나요?", "type": "how_to", "qid": 263}
+{"manual_id": "lg-aircon-mfl71898057", "page": 11, "question": "LG ThinQ 앱으로 에어컨을 무선 공유기에 연결할 때, 와이파이 이름이나 비밀번호에 어떤 문자를 사용해야 하나요?", "type": "troubleshooting", "qid": 267}
+{"manual_id": "lg-aircon-mfl71898057", "page": 19, "question": "에어컨 리모컨으로 설정할 수 있는 희망 온도의 범위는 어떻게 되나요?", "type": "spec_numeric", "qid": 268}
+{"manual_id": "lg-aircon-mfl71898057", "page": 43, "question": "에어컨의 필터 교체 알림을 수동으로 초기화하는 방법은 무엇인가요?", "type": "how_to", "qid": 271}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 6, "question": "공기청정기에서 이상한 소리, 냄새 또는 연기가 나면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 272}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 18, "question": "공기청정기의 알레르겐 필터는 얼마나 자주 교환해야 하나요?", "type": "spec_numeric", "qid": 274}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 25, "question": "공기청정기의 음이온 운전 기능을 어떻게 켤 수 있나요?", "type": "how_to", "qid": 275}
+{"manual_id": "lg-airpurifier-las064-mfl31566607", "page": 15, "question": "공기청정기를 잠자는 위치에서 얼마나 떨어뜨려 놓아야 하나요?", "type": "how_to", "qid": 278}
+{"manual_id": "lg-airpurifier-lat110-mfl66979802", "page": 16, "question": "공기청정기가 운전을 시작하면 예비운전은 몇 분 동안 진행되나요?", "type": "spec_numeric", "qid": 281}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 2, "question": "LG 공기청정기의 공기 제균 이온은 부유 세균을 최대 몇 퍼센트까지 살균할 수 있나요?", "type": "spec_numeric", "qid": 284}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 19, "question": "공기청정기의 본체 조절부나 표시부를 청소할 때 사용하면 안 되는 세제는 무엇인가요?", "type": "how_to", "qid": 285}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 22, "question": "공기청정기의 버튼이 터치식이 아닌데, 기능이 변경될 때까지 어느 정도로 눌러야 하나요?", "type": "troubleshooting", "qid": 286}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 18, "question": "공기청정기 운전 시작 후 냄새 센서가 안정화되는 데 몇 분이 걸리나요?", "type": "spec_numeric", "qid": 288}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 23, "question": "공기청정기 필터를 설치하기 전에 반드시 해야 할 조치는 무엇인가요?", "type": "how_to", "qid": 289}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 28, "question": "공기청정기에서 냄새가 나는데 청정표시등이 변경되지 않을 때, 냄새 센서가 어떤 종류의 냄새에는 반응하지 않을 수 있나요?", "type": "troubleshooting", "qid": 290}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 8, "question": "제습기를 이동할 때 주의해야 할 점은 무엇인가요?", "type": "how_to", "qid": 291}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 28, "question": "제습기 습도 표시 램프에 'Hi'가 표시되면 어떤 의미인가요?", "type": "troubleshooting", "qid": 295}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 13, "question": "이 제습기에 사용할 수 있는 별매품 부속품에는 어떤 것들이 있나요?", "type": "spec_numeric", "qid": 297}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 23, "question": "제습기의 물통을 비우는 방법은 무엇인가요?", "type": "how_to", "qid": 299}
+{"manual_id": "lg-dehumidifier-snc063", "page": 19, "question": "에어컨의 열대야 절전 취침 운전 기능을 어떻게 설정하나요?", "type": "how_to", "qid": 305}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 8, "question": "식기세척기의 UV 기능은 무엇이며 어떻게 작동하나요?", "type": "how_to", "qid": 308}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 19, "question": "식기세척기의 '급속' 세척 코스 소요 시간은 얼마나 되나요?", "type": "spec_numeric", "qid": 310}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 8, "question": "LG ThinQ 앱으로 식기세척기를 연결할 때 지원되는 Wi-Fi 주파수는 무엇인가요?", "type": "spec_numeric", "qid": 314}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 24, "question": "식기세척기 세척 후 거품이 남았을 때 어떻게 조치해야 하나요?", "type": "how_to", "qid": 316}
+{"manual_id": "lg-dryer-mfl71671288", "page": 20, "question": "이 건조기에 건조하면 안 되는 의류 품목에는 어떤 것들이 있나요?", "type": "spec_numeric", "qid": 321}
+{"manual_id": "lg-dryer-mfl71671288", "page": 26, "question": "건조기에서 건조 코스별 행정 상세 기능을 어떻게 설정하나요?", "type": "how_to", "qid": 322}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 11, "question": "김치냉장고를 설치할 때 권장되는 주위 온도 범위는 어떻게 되나요?", "type": "spec_numeric", "qid": 325}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 29, "question": "김치냉장고 상칸의 냉장 보관 단계를 어떻게 선택하나요?", "type": "how_to", "qid": 327}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 46, "question": "김치냉장고에서 '드르럭~', '덜컥', '웅~' 같은 소리가 들리는 것은 정상인가요?", "type": "troubleshooting", "qid": 329}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 37, "question": "원터치 탈취 기능을 어떻게 시작하나요?", "type": "how_to", "qid": 334}
+{"manual_id": "lg-fridge-mfl62093510", "page": 2, "question": "이 디오스 냉장고를 구입하면 어떤 부속품들이 포함되어 있나요?", "type": "spec_numeric", "qid": 336}
+{"manual_id": "lg-fridge-mfl62093510", "page": 9, "question": "냉장고를 폐기할 때 어떻게 해야 하나요?", "type": "how_to", "qid": 337}
+{"manual_id": "lg-fridge-mfl62093510", "page": 41, "question": "냉장고를 처음 운전할 때 소리가 크게 들리는 이유는 무엇인가요?", "type": "troubleshooting", "qid": 341}
+{"manual_id": "lg-fridge-mfl67567740", "page": 17, "question": "신선 야채실을 분해하는 방법을 알려주세요.", "type": "how_to", "qid": 344}
+{"manual_id": "lg-fridge-mfl67567740", "page": 43, "question": "냉장고 앞면이나 옆면이 따뜻하게 느껴지는 현상은 고장인가요?", "type": "troubleshooting", "qid": 347}
+{"manual_id": "lg-fridge-mfl67706201", "page": 11, "question": "냉장고 설치 시 주위와 적당한 간격을 얼마나 유지해야 하나요?", "type": "spec_numeric", "qid": 349}
+{"manual_id": "lg-fridge-mfl67706201", "page": 29, "question": "좌칸 또는 우칸의 식품 종류와 보관 단계를 어떻게 변경하나요?", "type": "how_to", "qid": 350}
+{"manual_id": "lg-fridge-mfl67706201", "page": 46, "question": "김치가 얼 때 보관 온도를 어떻게 조절해야 하나요?", "type": "troubleshooting", "qid": 352}
+{"manual_id": "lg-fridge-mfl71439509", "page": 9, "question": "제품 문의 힌지가 파손되었거나 작동이 원활하지 않을 때 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 354}
+{"manual_id": "lg-fridge-mfl71439509", "page": 40, "question": "신호음으로 고장 원인을 진단하는 스마트 진단 기능을 어떻게 실행하나요?", "type": "how_to", "qid": 358}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 10, "question": "냉장실 온도를 더 차갑게 조절하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 361}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 14, "question": "이 냉장고의 권장 설치 주위 온도는 몇 도에서 몇 도 사이인가요?", "type": "spec_numeric", "qid": 362}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 18, "question": "도어 아이스메이커를 분해할 때 어떤 순서로 해야 파손 위험이 없나요?", "type": "how_to", "qid": 367}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 47, "question": "선택한 구간을 반복 재생하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 374}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 2, "question": "이 김치냉장고는 어떤 전압과 주파수를 사용하나요?", "type": "spec_numeric", "qid": 377}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 17, "question": "상칸 접이식 선반을 어떻게 분해하나요?", "type": "how_to", "qid": 379}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 39, "question": "김치가 얼 때 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 382}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 17, "question": "안마의자의 기본 안마 시간은 몇 분으로 설정되어 있나요?", "type": "spec_numeric", "qid": 384}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 31, "question": "엉덩이 진동 기능을 추가하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 386}
+{"manual_id": "lg-massagechair-bm101rb-mfl58377903", "page": 23, "question": "자동 코스에서는 어떤 안마 기능이 조절되지 않나요?", "type": "spec_numeric", "qid": 388}
+{"manual_id": "lg-massagechair-bm101rb-mfl58377903", "page": 29, "question": "자동 4 코스에서 목과 어깨를 집중적으로 마사지할 때 어떤 종류의 마사지가 제공되나요?", "type": "how_to", "qid": 389}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 41, "question": "젖은 소금이나 고춧가루를 뽀송하게 만들려면 어떻게 해야 하나요?", "type": "how_to", "qid": 395}
+{"manual_id": "lg-microwave-mfl30378952", "page": 23, "question": "전자레인지 조작부를 청소할 때 주의할 점은 무엇인가요?", "type": "how_to", "qid": 400}
+{"manual_id": "lg-microwave-mfl67233119", "page": 8, "question": "회전링과 회전 유리 접시를 어떻게 설치해야 하나요?", "type": "how_to", "qid": 402}
+{"manual_id": "lg-microwave-mfl68822533", "page": 8, "question": "제품에서 이상한 소리나 냄새 또는 연기가 나면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 407}
+{"manual_id": "lg-microwave-mfl68822533", "page": 14, "question": "전자레인지의 구성품 중 'a'는 무엇을 나타내나요?", "type": "spec_numeric", "qid": 408}
+{"manual_id": "lg-microwave-mfl68822533", "page": 20, "question": "자동요리 기능으로 달걀찜을 만들려면 어떻게 해야 하나요?", "type": "how_to", "qid": 409}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 13, "question": "전자레인지 기능 사용 시 어떤 종류의 그릇을 사용할 수 있나요?", "type": "how_to", "qid": 413}
+{"manual_id": "lg-microwave-mw201", "page": 13, "question": "냉동된 쇠고기 500g을 해동하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 419}
+{"manual_id": "lg-microwave-mw231uw", "page": 15, "question": "전자레인지로 시금치 100g을 데치려면 몇 분 동안 가열해야 하나요?", "type": "how_to", "qid": 425}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 2, "question": "이 광파오븐의 회전 조리 접시 크기는 몇 mm인가요?", "type": "spec_numeric", "qid": 427}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 22, "question": "광파오븐의 오븐 자동메뉴로 피자를 조리하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 430}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 9, "question": "스팀 요리를 할 때 어떤 종류의 물을 사용해야 하나요?", "type": "how_to", "qid": 433}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 26, "question": "식품건조 기능으로 호박 270g을 건조하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 435}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 25, "question": "프로젝터의 고음 설정을 조절하는 방법은 무엇인가요?", "type": "how_to", "qid": 440}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 32, "question": "프로젝터에서 지원하는 사진 파일 형식과 해상도 범위는 어떻게 되나요?", "type": "spec_numeric", "qid": 441}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 39, "question": "프로젝터의 DivX 등록 코드를 확인하는 방법은 무엇인가요?", "type": "how_to", "qid": 442}
+{"manual_id": "lg-purifier-mfl71874402", "page": 17, "question": "정수기의 중금속 흡착 필터와 바이러스 클리어 필터의 교체 주기는 각각 어떻게 되나요?", "type": "spec_numeric", "qid": 447}
+{"manual_id": "lg-purifier-mfl71874402", "page": 20, "question": "정수기에서 신호음으로 고장 진단을 시작하려면 어떤 버튼을 길게 눌러야 하나요?", "type": "how_to", "qid": 448}
+{"manual_id": "lg-purifier-mfl72092301", "page": 16, "question": "정수기의 중금속 흡착 필터는 어떤 색상이며, 10L/일 사용 기준으로 교체 주기는 어떻게 되나요?", "type": "spec_numeric", "qid": 453}
+{"manual_id": "lg-purifier-mfl72092301", "page": 19, "question": "정수기에서 신호음으로 고장 진단을 시작하려면 어떤 버튼을 길게 눌러야 하나요?", "type": "how_to", "qid": 454}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 12, "question": "스타일러 구성품 중 일반 옷걸이를 사용할 때 필요한 부품은 무엇인가요?", "type": "how_to", "qid": 456}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 39, "question": "스타일러의 내부살균 기능은 사용하지 않더라도 몇 회 사용 후 자동으로 작동하나요?", "type": "spec_numeric", "qid": 459}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 48, "question": "스타일러의 수평을 맞추지 않고 사용할 경우 발생할 수 있는 문제점은 무엇인가요?", "type": "troubleshooting", "qid": 460}
+{"manual_id": "lg-styler-mfl66101203", "page": 21, "question": "스타일러의 보푸라기 필터는 주기적으로 청소해야 하나요?", "type": "how_to", "qid": 462}
+{"manual_id": "lg-styler-mfl66101203", "page": 38, "question": "스타일러의 살균+내부살균 코스 예상 소요시간은 얼마나 되나요?", "type": "spec_numeric", "qid": 464}
+{"manual_id": "lg-styler-mfl71825955", "page": 32, "question": "스타일러를 옮길 때 몇 명 이상이 함께 옮겨야 하나요?", "type": "spec_numeric", "qid": 470}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 38, "question": "퍼블릭 디스플레이 모드에서 TV가 처음 켜졌을 때 시작 소리 크기를 어떻게 설정할 수 있나요?", "type": "how_to", "qid": 478}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 60, "question": "PC로 TV 기능을 조정하기 위해 RS-232C 단자를 연결할 때 어떤 종류의 커넥터를 사용해야 하나요?", "type": "spec_numeric", "qid": 480}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 111, "question": "USB 저장장치를 안전하게 제거하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 484}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 24, "question": "ARC(Audio Return Channel) 기능이 지원되는 외부 오디오 기기는 TV의 어떤 HDMI 단자에 연결해야 하나요?", "type": "how_to", "qid": 489}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 39, "question": "HDMI 1080p 신호에서 수직 주파수 24Hz일 때 지원되는 입체 영상 형식은 무엇인가요?", "type": "spec_numeric", "qid": 491}
+{"manual_id": "lg-tv-mfl05847803", "page": 2, "question": "TV를 청소할 때 어떤 물질을 사용하면 안 되나요?", "type": "how_to", "qid": 492}
+{"manual_id": "lg-tv-mfl05847803", "page": 3, "question": "스탠드로 TV를 설치할 때 통풍구를 막지 않으려면 다른 물체와 얼마나 거리를 두어야 하나요?", "type": "spec_numeric", "qid": 493}
+{"manual_id": "lg-tv-sac34134130", "page": 2, "question": "TV 화면에 잔상이 발생할 수 있는 정지 화면의 예시에는 어떤 것들이 있나요?", "type": "troubleshooting", "qid": 497}
+{"manual_id": "lg-tv-sac34134130", "page": 88, "question": "TV의 켜짐 시각을 예약할 때, 꺼짐 시각을 설정하지 않을 경우 반복 설정은 어떻게 해야 하나요?", "type": "how_to", "qid": 500}
+{"manual_id": "lg-tv-sac34134130", "page": 145, "question": "26LE5500 모델의 받침대 포함 무게는 몇 kg인가요?", "type": "spec_numeric", "qid": 502}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 5, "question": "살균 동작 시 UV 램프가 동작 중일 때 직접 자외선 불빛을 들여다보면 어떤 문제가 발생할 수 있나요?", "type": "troubleshooting", "qid": 504}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 8, "question": "침구 청소기의 손잡이를 놓으면 흡입 동작이 얼마나 지속되나요?", "type": "how_to", "qid": 505}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 2, "question": "VH9010DN 모델 침구 청소기의 정격 소비 전력은 몇 와트인가요?", "type": "spec_numeric", "qid": 508}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 11, "question": "LG 침구 청소기 VH9010의 헤파필터는 물세척이 가능한가요?", "type": "how_to", "qid": 512}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 24, "question": "LG 로봇 청소기의 먼지통을 어떻게 청소해야 하나요?", "type": "how_to", "qid": 518}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 24, "question": "LG 청소 로봇의 관리제를 채울 때 어떤 주의사항을 지켜야 하나요?", "type": "how_to", "qid": 521}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 2, "question": "LG 청소기 VK7901LHA 모델의 본체 중량은 얼마인가요?", "type": "spec_numeric", "qid": 525}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 5, "question": "LG 청소기의 전원 코드나 플러그를 사용할 때 어떤 점을 주의해야 하나요?", "type": "how_to", "qid": 526}
+{"manual_id": "lg-washer-d1220mf", "page": 17, "question": "LG DIOS 식기세척기의 '살균건조' 코스는 어떤 용도이며, 세제를 넣어야 하나요?", "type": "how_to", "qid": 533}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 37, "question": "LG 드럼세탁기의 슈즈건조 기능을 사용하여 신발을 건조할 때, 건조 시간은 어떻게 설정할 수 있나요?", "type": "how_to", "qid": 539}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 37, "question": "LG 드럼세탁기를 설치할 때 접지를 피해야 할 곳은 어디인가요?", "type": "how_to", "qid": 545}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 11, "question": "드럼세탁기에서 세제를 너무 많이 사용하면 어떤 문제가 발생할 수 있나요?", "type": "troubleshooting", "qid": 547}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 19, "question": "헹굼+탈수 코스를 사용하는 방법을 알려주세요.", "type": "how_to", "qid": 548}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 34, "question": "세탁 예약은 몇 시간부터 몇 시간까지 설정할 수 있나요?", "type": "spec_numeric", "qid": 550}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 4, "question": "세탁기를 욕실이나 카펫 위, 또는 눈, 비에 노출된 장소에 설치하면 안 되는 이유는 무엇인가요?", "type": "troubleshooting", "qid": 552}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 11, "question": "세탁물 6.0~8.0kg에 액체 세제를 얼마나 사용해야 하나요?", "type": "spec_numeric", "qid": 553}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 32, "question": "급수호스를 더 길게 연장하여 사용하고 싶을 때 어떻게 해야 하나요?", "type": "how_to", "qid": 556}
+{"manual_id": "lg-washer-mfl47377718", "page": 5, "question": "세척 코스가 완료된 후 어떤 기능이 동작하나요?", "type": "how_to", "qid": 558}
+{"manual_id": "lg-washer-mfl68881001", "page": 22, "question": "고농축 섬유유연제 또는 점성이 높은 섬유유연제를 사용할 때 어떻게 해야 하나요?", "type": "how_to", "qid": 565}
+{"manual_id": "lg-washer-mfl68881001", "page": 41, "question": "LG SmartThinQ 앱을 사용하기 위해 Wi-Fi의 무선 주파수는 몇 GHz를 지원하나요?", "type": "spec_numeric", "qid": 567}
+{"manual_id": "lg-washer-mfl68881001", "page": 51, "question": "스테인레스 세탁통에 녹이 생길 수 있는 경우는 어떤 때인가요?", "type": "troubleshooting", "qid": 568}
+{"manual_id": "lg-washer-mfl71792807", "page": 9, "question": "방수성 재질을 세탁할 경우 어떤 문제가 발생할 수 있나요?", "type": "troubleshooting", "qid": 570}
+{"manual_id": "lg-washer-mfl71792807", "page": 18, "question": "제품 동작 중 전원을 끌 때 전원 버튼을 몇 초 이상 눌러야 하나요?", "type": "spec_numeric", "qid": 571}
+{"manual_id": "lg-washer-mfl71792807", "page": 25, "question": "구김방지 기능이 없는 모델에서 구김방지 옵션을 선택하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 572}
+{"manual_id": "lg-washer-mfl71792807", "page": 42, "question": "미끄럼 방지 시트를 설치하기 전에 바닥면을 어떻게 해야 하나요?", "type": "how_to", "qid": 574}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 2, "question": "스마트 클리닝+ 기능은 어떤 역할을 하나요?", "type": "how_to", "qid": 575}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 8, "question": "세탁물 9.0kg 이상일 때 농축 세제는 얼마나 사용해야 하나요?", "type": "spec_numeric", "qid": 576}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 32, "question": "스테인레스 세탁조에 녹이 발생할 수 있는 경우는 어떤 때인가요?", "type": "troubleshooting", "qid": 580}
+{"manual_id": "lg-washer-tong-t1203", "page": 34, "question": "핸들을 고정하여 사용하려면 어떻게 해야 하나요?", "type": "how_to", "qid": 589}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 21, "question": "정수기의 물받이를 청소하는 방법은 무엇인가요?", "type": "how_to", "qid": 592}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 12, "question": "서브우퍼의 표시등이 적색과 청색으로 동시에 깜박이면 어떤 상태를 의미하나요?", "type": "error_code", "qid": 595}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 27, "question": "사운드바 소프트웨어를 USB로 업데이트하는 방법은 무엇인가요?", "type": "how_to", "qid": 598}
+{"manual_id": "samsung-tv-oscar-kor", "page": 73, "question": "TV에서 사진을 볼 때 사용할 수 있는 옵션에는 어떤 것들이 있나요?", "type": "how_to", "qid": 600}
+{"manual_id": "samsung-tv-oscar-kor", "page": 141, "question": "4096x2160 해상도에서 60Hz일 때 수평 주파수는 몇 KHz인가요?", "type": "spec_numeric", "qid": 602}
+{"manual_id": "samsung-tv-oscar-kor", "page": 179, "question": "인터넷 연결이 안 될 경우 네트워크 상태를 확인하려면 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 603}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 15, "question": "제습 작동 모드에서 온도를 몇 도에서 몇 도까지 설정할 수 있나요?", "type": "spec_numeric", "qid": 605}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 23, "question": "공기 필터에 기름때가 심하게 묻었을 경우 무엇으로 세척해야 하나요?", "type": "how_to", "qid": 607}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 25, "question": "김치냉장고 좌실에서 발효과학 기능을 사용할 때 선택할 수 있는 김치 모드는 무엇인가요?", "type": "how_to", "qid": 609}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 50, "question": "정전 시 김치냉장고 문을 열지 않으면 냉기가 최대 몇 시간 유지되나요?", "type": "spec_numeric", "qid": 611}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 65, "question": "김치가 너무 빨리 시어질 때 어떻게 조치해야 하나요?", "type": "troubleshooting", "qid": 612}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 11, "question": "위닉스 창문형 에어컨이 Wi-Fi 유무선 공유기와 접속이 되지 않고 계속 점멸할 때 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 613}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 22, "question": "위닉스 창문형 에어컨의 인테리어 설치 브라켓은 어떻게 조립하나요?", "type": "how_to", "qid": 614}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 32, "question": "위닉스 창문형 에어컨의 냉방 기능에서 희망 온도는 최저 몇 도부터 최고 몇 도까지 설정할 수 있나요?", "type": "spec_numeric", "qid": 615}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 22, "question": "위닉스 공기청정기의 필터 교체 주기는 하루 24시간 사용할 경우 몇 개월에서 최장 몇 년까지인가요?", "type": "spec_numeric", "qid": 621}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 27, "question": "위닉스 공기청정기의 먼지센서는 얼마나 자주 청소해야 하나요?", "type": "how_to", "qid": 622}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 7, "question": "위닉스 제습기를 45도 이상 눕혀 이동했다면 제품 작동 전에 어떻게 해야 하나요?", "type": "troubleshooting", "qid": 624}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 21, "question": "위닉스 제습기의 물통은 얼마나 자주 청소해야 하나요?", "type": "how_to", "qid": 626}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 46, "question": "위닉스 텀블 건조기의 열 교환기는 몇 회 사용 시 점검 표시등이 켜지며 청소해야 하나요?", "type": "how_to", "qid": 632}
+{"manual_id": "winix-humidifier-wltm750jwk", "page": 1, "question": "위닉스 가습기의 물통 용량은 몇 리터인가요?", "type": "spec_numeric", "qid": 633}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 9, "question": "위닉스 텀블 세탁기를 설치할 때 벽면과의 권장 거리는 어떻게 되나요?", "type": "spec_numeric", "qid": 635}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 17, "question": "위닉스 텀블 세탁기의 섬유 관리 차트에서 수온 95℃를 표준으로 하는 세탁 아이콘은 무엇을 의미하나요?", "type": "how_to", "qid": 636}
