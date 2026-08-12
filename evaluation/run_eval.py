@@ -47,29 +47,33 @@ def _make_retriever(name: str):
 
         return BM25Retriever()
     if name == "hybrid":
+        import os as _o
+
         from rag.retrieval.hybrid import HybridRetriever
 
-        return HybridRetriever()
+        return HybridRetriever(bm25_weight=float(_o.environ.get("BM25_WEIGHT") or 1.0))
     if name == "agentic":
         from rag.retrieval.agentic import AgenticRetriever
 
         return AgenticRetriever()
-    # RERANK_POOL로 리랭커에 넘길 후보 수를 조절한다 — 라이브 지연이 후보 수에 거의 비례해서,
-    # "후보를 줄이면 정확도를 얼마나 잃는가"를 같은 평가셋으로 재야 트레이드오프를 정할 수 있다.
+    # RERANK_POOL로 리랭커에 넘길 후보 수를, BM25_WEIGHT로 융합에서 BM25 비중을 조절한다.
+    # (지연은 후보 수에 비례하고, 실사용자 말투에선 BM25 비중을 낮추는 게 나을 수 있어서
+    #  둘 다 같은 평가셋으로 재야 트레이드오프를 정할 수 있다.)
     import os
 
     pool = int(os.environ.get("RERANK_POOL") or 20)
+    bw = float(os.environ.get("BM25_WEIGHT") or 1.0)
     if name in ("rerank", "hybrid-rerank"):
         from rag.retrieval.hybrid import HybridRetriever
         from rag.retrieval.reranker import Reranker
 
-        return HybridRetriever(reranker=Reranker(), rerank_pool=pool)
+        return HybridRetriever(reranker=Reranker(), rerank_pool=pool, bm25_weight=bw)
     if name == "agentic-rerank":
         from rag.retrieval.agentic import AgenticRetriever
         from rag.retrieval.hybrid import HybridRetriever
         from rag.retrieval.reranker import Reranker
 
-        return AgenticRetriever(hybrid=HybridRetriever(reranker=Reranker(), rerank_pool=pool))
+        return AgenticRetriever(hybrid=HybridRetriever(reranker=Reranker(), rerank_pool=pool, bm25_weight=bw))
     from rag.retrieval.naive import NaiveRetriever
 
     return NaiveRetriever()
@@ -161,6 +165,9 @@ def run_eval(
 
     pool_env = _os.environ.get("RERANK_POOL")
     tag = f"__pool{pool_env}" if pool_env and "rerank" in name else ""
+    bw_env = _os.environ.get("BM25_WEIGHT")
+    if bw_env and name in ("hybrid", "rerank", "hybrid-rerank", "agentic-rerank"):
+        tag += f"__bw{bw_env}"
     # 기본 평가셋이 아니면 파일명에 평가셋 이름을 넣는다 (표현만 바꾼 변형 등이 서로 덮어쓰지 않도록)
     stem_es = Path(evalset_path).stem
     if stem_es != "evalset":

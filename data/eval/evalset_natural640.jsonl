@@ -1,0 +1,640 @@
+{"manual_id": "lg-dehumidifier-snc063", "page": 9, "question": "제습기 청소할 때 조심해야 되는 거 있어요?", "type": "how_to", "qid": 0}
+{"manual_id": "lg-dehumidifier-snc063", "page": 15, "question": "리모컨 건전지 갈아 끼울 때 조심해야 할 게 있나요?", "type": "how_to", "qid": 1}
+{"manual_id": "lg-dehumidifier-snc063", "page": 21, "question": "제습기 실외기 놓을 때 벽이랑 최소 얼마나 떨어뜨려야 돼요?", "type": "spec_numeric", "qid": 2}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 2, "question": "이 냉장고에 무슨 압축기 들어있어요?", "type": "spec_numeric", "qid": 3}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 13, "question": "뜨거운 음식 그냥 바로 냉장고에 넣어도 되나요?", "type": "how_to", "qid": 4}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 25, "question": "냉장고 냄새 잡아주는 숯 필터 다시 쓰려면 어떻게 해요?", "type": "how_to", "qid": 5}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 37, "question": "냉동실 문이 한쪽으로 처졌는데 똑바로 맞추려면 어떻게 해요?", "type": "how_to", "qid": 6}
+{"manual_id": "lg-microwave-mfl30378952", "page": 8, "question": "전자레인지 안에 유리 접시랑 받침 어떻게 끼워요?", "type": "how_to", "qid": 7}
+{"manual_id": "lg-microwave-mfl30378952", "page": 14, "question": "전자레인지에 밥 한 공기 알아서 데워지게 하려면 뭐 눌러요?", "type": "how_to", "qid": 8}
+{"manual_id": "lg-microwave-mfl30378952", "page": 20, "question": "전자레인지로 김치찌개 하려면 뭐 넣고 몇 분 돌려야 돼요?", "type": "how_to", "qid": 9}
+{"manual_id": "lg-microwave-mw201", "page": 8, "question": "전자레인지 안에 테이프로 뭐 붙어있으면 어떻게 해야 돼요?", "type": "how_to", "qid": 10}
+{"manual_id": "lg-microwave-mw201", "page": 14, "question": "우유 한 컵 정도 전자레인지에 자동으로 데울 때 뚜껑 덮어야 되나요?", "type": "how_to", "qid": 11}
+{"manual_id": "lg-microwave-mw201", "page": 20, "question": "전자레인지로 감자조림 하려면 감자 얼마나 넣어야 돼요?", "type": "how_to", "qid": 12}
+{"manual_id": "lg-microwave-mw231uw", "page": 3, "question": "전자레인지를 문어발 콘센트에 다른 거랑 같이 꽂으면 왜 안 돼요?", "type": "troubleshooting", "qid": 13}
+{"manual_id": "lg-microwave-mw231uw", "page": 7, "question": "전자레인지 쓰다가 이상한 소리 나거나 냄새나 연기 나면 어떻게 해요?", "type": "troubleshooting", "qid": 14}
+{"manual_id": "lg-microwave-mw231uw", "page": 12, "question": "전자레인지로 언 소고기 500g 녹이려면 어떻게 해요?", "type": "how_to", "qid": 15}
+{"manual_id": "lg-microwave-mw231uw", "page": 16, "question": "냉장고에 있던 피자 두 조각 전자레인지에 직접 시간 맞춰 돌리면 몇 분이에요?", "type": "spec_numeric", "qid": 16}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 5, "question": "청소기에 필터 안 끼우고 쓰면 고장 날 수 있어요?", "type": "troubleshooting", "qid": 17}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 9, "question": "청소기 먼지통 씻고 나서 다시 쓰기 전에 뭘 해야 돼요?", "type": "how_to", "qid": 18}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 12, "question": "청소기 흡입력이 약해지고 호스가 쪼그라들면서 시끄러우면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 19}
+{"manual_id": "lg-washer-d1220mf", "page": 9, "question": "식기세척기 어린이 잠금 어떻게 켜고 꺼요?", "type": "how_to", "qid": 20}
+{"manual_id": "lg-washer-d1220mf", "page": 18, "question": "식기세척기 쓰기 전에 물 밸브 잠겼는지랑 겨울에 호스 얼었는지 어떻게 확인해요?", "type": "troubleshooting", "qid": 21}
+{"manual_id": "lg-washer-d1220mf", "page": 26, "question": "식기세척기 안에 물 뿌리는 부분 어떻게 청소해요?", "type": "how_to", "qid": 22}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 2, "question": "드럼세탁기 사면 기본으로 뭐가 같이 들어있어요?", "type": "spec_numeric", "qid": 23}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 16, "question": "드럼세탁기에서 색깔 옷 빠는 코스로 하면 물 온도가 기본으로 몇 도예요?", "type": "spec_numeric", "qid": 24}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 28, "question": "드럼세탁기로 그냥 빨래만 돌릴 때는 세제를 어디에 넣어야 돼요?", "type": "how_to", "qid": 25}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 40, "question": "세탁기 물 호스를 수도꼭지에 연결할 때 중간에 있는 연결 부분은 어떻게 조여야 돼요?", "type": "how_to", "qid": 26}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 13, "question": "세탁기에 애들이 못 누르게 잠그는 버튼이 어디 있어요?", "type": "spec_numeric", "qid": 27}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 23, "question": "드럼세탁기 빨리 끝내는 걸로 돌리면 원래보다 시간이 얼마나 줄어요?", "type": "spec_numeric", "qid": 28}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 33, "question": "세탁기 물 호스 연결할 때 파란색 밸브는 어디에 꽂아야 돼요?", "type": "how_to", "qid": 29}
+{"manual_id": "lg-washer-mfl47377718", "page": 2, "question": "식기세척기 소독 기능 쓸 때 물이 몇 도까지 올라가요?", "type": "spec_numeric", "qid": 30}
+{"manual_id": "lg-washer-mfl47377718", "page": 12, "question": "식기세척기 예약해놓으면 최대 몇 시간 뒤까지 걸 수 있어요?", "type": "spec_numeric", "qid": 31}
+{"manual_id": "lg-washer-mfl47377718", "page": 22, "question": "식기세척기 문 안 닫혔는데 시작 버튼 누르면 화면에 뭐라고 떠요?", "type": "error_code", "qid": 32}
+{"manual_id": "lg-washer-mfl47377718", "page": 32, "question": "식기세척기 돌리다가 전기 나갔다 들어왔는데 화면에 이상한 표시 떠요, 이게 무슨 뜻이에요?", "type": "error_code", "qid": 33}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 2, "question": "이 세탁기는 알아서 빨래 상태 맞춰주는 기능이 뭘 보고 판단하는 거예요?", "type": "spec_numeric", "qid": 34}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 10, "question": "세탁기 돌아가다가 문제 생기면 뭐라고 알려줘요?", "type": "error_code", "qid": 35}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 18, "question": "세탁기 통 청소 코스 돌릴 때 락스 같은 거 어떤 종류 써야 돼요?", "type": "how_to", "qid": 36}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 26, "question": "세탁기 물 빠지는 호스 늘려서 쓸 때 몇 미터까지 괜찮아요?", "type": "spec_numeric", "qid": 37}
+{"manual_id": "lg-washer-tong-t1203", "page": 2, "question": "이 세탁기는 안에 빨래 도는 통에 곰팡이 안 슬게 뭐가 돼 있다던데 그게 뭐예요?", "type": "spec_numeric", "qid": 38}
+{"manual_id": "lg-washer-tong-t1203", "page": 12, "question": "통돌이 세탁기가 빨래 양 재는 데 몇 초 걸려요?", "type": "spec_numeric", "qid": 39}
+{"manual_id": "lg-washer-tong-t1203", "page": 21, "question": "통돌이 세탁기에서 빨래 물에 좀 담가뒀다 돌리는 거 안 되는 게 뭐예요?", "type": "how_to", "qid": 40}
+{"manual_id": "lg-washer-tong-t1203", "page": 30, "question": "통돌이 세탁기 물 빠지는 호스 끝이 물에 잠기면 왜 안 돼요?", "type": "troubleshooting", "qid": 41}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 8, "question": "정수기에서 지지직 소리 나고 뭐 탄 냄새에 연기까지 나는데 어떡해요?", "type": "troubleshooting", "qid": 42}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 15, "question": "정수기에서 뜨거운 물 마시려면 어떻게 해야 돼요?", "type": "how_to", "qid": 43}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 22, "question": "정수기 제일 앞에서 이물질 걸러주는 필터는 몇 달마다 갈아야 돼요?", "type": "spec_numeric", "qid": 44}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 8, "question": "정수기 필터를 제때 안 갈면 무슨 문제 생겨요?", "type": "troubleshooting", "qid": 45}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 15, "question": "정수기에서 물 계속 받는 기능은 몇 초 동안 나와요?", "type": "spec_numeric", "qid": 46}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 22, "question": "정수기 알오 필터는 몇 달에 한 번씩 갈아요?", "type": "spec_numeric", "qid": 47}
+{"manual_id": "sew-650dw", "page": 1, "question": "빨래할 때 뜨거운 물 쓰면 온도가 몇 도 넘으면 안 돼요?", "type": "spec_numeric", "qid": 48}
+{"manual_id": "sew-650dw", "page": 5, "question": "세탁기 예약 걸면 최대 몇 시간 뒤까지 돌아가게 할 수 있어요?", "type": "spec_numeric", "qid": 49}
+{"manual_id": "sew-650dw", "page": 8, "question": "세탁기 물 빠지는 필터는 어떻게 청소해요?", "type": "how_to", "qid": 50}
+{"manual_id": "sew-650dw", "page": 11, "question": "세탁기 물 호스를 수도꼭지에 연결할 때 나사는 어떻게 조여요?", "type": "how_to", "qid": 51}
+{"manual_id": "lg-dehumidifier-snc063", "page": 1, "question": "인터넷으로 AS 신청하면 어떤 혜택이 있어요?", "type": "how_to", "qid": 52}
+{"manual_id": "lg-dehumidifier-snc063", "page": 5, "question": "에어컨 다른 데로 옮겨서 달 때 조심해야 할 게 뭐예요?", "type": "how_to", "qid": 53}
+{"manual_id": "lg-dehumidifier-snc063", "page": 8, "question": "에어컨 틀었는데 가스 새는 것 같으면 뭐부터 해야 돼요?", "type": "troubleshooting", "qid": 54}
+{"manual_id": "lg-dehumidifier-snc063", "page": 11, "question": "에어컨 필터 얼마나 자주 닦아줘야 돼요?", "type": "spec_numeric", "qid": 55}
+{"manual_id": "lg-dehumidifier-snc063", "page": 14, "question": "리모컨에 모드 바꾸는 버튼 누르면 뭐가 돼요?", "type": "how_to", "qid": 56}
+{"manual_id": "lg-dehumidifier-snc063", "page": 18, "question": "에어컨 완전 세게 트는 거 어떻게 꺼요?", "type": "how_to", "qid": 57}
+{"manual_id": "lg-dehumidifier-snc063", "page": 20, "question": "정전됐다가 다시 들어오면 알아서 켜지게 하는 거 어떻게 켜고 꺼요?", "type": "how_to", "qid": 58}
+{"manual_id": "lg-dehumidifier-snc063", "page": 25, "question": "에어컨 리모컨이 안 먹힐 때 어떻게 해요?", "type": "troubleshooting", "qid": 59}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 3, "question": "이 냉장고를 110볼트 쓰는 데서 쓰려면 뭐가 따로 필요해요?", "type": "spec_numeric", "qid": 60}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 8, "question": "냉장고에서 이상한 냄새나 연기 나면 어떡해요?", "type": "troubleshooting", "qid": 61}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 14, "question": "냉장고 화면에서 온도는 어떻게 바꿔요?", "type": "how_to", "qid": 62}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 19, "question": "냉장고 선반은 어떻게 빼요?", "type": "how_to", "qid": 63}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 26, "question": "냉장고 밑에 야채 칸은 어떻게 빼요?", "type": "how_to", "qid": 64}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 31, "question": "냉장고 앞에 버튼이 물 묻어서 잘 안 눌리는데 어떡하죠?", "type": "troubleshooting", "qid": 65}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 38, "question": "냉장고 문에 고무 테두리는 어떻게 닦아요?", "type": "how_to", "qid": 66}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 43, "question": "냉장고 불 안 켜질 때 어떻게 해요?", "type": "troubleshooting", "qid": 67}
+{"manual_id": "lg-microwave-mfl30378952", "page": 4, "question": "전자레인지 코드는 어디에 꽂아야 돼요?", "type": "how_to", "qid": 68}
+{"manual_id": "lg-microwave-mfl30378952", "page": 7, "question": "전자레인지 쓰다가 이상한 소리나 냄새, 연기 나면 어떻게 해요?", "type": "troubleshooting", "qid": 69}
+{"manual_id": "lg-microwave-mfl30378952", "page": 11, "question": "전자레인지에 금속 그릇 넣어도 돼요?", "type": "how_to", "qid": 70}
+{"manual_id": "lg-microwave-mfl30378952", "page": 15, "question": "전자레인지로 냉동 피자 버튼 하나로 돌리려면 어떻게 해요?", "type": "how_to", "qid": 71}
+{"manual_id": "lg-microwave-mfl30378952", "page": 17, "question": "전자레인지 냄새 나는 거 없애는 기능은 어떻게 써요?", "type": "how_to", "qid": 72}
+{"manual_id": "lg-microwave-mfl30378952", "page": 21, "question": "소금이 눅눅할 때 전자레인지에 몇 분 돌리면 뽀송해져요?", "type": "spec_numeric", "qid": 73}
+{"manual_id": "lg-microwave-mfl30378952", "page": 24, "question": "전자레인지 버튼 눌러도 안 켜지는데 이럴 땐 어떻게 해요?", "type": "troubleshooting", "qid": 74}
+{"manual_id": "lg-microwave-mw201", "page": 4, "question": "전자레인지 쓸 때 멀티탭은 접지 되는 걸로 써야 돼요?", "type": "how_to", "qid": 75}
+{"manual_id": "lg-microwave-mw201", "page": 7, "question": "전자레인지 돌리자마자 음식이나 그릇 바로 만지면 안 돼요?", "type": "how_to", "qid": 76}
+{"manual_id": "lg-microwave-mw201", "page": 11, "question": "전자레인지에 랩 씌울 때 랩이 부풀거나 음식에 달라붙지 않게 하려면 어떻게 씌워야 돼요?", "type": "how_to", "qid": 77}
+{"manual_id": "lg-microwave-mw201", "page": 15, "question": "전자레인지로 냉동밥 데울 때 1인분에 몇 g 정도 넣으면 돼요?", "type": "spec_numeric", "qid": 78}
+{"manual_id": "lg-microwave-mw201", "page": 17, "question": "냉장고나 냉동실에 넣어뒀던 즉석밥은 전자레인지에 어떻게 데워요?", "type": "how_to", "qid": 79}
+{"manual_id": "lg-microwave-mw201", "page": 21, "question": "표고버섯 3장 불릴 때 전자레인지에 몇 분 돌려야 돼요?", "type": "spec_numeric", "qid": 80}
+{"manual_id": "lg-microwave-mw201", "page": 24, "question": "전자레인지 안에 불이랑 화면 표시가 저절로 꺼지는데 왜 그래요?", "type": "troubleshooting", "qid": 81}
+{"manual_id": "lg-microwave-mw231uw", "page": 4, "question": "달걀이나 삶은 달걀 전자레인지에 데워도 되나요?", "type": "how_to", "qid": 82}
+{"manual_id": "lg-microwave-mw231uw", "page": 5, "question": "전자레인지 놓을 때 벽에서 얼마나 띄워야 돼요?", "type": "spec_numeric", "qid": 83}
+{"manual_id": "lg-microwave-mw231uw", "page": 8, "question": "전자레인지 안에 돌아가는 유리 접시랑 링은 어떻게 끼워요?", "type": "how_to", "qid": 84}
+{"manual_id": "lg-microwave-mw231uw", "page": 10, "question": "전자레인지 TV나 오디오 옆에 놓을 때 얼마나 떨어뜨려야 돼요?", "type": "spec_numeric", "qid": 85}
+{"manual_id": "lg-microwave-mw231uw", "page": 13, "question": "전자레인지로 우유 데울 때 자동으로 하려면 어떻게 해요?", "type": "how_to", "qid": 86}
+{"manual_id": "lg-microwave-mw231uw", "page": 14, "question": "전자레인지로 젖병 소독할 때 조심해야 할 거 있어요?", "type": "how_to", "qid": 87}
+{"manual_id": "lg-microwave-mw231uw", "page": 17, "question": "콩 불릴 때 전자레인지에 몇 분 돌려야 돼요?", "type": "spec_numeric", "qid": 88}
+{"manual_id": "lg-microwave-mw231uw", "page": 19, "question": "전자레인지 돌릴 때 유리 접시가 안 돌아가거나 이상한 소리 나면 어떻게 해요?", "type": "troubleshooting", "qid": 89}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 4, "question": "청소기에 물 들어갔는데 어떡하죠?", "type": "troubleshooting", "qid": 90}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 7, "question": "청소기로 커튼이랑 벽, 천장 밀 때는 어떤 걸 끼워서 써요?", "type": "how_to", "qid": 91}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 8, "question": "청소기 안에 먼지 쌓인 거 언제쯤 버려야 돼요?", "type": "how_to", "qid": 92}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 10, "question": "청소기 모터 필터는 어떻게 씻어요?", "type": "how_to", "qid": 93}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 11, "question": "청소기 뒤쪽에 바람 나가는 필터는 얼마나 자주 청소해줘야 돼요?", "type": "spec_numeric", "qid": 94}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 13, "question": "청소기가 쓰다가 갑자기 꺼져버리면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 95}
+{"manual_id": "lg-washer-d1220mf", "page": 5, "question": "식기세척기 쓰다가 가스 냄새 나면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 96}
+{"manual_id": "lg-washer-d1220mf", "page": 10, "question": "식기세척기에서 헹굼 추가 버튼 누르면 뭐가 돼요?", "type": "how_to", "qid": 97}
+{"manual_id": "lg-washer-d1220mf", "page": 14, "question": "식기세척기에 넣으면 안 되는 그릇 같은 거 뭐가 있어요?", "type": "how_to", "qid": 98}
+{"manual_id": "lg-washer-d1220mf", "page": 19, "question": "식기세척기에서 위아래 따로 씻어주는 코스는 어떻게 켜서 시작해요?", "type": "how_to", "qid": 99}
+{"manual_id": "lg-washer-d1220mf", "page": 22, "question": "식기세척기 제일 빨리 씻는 걸로 돌리면 몇 분쯤 걸려요?", "type": "spec_numeric", "qid": 100}
+{"manual_id": "lg-washer-d1220mf", "page": 27, "question": "식기세척기 접지선 따로 연결할 때 뭘 조심해야 돼요?", "type": "how_to", "qid": 101}
+{"manual_id": "lg-washer-d1220mf", "page": 30, "question": "식기세척기 다 돌렸는데 그릇이 안 마르면 뭘 확인해봐야 돼요?", "type": "troubleshooting", "qid": 102}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 10, "question": "세탁기 통에 녹슨 거 생기면 어떻게 닦아내요?", "type": "troubleshooting", "qid": 103}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 17, "question": "속옷이나 니트 빨 때 몇 kg까지 넣어도 돼요?", "type": "spec_numeric", "qid": 104}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 22, "question": "삶음빨래 할 때 물 온도 몇 도로 맞추면 돼요?", "type": "spec_numeric", "qid": 105}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 29, "question": "세탁조 청소할 때 락스 얼마나 넣어야 돼요?", "type": "spec_numeric", "qid": 106}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 35, "question": "빨래부터 건조까지 한번에 돌릴 때 몇 kg까지 넣어도 돼요?", "type": "spec_numeric", "qid": 107}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 41, "question": "세탁기 뒤에 있는 고정 나사 빼고 나면 그건 어떻게 보관해요?", "type": "how_to", "qid": 108}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 47, "question": "세탁기 문 고무는 얼마나 자주 닦아줘야 돼요?", "type": "spec_numeric", "qid": 109}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 6, "question": "세탁기 밑에 물이 차 있으면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 110}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 12, "question": "드럼세탁기는 왜 세제를 적게 넣어야 돼요?", "type": "how_to", "qid": 111}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 17, "question": "이불 빨 때 몇 kg까지 돼요?", "type": "spec_numeric", "qid": 112}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 22, "question": "삶음빨래 할 때 몇 kg까지 넣어야 잘 돼요?", "type": "spec_numeric", "qid": 113}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 28, "question": "이 세탁기 빨래부터 건조까지 한번에 돌리면 몇 kg까지 넣어도 돼요?", "type": "spec_numeric", "qid": 114}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 32, "question": "세탁기 호스를 온수 냉수 중 한쪽에만 연결했을 땐 어떻게 해야 돼요?", "type": "how_to", "qid": 115}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 38, "question": "세탁기 물 들어오는 데 필터 막혔을 때 어떻게 청소해요?", "type": "how_to", "qid": 116}
+{"manual_id": "lg-washer-mfl47377718", "page": 4, "question": "식기세척기에 그릇 넣기 전에 뭐 준비해야 돼요?", "type": "how_to", "qid": 117}
+{"manual_id": "lg-washer-mfl47377718", "page": 8, "question": "이 식기세척기 몇 년까지 쓰는 게 안전해요?", "type": "spec_numeric", "qid": 118}
+{"manual_id": "lg-washer-mfl47377718", "page": 13, "question": "식기세척기 애들 못 만지게 잠그는 거 어떻게 설정해요?", "type": "how_to", "qid": 119}
+{"manual_id": "lg-washer-mfl47377718", "page": 18, "question": "식기세척기 위 칸 바구니 높이 조절은 어떻게 해요?", "type": "how_to", "qid": 120}
+{"manual_id": "lg-washer-mfl47377718", "page": 23, "question": "식기세척기 예약해놓을 때 최대 몇 시간까지 돼요?", "type": "spec_numeric", "qid": 121}
+{"manual_id": "lg-washer-mfl47377718", "page": 33, "question": "식기세척기에 UV 불이 깜빡거리는데 무슨 뜻이에요?", "type": "troubleshooting", "qid": 122}
+{"manual_id": "lg-washer-mfl47377718", "page": 37, "question": "식기세척기 돌아갈 때 안에서 달그락거리는 소리 나는데 어떻게 해요?", "type": "troubleshooting", "qid": 123}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 7, "question": "브라 와이어 있는 거 세탁기에 넣어도 돼요?", "type": "how_to", "qid": 124}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 11, "question": "헹굴 때 물을 새로 받아서 헹구게 하면, 헹구는 횟수에 따라 물 받는 방식이 달라져요?", "type": "how_to", "qid": 125}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 15, "question": "속옷 같은 거 빨 때는 몇 킬로까지 넣어도 돼요?", "type": "spec_numeric", "qid": 126}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 19, "question": "세탁기 예약, 몇 시간부터 몇 시간까지 걸 수 있어요?", "type": "spec_numeric", "qid": 127}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 22, "question": "세제나 보풀 더 확실히 헹구고 싶을 때, 물 새로 받아서 헹구는 기능 어떻게 써요?", "type": "how_to", "qid": 128}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 27, "question": "세탁기가 삐뚤어지지 않고 잘 놓였는지 어떻게 봐요?", "type": "how_to", "qid": 129}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 30, "question": "세탁기에 물 안 들어온다고 뜨면 뭘 확인하고 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 130}
+{"manual_id": "lg-washer-tong-t1203", "page": 8, "question": "진한 세제 쓸 때 물 30리터에 세제 몇 g 넣어야 돼요?", "type": "spec_numeric", "qid": 131}
+{"manual_id": "lg-washer-tong-t1203", "page": 13, "question": "울 코스로 빨 때 옷 상하지 않으려면 물높이를 몇 밑으로는 하면 안 돼요?", "type": "spec_numeric", "qid": 132}
+{"manual_id": "lg-washer-tong-t1203", "page": 17, "question": "조용하게 빠는 모드로 돌리면 표준으로 돌릴 때보다 시간이 얼마나 걸려요?", "type": "spec_numeric", "qid": 133}
+{"manual_id": "lg-washer-tong-t1203", "page": 22, "question": "울 코스도 예약 걸어놓고 돌릴 수 있어요?", "type": "how_to", "qid": 134}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 4, "question": "정수기 멀티탭에 다른 거랑 같이 꽂아 써도 돼요?", "type": "how_to", "qid": 135}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 7, "question": "정수기 놓을 때 뒤랑 옆은 벽에서 얼마나 띄워야 돼요?", "type": "spec_numeric", "qid": 136}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 12, "question": "정수기에서 물 계속 받는 버튼 누르면 몇 초 동안 나와요?", "type": "spec_numeric", "qid": 137}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 16, "question": "이 정수기 전기 몇 볼트 몇 헤르츠짜리예요?", "type": "spec_numeric", "qid": 138}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 18, "question": "정수기에 있는 뜨거운 물 다 빼내려면 어떻게 해요?", "type": "how_to", "qid": 139}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 23, "question": "정수기 필터 갈 때 마시는 물이랑 버리는 물 비율이 어떻게 돼요?", "type": "spec_numeric", "qid": 140}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 26, "question": "정수기 물맛이 이상하면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 141}
+{"manual_id": "lg-waterpurifier-wqd74", "page": 18, "question": "정수기 물통 닦으려는데 위에 뚜껑 어떻게 열어요?", "type": "how_to", "qid": 142}
+{"manual_id": "sew-650dw", "page": 3, "question": "세탁기 문 여는 버튼 못 누르는 때가 언제예요?", "type": "how_to", "qid": 143}
+{"manual_id": "sew-650dw", "page": 4, "question": "세탁기에 일반 세제 쓸 때 물 30리터에 몇 g 넣어야 되나요?", "type": "spec_numeric", "qid": 144}
+{"manual_id": "sew-650dw", "page": 6, "question": "세탁기 울 빨래 돌릴 때 몇 kg까지 넣어도 되나요?", "type": "spec_numeric", "qid": 145}
+{"manual_id": "sew-650dw", "page": 7, "question": "세탁기로 빨래 물기만 좀 짜내고 싶은데 어떻게 해요?", "type": "how_to", "qid": 146}
+{"manual_id": "sew-650dw", "page": 9, "question": "세탁기 안전장치는 누가 떼어내야 돼요?", "type": "how_to", "qid": 147}
+{"manual_id": "sew-650dw", "page": 10, "question": "세탁기 놓을 때 벽에서 얼마나 떨어뜨려 놔야 돼요?", "type": "spec_numeric", "qid": 148}
+{"manual_id": "sew-650dw", "page": 12, "question": "세탁기 물 빠지는 호스는 바닥에서 몇 m 높이에 달아야 돼요?", "type": "spec_numeric", "qid": 149}
+{"manual_id": "sew-650dw", "page": 13, "question": "세탁기 돌릴 때 'EA'라고 뜨면 어떻게 해야 돼요?", "type": "error_code", "qid": 150}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 1, "question": "이 정수기 몇 볼트에 전기 얼마나 먹나요?", "type": "spec_numeric", "qid": 151}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 4, "question": "정수기 기본값 기능은 어떻게 되는 거예요?", "type": "how_to", "qid": 152}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 9, "question": "정수기 갖다 놓고 얼마나 있다가 코드 꽂아야 돼요?", "type": "how_to", "qid": 153}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 13, "question": "정수기 뜨거운 물 나올 때까지 데워지는 데 몇 분 걸려요?", "type": "spec_numeric", "qid": 154}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 16, "question": "정수기 물 나오는 데는 어떻게 닦아요?", "type": "how_to", "qid": 155}
+{"manual_id": "chungho-purifier-chp-4030d", "page": 20, "question": "필터 갈고 나서 물 다시 틀었는데 물이 새면 어떡해요?", "type": "troubleshooting", "qid": 156}
+{"manual_id": "chungho-purifier-newicetree", "page": 2, "question": "이 얼음 정수기 전압이 몇 볼트예요?", "type": "spec_numeric", "qid": 157}
+{"manual_id": "chungho-purifier-newicetree", "page": 7, "question": "정수기 밸브를 찬물 관에 연결해야 하는 이유가 뭐예요?", "type": "troubleshooting", "qid": 158}
+{"manual_id": "chungho-purifier-newicetree", "page": 11, "question": "물 채울 때 '가득' 표시까지 안 채우고 조금만 넣으면 어떻게 돼요?", "type": "troubleshooting", "qid": 159}
+{"manual_id": "chungho-purifier-newicetree", "page": 15, "question": "자동 소독 기능은 몇 분 정도 돌아가요?", "type": "spec_numeric", "qid": 160}
+{"manual_id": "chungho-purifier-newicetree", "page": 19, "question": "정수기 물 나오는 꼭지 닦을 때 쓰면 안 되는 게 뭐예요?", "type": "how_to", "qid": 161}
+{"manual_id": "chungho-purifier-newicetree", "page": 23, "question": "새 필터 끼우기 전에 꼭 해야 되는 게 뭐예요?", "type": "how_to", "qid": 162}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 2, "question": "공기청정기 바람 나오는 데 그릴 떼지는 게 뭐가 좋아요?", "type": "how_to", "qid": 163}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 6, "question": "공기청정기 벽이나 물건에서 최소 몇 cm는 띄워놔야 돼요?", "type": "spec_numeric", "qid": 164}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 12, "question": "초미세먼지 잡아주는 필터는 무슨 역할을 해요?", "type": "spec_numeric", "qid": 165}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 16, "question": "공기청정기 버튼 잠그려면 어떻게 해요?", "type": "how_to", "qid": 166}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 21, "question": "공기청정기 겉면은 어떻게 닦아야 돼요?", "type": "how_to", "qid": 167}
+{"manual_id": "coway-airpurifier-ap2318d", "page": 25, "question": "공기청정기 옆에 있는 필터는 어떤 순서로 다시 끼워요?", "type": "how_to", "qid": 168}
+{"manual_id": "coway-bidet-ba20c", "page": 2, "question": "비데에 물 알아서 빼주는 거 그거 뭐 하는 거예요?", "type": "how_to", "qid": 169}
+{"manual_id": "coway-bidet-ba20c", "page": 6, "question": "비데에서 이상한 소리 나고 타는 냄새랑 연기까지 나는데 어떡해요?", "type": "troubleshooting", "qid": 170}
+{"manual_id": "coway-bidet-ba20c", "page": 12, "question": "비데 물살 세기 조절하는 버튼이 어떤 거예요?", "type": "how_to", "qid": 171}
+{"manual_id": "coway-bidet-ba20c", "page": 16, "question": "비데 건조할 때 따뜻한 바람이 몇 분 정도 나와요?", "type": "spec_numeric", "qid": 172}
+{"manual_id": "coway-bidet-ba20c", "page": 20, "question": "비데 겉 닦을 때 쓰면 안 되는 세제나 도구가 있어요?", "type": "how_to", "qid": 173}
+{"manual_id": "coway-bidet-ba20c", "page": 24, "question": "비데가 아예 안 켜질 땐 뭘 확인해봐야 돼요?", "type": "troubleshooting", "qid": 174}
+{"manual_id": "coway-cooktop-cer03", "page": 2, "question": "전기레인지 큰 화구는 뭐가 좋은 거예요?", "type": "spec_numeric", "qid": 175}
+{"manual_id": "coway-cooktop-cer03", "page": 6, "question": "전기레인지 유리판에 금 갔는데 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 176}
+{"manual_id": "coway-cooktop-cer03", "page": 10, "question": "레인지에 H자가 깜빡거리는데 무슨 뜻이에요?", "type": "spec_numeric", "qid": 177}
+{"manual_id": "coway-cooktop-cer03", "page": 14, "question": "전기레인지 큰 화구 두 개 합쳐서 쓰는 거 어떻게 설정해요?", "type": "how_to", "qid": 178}
+{"manual_id": "coway-cooktop-cer03", "page": 18, "question": "전기레인지 유리판 닦을 때 쓰면 안 되는 수세미나 세제 뭐 있어요?", "type": "how_to", "qid": 179}
+{"manual_id": "coway-cooktop-cer03", "page": 23, "question": "전기레인지 제일 큰 화구 화력이 최대 몇 kW예요?", "type": "spec_numeric", "qid": 180}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 2, "question": "제습기에 물 받는 통 꽉 차면 어떻게 되나요?", "type": "how_to", "qid": 181}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 5, "question": "제습기 전선이 까지고 망가졌으면 어떡해요?", "type": "troubleshooting", "qid": 182}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 9, "question": "제습기는 몇 도에서 써야 돼요?", "type": "spec_numeric", "qid": 183}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 13, "question": "제습기가 얼어붙은 거 녹이는 중일 때도 바람 세기 바꿀 수 있나요?", "type": "how_to", "qid": 184}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 16, "question": "제습기에서 냄새 잡아주는 필터는 몇 달마다 갈아요?", "type": "spec_numeric", "qid": 185}
+{"manual_id": "coway-dehumidifier-ad1615a", "page": 19, "question": "이 제습기 하루에 습기 얼마나 빼줘요?", "type": "spec_numeric", "qid": 186}
+{"manual_id": "coway-induction-cip30w", "page": 8, "question": "인덕션 놓을 때 먼지 같은 거 안 들어가게 하려면 어떻게 해야 돼요?", "type": "how_to", "qid": 187}
+{"manual_id": "coway-induction-cip30w", "page": 15, "question": "인덕션에 올릴 냄비는 밑바닥이 몇 센치는 돼야 해요?", "type": "spec_numeric", "qid": 188}
+{"manual_id": "coway-induction-cip30w", "page": 22, "question": "인덕션 몇 시간 뒤에 꺼지게 해놓은 거 취소하려면 어떻게 해요?", "type": "how_to", "qid": 189}
+{"manual_id": "coway-induction-cip30w", "page": 28, "question": "인덕션에 H 불 켜져 있을 때 조심할 게 뭐예요?", "type": "how_to", "qid": 190}
+{"manual_id": "coway-induction-cip30w", "page": 34, "question": "인덕션 위에 소금이나 설탕 눌어붙으면 어떻게 닦아내요?", "type": "how_to", "qid": 191}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 2, "question": "코웨이 정수기 필터 가는 게 뭐가 그렇게 쉬워졌다는 거예요?", "type": "how_to", "qid": 192}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 14, "question": "정수기 냉수 기능 꺼놓으면 어떤 불이 들어와요?", "type": "how_to", "qid": 193}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 20, "question": "정수기에서 물 계속 눌러서 받으려면 어떻게 해요?", "type": "how_to", "qid": 194}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 26, "question": "정수기 와이파이 표시에 AP5 뜨면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 195}
+{"manual_id": "coway-purifier-chp-cp7210n", "page": 35, "question": "정수기에 새 필터 끼운 다음엔 어떻게 씻어줘야 돼요?", "type": "how_to", "qid": 196}
+{"manual_id": "coway-purifier-chpi6500l", "page": 2, "question": "얼음 나오는 코웨이 정수기가 불 꺼지면 알아서 전기 아낀다던데 그거 어떻게 되는 거예요?", "type": "how_to", "qid": 197}
+{"manual_id": "coway-purifier-chpi6500l", "page": 14, "question": "정수기에서 얼음 뽑으려면 어떤 버튼 눌러야 돼요?", "type": "how_to", "qid": 198}
+{"manual_id": "coway-purifier-chpi6500l", "page": 21, "question": "정수기에서 얼음이 안 나오는데 어느 쪽 불빛을 봐야 돼요?", "type": "troubleshooting", "qid": 199}
+{"manual_id": "coway-purifier-chpi6500l", "page": 28, "question": "정수기 물 나오는 꼭지 부분 더러우면 어떻게 닦아요?", "type": "how_to", "qid": 200}
+{"manual_id": "coway-purifier-chpi6500l", "page": 34, "question": "정수기 찬물 담기는 통은 몇 리터나 들어가요?", "type": "spec_numeric", "qid": 201}
+{"manual_id": "coway-styler-fad01s", "page": 2, "question": "의류청정기가 옷 구겨진 거 펴주는 건 어떤 식으로 해주는 거예요?", "type": "how_to", "qid": 202}
+{"manual_id": "coway-styler-fad01s", "page": 10, "question": "코웨이 의류청정기 쓰는데 이상한 소리 나거나 탄내, 연기 나면 어떻게 해요?", "type": "troubleshooting", "qid": 203}
+{"manual_id": "coway-styler-fad01s", "page": 20, "question": "의류청정기 미스트 필터에 물때 끼면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 204}
+{"manual_id": "coway-styler-fad01s", "page": 30, "question": "의류청정기 화면에 작동 중일 때 뭐가 떠요?", "type": "how_to", "qid": 205}
+{"manual_id": "coway-styler-fad01s", "page": 45, "question": "의류청정기 돌아가는 중에 문 열면 어떻게 돼요?", "type": "how_to", "qid": 206}
+{"manual_id": "coway-styler-fad01s", "page": 62, "question": "방 탈취 기능 돌리는 중에 옷 케어 누르면, 끝나고 나서 어떻게 작동해요?", "type": "how_to", "qid": 207}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 2, "question": "인덕션에 국물 넘치는 거 자동으로 막아주는 기능 있잖아요, 그게 어떻게 작동하는 거예요?", "type": "how_to", "qid": 208}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 9, "question": "인덕션 1번 자리를 9로 놓으면 몇 와트 나와요?", "type": "spec_numeric", "qid": 209}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 16, "question": "인덕션 쓸 때 냄비 종류에 따라 소리 나는 거, 그거 정상이에요?", "type": "troubleshooting", "qid": 210}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 23, "question": "인덕션이 냄비 올려놓으면 알아서 알아보게 하려면 어떻게 해요?", "type": "how_to", "qid": 211}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 29, "question": "인덕션 넘침 방지 기능 화력 좀 낮추고 싶은데 어떻게 해요?", "type": "how_to", "qid": 212}
+{"manual_id": "cuckoo-induction-cir-js301fw", "page": 36, "question": "인덕션 화면에 기억장치 고장난 표시가 깜빡거리는데 어떻게 해요?", "type": "error_code", "qid": 213}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 2, "question": "정수기에서 얼음 담아두는 데는 어떻게 깨끗하게 관리돼요?", "type": "how_to", "qid": 214}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 9, "question": "정수기 햇빛 드는 데 놔도 괜찮아요?", "type": "how_to", "qid": 215}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 16, "question": "정수기 찬물 켜놓고 얼마나 기다렸다 받아야 시원해요?", "type": "spec_numeric", "qid": 216}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 22, "question": "정수기 절전 모드 켜면 어떻게 작동해요?", "type": "how_to", "qid": 217}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 28, "question": "정수기 필터 갈아야 될 때 말로 알려줘요?", "type": "how_to", "qid": 218}
+{"manual_id": "cuckoo-purifier-cp-ss011wsv", "page": 34, "question": "정수기 얼음통 안쪽은 어떻게 청소해요?", "type": "how_to", "qid": 219}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 2, "question": "밥솥 전선을 난로 옆에 두면 왜 안 된대요?", "type": "troubleshooting", "qid": 220}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 3, "question": "밥솥에 찌그러진 솥이나 다른 회사 솥 쓰면 왜 안 돼요?", "type": "troubleshooting", "qid": 221}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 8, "question": "밥솥에서 김 나오는 구멍 막혔을 때 어떻게 닦아요?", "type": "how_to", "qid": 222}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 10, "question": "밥솥 빠른 취사로 하면 시간 얼마나 줄어요?", "type": "spec_numeric", "qid": 223}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 12, "question": "밥솥에서 밥 하거나 보온 중에 '찌' 소리 나면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 224}
+{"manual_id": "cuckoo-ricecooker-crp-chp1060fsm", "page": 15, "question": "밥솥은 전기를 몇 와트나 먹어요?", "type": "spec_numeric", "qid": 225}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 2, "question": "밥솥 뚜껑 열어놓고 요리하는 기능은 언제 써요?", "type": "how_to", "qid": 226}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 16, "question": "압력밥솥으로 압력 요리하고 나서 뚜껑 손잡이가 잘 안 돌아갈 때 어떻게 해요?", "type": "troubleshooting", "qid": 227}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 27, "question": "밥솥으로 찜 할 때 시간은 어떻게 맞춰요?", "type": "how_to", "qid": 228}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 36, "question": "밥솥 보온 더 세게 해주는 기능 어떻게 켜요?", "type": "how_to", "qid": 229}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 46, "question": "밥솥으로 스테이크 하려면 찜 몇 분으로 해놔야 돼요?", "type": "spec_numeric", "qid": 230}
+{"manual_id": "cuckoo-ricecooker-crp-ut1010fgg", "page": 55, "question": "밥솥 뚜껑 어떻게 열어요?", "type": "how_to", "qid": 231}
+{"manual_id": "lg-aircon-mfl31428517", "page": 2, "question": "LG 벽걸이 에어컨에 성에 녹여주는 기능이 뭐예요?", "type": "how_to", "qid": 232}
+{"manual_id": "lg-aircon-mfl31428517", "page": 7, "question": "에어컨에서 이상한 소리나 냄새, 연기 나면 어떻게 해요?", "type": "troubleshooting", "qid": 233}
+{"manual_id": "lg-aircon-mfl31428517", "page": 14, "question": "에어컨 리모컨에 바람 확 세게 나오는 버튼 있던데, 그게 무슨 기능이에요?", "type": "how_to", "qid": 234}
+{"manual_id": "lg-aircon-mfl31428517", "page": 19, "question": "에어컨 바람 세게 나오는 거 끄려면 어떻게 해요?", "type": "how_to", "qid": 235}
+{"manual_id": "lg-aircon-mfl31428517", "page": 24, "question": "정전됐다가 다시 전기 들어오면 에어컨이 알아서 켜지게 하려면 어떻게 해요?", "type": "how_to", "qid": 236}
+{"manual_id": "lg-aircon-mfl31428517", "page": 29, "question": "에어컨 틀었는데 실내기에서 뿌연 김 같은 게 나와요, 이거 왜 그런 거예요?", "type": "troubleshooting", "qid": 237}
+{"manual_id": "lg-aircon-mfl31428519", "page": 2, "question": "이 벽걸이 에어컨은 여름 말고 다른 계절에도 공기를 깨끗하게 해줘요?", "type": "how_to", "qid": 238}
+{"manual_id": "lg-aircon-mfl31428519", "page": 8, "question": "에어컨 닦기 전에 코드 빼야 돼요?", "type": "how_to", "qid": 239}
+{"manual_id": "lg-aircon-mfl31428519", "page": 15, "question": "에어컨 리모컨은 몇 미터쯤 떨어져도 눌러져요?", "type": "spec_numeric", "qid": 240}
+{"manual_id": "lg-aircon-mfl31428519", "page": 20, "question": "에어컨 공기 깨끗하게 해주는 기능 켜놨는데 이거 어떻게 꺼요?", "type": "how_to", "qid": 241}
+{"manual_id": "lg-aircon-mfl31428519", "page": 25, "question": "정전됐다가 다시 들어와도 에어컨이 저절로 안 켜지게 하려면 어떻게 해요?", "type": "how_to", "qid": 242}
+{"manual_id": "lg-aircon-mfl31428519", "page": 30, "question": "에어컨이 예전만큼 안 시원한데 필터에 먼지 껴서 그런 거면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 243}
+{"manual_id": "lg-aircon-mfl67082317", "page": 2, "question": "이 에어컨 바람이 13미터나 멀리까지 나간다는데 그게 무슨 기능이에요?", "type": "how_to", "qid": 244}
+{"manual_id": "lg-aircon-mfl67082317", "page": 9, "question": "에어컨 청소할 때 독한 화학 세제 써도 돼요?", "type": "how_to", "qid": 245}
+{"manual_id": "lg-aircon-mfl67082317", "page": 18, "question": "에어컨 리모컨 건전지 갈 때 아무거나 넣어도 돼요, 정해진 게 있어요?", "type": "how_to", "qid": 246}
+{"manual_id": "lg-aircon-mfl67082317", "page": 25, "question": "에어컨에 향 나오게 해주는 통 있잖아요, 하루 4시간씩 틀면 며칠이나 가요?", "type": "spec_numeric", "qid": 247}
+{"manual_id": "lg-aircon-mfl67082317", "page": 31, "question": "장마철에 눅눅한 거 뽀송하게 제습하려면 에어컨 어떻게 하면 돼요?", "type": "how_to", "qid": 248}
+{"manual_id": "lg-aircon-mfl67082317", "page": 38, "question": "에어컨 속에 물기 차고 곰팡이 생기는 거 어떻게 없애요?", "type": "how_to", "qid": 249}
+{"manual_id": "lg-aircon-mfl67414804", "page": 7, "question": "에어컨 쓰다가 가스 냄새 나는 것 같으면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 250}
+{"manual_id": "lg-aircon-mfl67414804", "page": 12, "question": "에어컨 리모컨에 빨리 시원해지게 하는 버튼은 뭐 하는 거예요?", "type": "how_to", "qid": 251}
+{"manual_id": "lg-aircon-mfl67414804", "page": 16, "question": "에어컨 자동으로 해놓으면 바람 세기가 알아서 조절되는 거예요?", "type": "how_to", "qid": 252}
+{"manual_id": "lg-aircon-mfl67414804", "page": 20, "question": "에어컨 밤에 자면서 켜놨다 꺼지게 하는 예약은 몇 분부터 몇 시간까지 돼요?", "type": "spec_numeric", "qid": 253}
+{"manual_id": "lg-aircon-mfl67414804", "page": 24, "question": "담배 연기 많은 데서 에어컨 쓰면 필터를 얼마나 자주 청소해야 돼요?", "type": "spec_numeric", "qid": 254}
+{"manual_id": "lg-aircon-mfl67733032", "page": 2, "question": "에어컨에 공기 중 세균 없애준다는 기능 있던데 그게 뭐예요?", "type": "how_to", "qid": 255}
+{"manual_id": "lg-aircon-mfl67733032", "page": 10, "question": "에어컨 겉면에 얼룩 묻었을 때 어떻게 닦아야 돼요?", "type": "how_to", "qid": 256}
+{"manual_id": "lg-aircon-mfl67733032", "page": 17, "question": "에어컨 리모컨에 전기 얼마나 썼는지 보는 버튼 누르면 뭐가 나와요?", "type": "how_to", "qid": 257}
+{"manual_id": "lg-aircon-mfl67733032", "page": 24, "question": "에어컨에 숲에서 부는 바람처럼 나오는 기능 켜놨는데 그거 어떻게 꺼요?", "type": "how_to", "qid": 258}
+{"manual_id": "lg-aircon-mfl67733032", "page": 31, "question": "에어컨 안에 세균 막아준다는 고운 필터 있잖아요, 그거 어떻게 청소해요?", "type": "how_to", "qid": 259}
+{"manual_id": "lg-aircon-mfl67733032", "page": 38, "question": "에어컨 불빛 밝기 몇 프로까지 줄일 수 있어요?", "type": "spec_numeric", "qid": 260}
+{"manual_id": "lg-aircon-mfl71898054", "page": 16, "question": "집이 덥고 눅눅할 때는 에어컨 온도를 몇 도로 맞추는 게 좋아요?", "type": "spec_numeric", "qid": 261}
+{"manual_id": "lg-aircon-mfl71898054", "page": 29, "question": "에어컨 전기 아끼는 모드 켜기 전에 온도를 22도보다 낮게 맞추면 어떻게 돼요?", "type": "how_to", "qid": 262}
+{"manual_id": "lg-aircon-mfl71898054", "page": 40, "question": "에어컨에서 나오는 은은한 불빛 무슨 색으로 바꿀 수 있어요?", "type": "how_to", "qid": 263}
+{"manual_id": "lg-aircon-mfl71898054", "page": 53, "question": "에어컨 화면에서 직접 기능 조작할 수 있어요?", "type": "how_to", "qid": 264}
+{"manual_id": "lg-aircon-mfl71898054", "page": 69, "question": "에어컨 뜯어서 안에 철판 같은 부분 제가 직접 닦아도 돼요?", "type": "how_to", "qid": 265}
+{"manual_id": "lg-aircon-mfl71898057", "page": 2, "question": "에어컨에 필터 갈라는 표시 뜨는데 그거 어떻게 없애요?", "type": "how_to", "qid": 266}
+{"manual_id": "lg-aircon-mfl71898057", "page": 11, "question": "핸드폰 앱으로 에어컨 와이파이 연결할 때 와이파이 이름이랑 비번은 어떤 글자로 해야 돼요?", "type": "troubleshooting", "qid": 267}
+{"manual_id": "lg-aircon-mfl71898057", "page": 19, "question": "에어컨 리모컨으로 몇 도부터 몇 도까지 맞출 수 있어요?", "type": "spec_numeric", "qid": 268}
+{"manual_id": "lg-aircon-mfl71898057", "page": 27, "question": "에어컨 공기 맑게 하는 거 켜면서 시원하게 하는 거나 습기 빼는 거, 바람만 나오는 것도 같이 되나요?", "type": "how_to", "qid": 269}
+{"manual_id": "lg-aircon-mfl71898057", "page": 34, "question": "에어컨 버튼 못 누르게 잠그려면 어떻게 해요?", "type": "how_to", "qid": 270}
+{"manual_id": "lg-aircon-mfl71898057", "page": 43, "question": "에어컨에 필터 갈라고 뜨는 표시 직접 없애려면 어떻게 해요?", "type": "how_to", "qid": 271}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 6, "question": "공기청정기에서 이상한 소리 나고 탄내에 연기까지 올라오는데 어떡해요?", "type": "troubleshooting", "qid": 272}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 12, "question": "공기청정기 닦을 때 세제 뭐 써야 돼요?", "type": "how_to", "qid": 273}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 18, "question": "공기청정기에서 알레르기 걸러주는 필터는 몇 달마다 갈아야 돼요?", "type": "spec_numeric", "qid": 274}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 25, "question": "공기청정기에서 음이온 나오게 하려면 뭘 눌러요?", "type": "how_to", "qid": 275}
+{"manual_id": "lg-airpurifier-laq111-mfl61887903", "page": 29, "question": "공기청정기 앞에 있는 필터 어떻게 닦아요?", "type": "how_to", "qid": 276}
+{"manual_id": "lg-airpurifier-las064-mfl31566607", "page": 9, "question": "공기청정기에 물 들어갔으면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 277}
+{"manual_id": "lg-airpurifier-las064-mfl31566607", "page": 15, "question": "공기청정기 침대에서 얼마나 멀리 두고 자야 돼요?", "type": "how_to", "qid": 278}
+{"manual_id": "lg-airpurifier-las064-mfl31566607", "page": 20, "question": "공기청정기에서 냄새 맡는 구멍 부분 얼마나 자주 청소해줘야 돼요?", "type": "spec_numeric", "qid": 279}
+{"manual_id": "lg-airpurifier-las064-mfl31566607", "page": 25, "question": "공기청정기 바람이 약하고 시끄러운 소리 날 때 뭘 봐야 돼요?", "type": "troubleshooting", "qid": 280}
+{"manual_id": "lg-airpurifier-lat110-mfl66979802", "page": 16, "question": "공기청정기 켜면 처음에 몇 분 정도 준비운동처럼 살살 돌다 가나요?", "type": "spec_numeric", "qid": 281}
+{"manual_id": "lg-airpurifier-lat110-mfl66979802", "page": 23, "question": "공기청정기 먼지 감지하는 유리 부분 얼마나 자주 닦아야 돼요?", "type": "spec_numeric", "qid": 282}
+{"manual_id": "lg-airpurifier-lat110-mfl66979802", "page": 28, "question": "공기청정기 버튼이 안 눌러질 때 혹시 잠겨있는 건지 어떻게 알아요?", "type": "troubleshooting", "qid": 283}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 2, "question": "공기청정기에서 나오는 이온이 공기 중에 떠다니는 균 몇 프로까지 없애줘요?", "type": "spec_numeric", "qid": 284}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 19, "question": "공기청정기 버튼이랑 화면 쪽 닦을 때 뭐로 닦으면 안 돼요?", "type": "how_to", "qid": 285}
+{"manual_id": "lg-airpurifier-mfl67408007", "page": 22, "question": "공기청정기 버튼 살짝 대면 안 먹던데 얼마나 꾹 눌러야 바뀌어요?", "type": "troubleshooting", "qid": 286}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 12, "question": "공기청정기에 있는 촘촘한 필터 얼마나 자주 청소해야 돼요?", "type": "spec_numeric", "qid": 287}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 18, "question": "공기청정기 켜고 나서 냄새 잡아내는 게 제대로 되려면 몇 분 있어야 돼요?", "type": "spec_numeric", "qid": 288}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 23, "question": "공기청정기에 새 필터 끼우기 전에 꼭 뭘 해야 돼요?", "type": "how_to", "qid": 289}
+{"manual_id": "lg-airpurifier-mfl68181323", "page": 28, "question": "방에 냄새나는데 공기청정기 불 색깔이 그대로면 원래 못 맡는 냄새가 따로 있는 거예요?", "type": "troubleshooting", "qid": 290}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 8, "question": "제습기 다른 방으로 옮길 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 291}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 13, "question": "제습기 모드 바꾸는 버튼 누르면 어떤 순서로 모드 바뀌어요?", "type": "how_to", "qid": 292}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 18, "question": "제습기로 신발 말릴 때 호스 어떻게 연결해요?", "type": "how_to", "qid": 293}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 23, "question": "제습기 물 계속 빠지게 하려면 호스 몇 mm짜리 써야 돼요?", "type": "how_to", "qid": 294}
+{"manual_id": "lg-dehumidifier-3828a20803u", "page": 28, "question": "제습기에 Hi라고 불 들어오는데 이게 무슨 뜻이에요?", "type": "troubleshooting", "qid": 295}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 8, "question": "제습기 옮길 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 296}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 13, "question": "제습기에 따로 돈 주고 사서 끼울 수 있는 게 뭐뭐 있어요?", "type": "spec_numeric", "qid": 297}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 18, "question": "제습기 조용하게 쓰는 모드 어떻게 켜요?", "type": "how_to", "qid": 298}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 23, "question": "제습기에 물 찬 거 어떻게 버려요?", "type": "how_to", "qid": 299}
+{"manual_id": "lg-dehumidifier-mfl05866401", "page": 29, "question": "제습기에서 윙윙 아니면 구루구루 소리 나는데 이거 원래 나는 소리예요?", "type": "troubleshooting", "qid": 300}
+{"manual_id": "lg-dehumidifier-snc063", "page": 3, "question": "벽걸이 에어컨에 전기 아끼는 냉방 모드 있어요?", "type": "spec_numeric", "qid": 301}
+{"manual_id": "lg-dehumidifier-snc063", "page": 7, "question": "에어컨 실외기 놓을 때 바람 세게 불거나 땅 흔들려도 안 넘어지게 어떻게 해야 돼요?", "type": "how_to", "qid": 302}
+{"manual_id": "lg-dehumidifier-snc063", "page": 12, "question": "리모컨 건전지 갈 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 303}
+{"manual_id": "lg-dehumidifier-snc063", "page": 16, "question": "에어컨 끄고 바로 켜면 왜 3분 정도 있다가 작동해요?", "type": "spec_numeric", "qid": 304}
+{"manual_id": "lg-dehumidifier-snc063", "page": 19, "question": "에어컨 밤에 잘 때 전기 덜 쓰면서 돌아가게 하려면 어떻게 해요?", "type": "how_to", "qid": 305}
+{"manual_id": "lg-dehumidifier-snc063", "page": 24, "question": "에어컨 켜놨는데 실내기에서 뽀얀 김 같은 게 나오는데 괜찮은 거예요?", "type": "troubleshooting", "qid": 306}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 2, "question": "식기세척기에 뜨거운 물로 소독까지 되는 코스 있어요?", "type": "spec_numeric", "qid": 307}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 8, "question": "식기세척기에 자외선으로 균 잡아주는 거 있잖아요, 그게 어떻게 돌아가는 거예요?", "type": "how_to", "qid": 308}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 14, "question": "식기세척기 위쪽 바구니 높이 조절하는 거 어떻게 해요?", "type": "how_to", "qid": 309}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 19, "question": "식기세척기 빨리 씻는 걸로 돌리면 몇 분 걸려요?", "type": "spec_numeric", "qid": 310}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 24, "question": "식기세척기 안에 하얗게 낀 거나 냄새나는 거 어떻게 없애요?", "type": "how_to", "qid": 311}
+{"manual_id": "lg-dishwasher-d1265mf1-mfl47377725", "page": 29, "question": "식기세척기에서 띵동띵동 소리가 계속 나는데 왜 그래요?", "type": "troubleshooting", "qid": 312}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 1, "question": "이 식기세척기 몇 년까지 써도 안전해요?", "type": "spec_numeric", "qid": 313}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 8, "question": "식기세척기 폰이랑 연결하려면 와이파이 몇 기가짜리 써야 돼요?", "type": "spec_numeric", "qid": 314}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 17, "question": "식기세척기 건조 옵션 켜면 어떤 식으로 돌아가요?", "type": "how_to", "qid": 315}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 24, "question": "식기세척기 다 돌았는데 안에 거품이 남아 있으면 어떡해요?", "type": "how_to", "qid": 316}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 31, "question": "식기세척기에 필터 갈라고 뜨는 표시 어떻게 초기화해요?", "type": "how_to", "qid": 317}
+{"manual_id": "lg-dishwasher-mfl70282475", "page": 40, "question": "식기세척기 다 돌렸는데 필터 밑에 물이 고여 있어요, 왜 그래요?", "type": "troubleshooting", "qid": 318}
+{"manual_id": "lg-dryer-mfl71671288", "page": 7, "question": "건조기에 기름이나 로션 묻은 빨래 넣고 돌려도 돼요?", "type": "how_to", "qid": 319}
+{"manual_id": "lg-dryer-mfl71671288", "page": 14, "question": "건조기 전기선 연결할 때 전선 굵기랑 차단기 용량은 어느 정도로 해야 돼요?", "type": "spec_numeric", "qid": 320}
+{"manual_id": "lg-dryer-mfl71671288", "page": 20, "question": "건조기에 넣으면 안 되는 옷은 뭐뭐 있어요?", "type": "spec_numeric", "qid": 321}
+{"manual_id": "lg-dryer-mfl71671288", "page": 26, "question": "건조기 코스마다 세부 옵션 바꾸는 건 어떻게 해요?", "type": "how_to", "qid": 322}
+{"manual_id": "lg-dryer-mfl71671288", "page": 32, "question": "건조기 안에 있는 물이 얼어버렸는데 이럴 땐 어떻게 해요?", "type": "troubleshooting", "qid": 323}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 2, "question": "이 김치냉장고 전압이랑 주파수가 몇이에요?", "type": "spec_numeric", "qid": 324}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 11, "question": "김치냉장고 놓는 자리는 몇 도 정도여야 괜찮아요?", "type": "spec_numeric", "qid": 325}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 20, "question": "김치냉장고 중간 칸 서랍 어떻게 빼요?", "type": "how_to", "qid": 326}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 29, "question": "김치냉장고 위칸을 냉장으로 쓰려면 뭘 눌러야 돼요?", "type": "how_to", "qid": 327}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 37, "question": "김치냉장고 냄새 빼는 기능 어떻게 켜요?", "type": "how_to", "qid": 328}
+{"manual_id": "lg-fridge-kimchi-mfl67319801", "page": 46, "question": "김치냉장고에서 웅웅거리고 덜컹거리는 소리 나는데 원래 그런 거죠?", "type": "troubleshooting", "qid": 329}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 2, "question": "이 김치냉장고는 전압이나 주파수가 어떻게 돼요?", "type": "spec_numeric", "qid": 330}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 11, "question": "김치냉장고 놓을 때 주변 온도 몇 도까지 괜찮아요?", "type": "spec_numeric", "qid": 331}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 20, "question": "중간 서랍 바구니는 어떻게 빼요?", "type": "how_to", "qid": 332}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 29, "question": "왼쪽 칸 냉장 온도 단계는 어떻게 바꿔요?", "type": "how_to", "qid": 333}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 37, "question": "김치냉장고 안에 냄새 빼주는 거 어떻게 켜요?", "type": "how_to", "qid": 334}
+{"manual_id": "lg-fridge-kimchi-mfl67706202", "page": 46, "question": "김치가 자꾸 얼어버리는데 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 335}
+{"manual_id": "lg-fridge-mfl62093510", "page": 2, "question": "이 냉장고 사면 안에 뭐가 같이 들어 있어요?", "type": "spec_numeric", "qid": 336}
+{"manual_id": "lg-fridge-mfl62093510", "page": 9, "question": "냉장고 갖다 버릴 때는 뭘 어떻게 해야 돼요?", "type": "how_to", "qid": 337}
+{"manual_id": "lg-fridge-mfl62093510", "page": 17, "question": "문에 달린 얼음 나오는 데서 물 얼리는 데 몇 시간 걸려요?", "type": "spec_numeric", "qid": 338}
+{"manual_id": "lg-fridge-mfl62093510", "page": 25, "question": "냉장고 냄새 없애는 숯 그거 다시 써도 돼요?", "type": "how_to", "qid": 339}
+{"manual_id": "lg-fridge-mfl62093510", "page": 33, "question": "냉동실이랑 냉장실 처음에 몇 도로 맞춰져 있어요?", "type": "spec_numeric", "qid": 340}
+{"manual_id": "lg-fridge-mfl62093510", "page": 41, "question": "냉장고 새로 켰는데 소리가 왜 이렇게 커요?", "type": "troubleshooting", "qid": 341}
+{"manual_id": "lg-fridge-mfl67567740", "page": 2, "question": "이 냉장고 살 때 같이 딸려오는 게 뭐예요?", "type": "spec_numeric", "qid": 342}
+{"manual_id": "lg-fridge-mfl67567740", "page": 9, "question": "이 냉장고에 들어가는 가스 종류랑 양이 얼마나 돼요?", "type": "spec_numeric", "qid": 343}
+{"manual_id": "lg-fridge-mfl67567740", "page": 17, "question": "냉장고에 채소 넣는 칸 어떻게 빼내요?", "type": "how_to", "qid": 344}
+{"manual_id": "lg-fridge-mfl67567740", "page": 25, "question": "얼음통에 얼음 몇 번 먹을 만큼 채워야 적당해요?", "type": "spec_numeric", "qid": 345}
+{"manual_id": "lg-fridge-mfl67567740", "page": 35, "question": "냉장고 문 오래 열어두면 삐 소리 몇 번 나요?", "type": "spec_numeric", "qid": 346}
+{"manual_id": "lg-fridge-mfl67567740", "page": 43, "question": "냉장고 앞이랑 옆이 뜨끈한데 이거 괜찮은 거예요?", "type": "troubleshooting", "qid": 347}
+{"manual_id": "lg-fridge-mfl67706201", "page": 2, "question": "김치냉장고 놓는 곳 온도가 몇 도에서 몇 도 사이여야 돼요?", "type": "spec_numeric", "qid": 348}
+{"manual_id": "lg-fridge-mfl67706201", "page": 11, "question": "냉장고 놓을 때 벽이랑 얼마나 띄워야 돼요?", "type": "spec_numeric", "qid": 349}
+{"manual_id": "lg-fridge-mfl67706201", "page": 29, "question": "김치냉장고 왼쪽 오른쪽 칸에 뭐 넣을지랑 얼마나 익힐지 어떻게 바꿔요?", "type": "how_to", "qid": 350}
+{"manual_id": "lg-fridge-mfl67706201", "page": 37, "question": "냄새가 잘 안 없어지는 것 같을 때 어떻게 해요?", "type": "troubleshooting", "qid": 351}
+{"manual_id": "lg-fridge-mfl67706201", "page": 46, "question": "김치냉장고에서 김치가 자꾸 어는데 온도 어떻게 맞춰야 돼요?", "type": "troubleshooting", "qid": 352}
+{"manual_id": "lg-fridge-mfl71439509", "page": 1, "question": "이 냉장고 몇 년까지 쓰는 게 좋아요?", "type": "spec_numeric", "qid": 353}
+{"manual_id": "lg-fridge-mfl71439509", "page": 9, "question": "냉장고 문에 달린 경첩이 부러지거나 뻑뻑해졌는데 어떻게 해요?", "type": "troubleshooting", "qid": 354}
+{"manual_id": "lg-fridge-mfl71439509", "page": 17, "question": "별 두 개짜리 칸은 온도를 몇 도로 맞춰야 돼요?", "type": "spec_numeric", "qid": 355}
+{"manual_id": "lg-fridge-mfl71439509", "page": 24, "question": "정수기 버튼 계속 누르고 있으면 물이 최대 몇 분까지 나와요?", "type": "spec_numeric", "qid": 356}
+{"manual_id": "lg-fridge-mfl71439509", "page": 32, "question": "얼음 트레이에 얼음 얼마나 채워야 적당해요?", "type": "spec_numeric", "qid": 357}
+{"manual_id": "lg-fridge-mfl71439509", "page": 40, "question": "냉장고 어디가 고장인지 삐 소리로 알려주는 거 어떻게 돌려요?", "type": "how_to", "qid": 358}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 2, "question": "야채칸이 뭐가 좋아요?", "type": "spec_numeric", "qid": 359}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 6, "question": "냉장고에서 가스 새는 것 같으면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 360}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 10, "question": "냉장고에서 얼리는 칸 말고 그냥 넣어두는 칸을 더 차갑게 하려면 어디 만져요?", "type": "how_to", "qid": 361}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 14, "question": "냉장고 놓는 자리가 몇 도에서 몇 도 사이여야 돼요?", "type": "spec_numeric", "qid": 362}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 18, "question": "냉장고에서 꾸르륵 물 흐르는 소리 나는 거 왜 그래요?", "type": "troubleshooting", "qid": 363}
+{"manual_id": "lg-fridge-rb464gm-mfl39938752", "page": 22, "question": "냉장고 문이 잘 안 닫히는데 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 364}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 4, "question": "냉장고 코드 꽂을 때 조심해야 할 거 있어요?", "type": "how_to", "qid": 365}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 10, "question": "오래 정전될 것 같으면 얼음통에 있는 얼음 어떻게 해야 돼요?", "type": "how_to", "qid": 366}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 18, "question": "냉장고 문에 붙은 얼음 만드는 통 안 깨지게 빼려면 뭐부터 떼요?", "type": "how_to", "qid": 367}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 27, "question": "냉장고 야채칸 습도 알아서 맞춰주는 서랍 있잖아요, 그거 어떻게 조절되는 거예요?", "type": "spec_numeric", "qid": 368}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 34, "question": "냉장고 잠금 버튼 몇 초 눌러야 잠기는 거예요?", "type": "spec_numeric", "qid": 369}
+{"manual_id": "lg-fridge-t751-mfl62093510", "page": 42, "question": "냉장실에 있는 음식이 얼어버리면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 370}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 2, "question": "이 오디오에서 연기 나거나 냄새가 이상하면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 371}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 17, "question": "홈시어터 무선 스피커 통이랑 본체는 얼마나 떨어뜨려 놔야 돼요?", "type": "spec_numeric", "qid": 372}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 33, "question": "여기 USB 하드나 USB 메모리 꽂으면 용량 얼마까지 인식돼요?", "type": "spec_numeric", "qid": 373}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 47, "question": "홈시어터에서 마음에 드는 부분만 계속 다시 틀려면 어떻게 해요?", "type": "how_to", "qid": 374}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 62, "question": "화면을 1080p 24Hz로 해놓으면 화면이 반으로 갈라져 보이는데 어떻게 해요?", "type": "troubleshooting", "qid": 375}
+{"manual_id": "lg-hometheater-bh9520tw", "page": 76, "question": "이 플레이어 어느 나라 디비디까지 재생할 수 있어요?", "type": "spec_numeric", "qid": 376}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 2, "question": "이 김치냉장고 몇 볼트에 몇 헤르츠짜리예요?", "type": "spec_numeric", "qid": 377}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 10, "question": "김치냉장고 위칸에서 김치통 꺼낼 때 어떻게 잡아야 돼요?", "type": "how_to", "qid": 378}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 17, "question": "김치냉장고 위쪽 칸에 접었다 폈다 하는 받침대 어떻게 빼내요?", "type": "how_to", "qid": 379}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 25, "question": "김치냉장고에서 김치 익히기 하고 있는 거 취소하려면 어떻게 해요?", "type": "how_to", "qid": 380}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 32, "question": "김치냉장고에 야채랑 과일 오래 두려면 어떻게 넣어야 돼요?", "type": "how_to", "qid": 381}
+{"manual_id": "lg-kimchifridge-rd316-mfl67121601", "page": 39, "question": "김치냉장고에 넣어둔 김치가 꽁꽁 얼어버렸는데 어떡해요?", "type": "troubleshooting", "qid": 382}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 9, "question": "안마의자 맨살로 그냥 앉아서 써도 돼요?", "type": "troubleshooting", "qid": 383}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 17, "question": "안마의자 그냥 켜면 기본으로 몇 분 동안 해줘요?", "type": "spec_numeric", "qid": 384}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 24, "question": "안마의자 마사지볼 속도는 어떻게 조절해요?", "type": "how_to", "qid": 385}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 31, "question": "안마의자 쓸 때 엉덩이 쪽 부르르 떨리는 것도 같이 되게 하려면 어떻게 해요?", "type": "how_to", "qid": 386}
+{"manual_id": "lg-massagechair-bm100rb-mfl58377902", "page": 37, "question": "안마의자 팔이랑 몸 에어마사지 같이 켜놨을 때 세기 조절하려면 어떻게 해요?", "type": "how_to", "qid": 387}
+{"manual_id": "lg-massagechair-bm101rb-mfl58377903", "page": 23, "question": "안마의자 알아서 해주는 걸로 돌리면 내가 못 바꾸는 게 뭐예요?", "type": "spec_numeric", "qid": 388}
+{"manual_id": "lg-massagechair-bm101rb-mfl58377903", "page": 29, "question": "안마의자 자동 4번으로 목이랑 어깨만 집중해서 할 때 어떤 식으로 주물러줘요?", "type": "how_to", "qid": 389}
+{"manual_id": "lg-massagechair-bm101rb-mfl58377903", "page": 35, "question": "안마의자 에어마사지 세기는 어떻게 조절해요?", "type": "how_to", "qid": 390}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 9, "question": "전자레인지로 찜 요리하다가 중간에 꺼버렸는데 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 391}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 17, "question": "전자레인지로 찜 요리하는데 물 채우라는 말 뜨면 어떻게 해요?", "type": "troubleshooting", "qid": 392}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 25, "question": "전자레인지로 계란 10개 천천히 익히려면 어떻게 해요?", "type": "how_to", "qid": 393}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 33, "question": "찜으로 5분 요리하려면 어떻게 해요?", "type": "how_to", "qid": 394}
+{"manual_id": "lg-microwave-ma921mbs-mfl30378985", "page": 41, "question": "전자레인지로 눅눅해진 소금이랑 고춧가루 뽀송하게 말리려면 어떻게 해요?", "type": "how_to", "qid": 395}
+{"manual_id": "lg-microwave-mfl30378952", "page": 5, "question": "계란이랑 삶은 계란 전자레인지에 돌려도 되나요?", "type": "troubleshooting", "qid": 396}
+{"manual_id": "lg-microwave-mfl30378952", "page": 10, "question": "전자레인지 놓을 때 벽에서 얼마나 떨어뜨려야 돼요?", "type": "spec_numeric", "qid": 397}
+{"manual_id": "lg-microwave-mfl30378952", "page": 13, "question": "냉동 소고기 500g 녹이려면 어떻게 해요?", "type": "how_to", "qid": 398}
+{"manual_id": "lg-microwave-mfl30378952", "page": 19, "question": "시금치 200g 데치려면 몇 분 돌려야 돼요?", "type": "spec_numeric", "qid": 399}
+{"manual_id": "lg-microwave-mfl30378952", "page": 23, "question": "전자레인지 버튼 있는 데 닦을 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 400}
+{"manual_id": "lg-microwave-mfl67233119", "page": 2, "question": "이 전자레인지가 일반 오븐보다 최대 몇 배나 빨라요?", "type": "spec_numeric", "qid": 401}
+{"manual_id": "lg-microwave-mfl67233119", "page": 8, "question": "전자레인지 안에 빙글빙글 도는 바퀴랑 유리판 어떻게 끼워요?", "type": "how_to", "qid": 402}
+{"manual_id": "lg-microwave-mfl67233119", "page": 15, "question": "냉동 소고기 500g 자동으로 녹이려면 어떻게 해요?", "type": "how_to", "qid": 403}
+{"manual_id": "lg-microwave-mfl67233119", "page": 20, "question": "냉동 너겟 300g 자동으로 돌리려면 어떻게 해요?", "type": "how_to", "qid": 404}
+{"manual_id": "lg-microwave-mfl67233119", "page": 26, "question": "그릴 오븐으로 360W 25분 돌리려면 어떻게 해요?", "type": "how_to", "qid": 405}
+{"manual_id": "lg-microwave-mfl67233119", "page": 31, "question": "표고버섯 3장 전자레인지로 불리려면 어떻게 해요?", "type": "how_to", "qid": 406}
+{"manual_id": "lg-microwave-mfl68822533", "page": 8, "question": "전자레인지 돌리는데 이상한 소리에 냄새랑 연기까지 나면 어떡해요?", "type": "troubleshooting", "qid": 407}
+{"manual_id": "lg-microwave-mfl68822533", "page": 14, "question": "전자레인지 설명서 그림에 a라고 붙어 있는 부분이 뭐예요?", "type": "spec_numeric", "qid": 408}
+{"manual_id": "lg-microwave-mfl68822533", "page": 20, "question": "전자레인지에서 알아서 해주는 걸로 계란찜 하려면 어떻게 눌러요?", "type": "how_to", "qid": 409}
+{"manual_id": "lg-microwave-mfl68822533", "page": 26, "question": "전자레인지로 최대 몇 kg까지 녹일 수 있어요?", "type": "spec_numeric", "qid": 410}
+{"manual_id": "lg-microwave-mfl68822533", "page": 32, "question": "표고버섯 3장 불리는데 몇 분 돌려야 돼요?", "type": "how_to", "qid": 411}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 7, "question": "쓰다가 이상한 소리 나거나 냄새, 연기 나면 어떻게 해요?", "type": "troubleshooting", "qid": 412}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 13, "question": "전자레인지 돌릴 때 어떤 그릇 써도 돼요?", "type": "how_to", "qid": 413}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 18, "question": "냉동 군만두 400g 자동으로 돌리려면 어떻게 해요?", "type": "how_to", "qid": 414}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 23, "question": "예열 안 하고 오븐으로 200도에서 20분 돌리려면 어떻게 해요?", "type": "how_to", "qid": 415}
+{"manual_id": "lg-microwave-mp920j-mfl30378968", "page": 30, "question": "전자레인지에 계란 돌릴 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 416}
+{"manual_id": "lg-microwave-mw201", "page": 5, "question": "전자레인지 문이나 문 여닫는 부분 고장나면 어떻게 해요?", "type": "troubleshooting", "qid": 417}
+{"manual_id": "lg-microwave-mw201", "page": 10, "question": "전자레인지 놓을 때 옆이랑 뒤쪽은 몇 cm 띄워야 돼요?", "type": "spec_numeric", "qid": 418}
+{"manual_id": "lg-microwave-mw201", "page": 13, "question": "전자레인지로 꽝꽝 언 소고기 500그램 녹이려면 어떻게 해요?", "type": "how_to", "qid": 419}
+{"manual_id": "lg-microwave-mw201", "page": 19, "question": "시금치 100g 데치려면 몇 분 돌려야 돼요?", "type": "how_to", "qid": 420}
+{"manual_id": "lg-microwave-mw201", "page": 23, "question": "전자레인지 버튼 있는 부분 닦을 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 421}
+{"manual_id": "lg-microwave-mw231uw", "page": 6, "question": "전자레인지 전선이 끊어졌거나 콘센트가 헐렁거리면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 422}
+{"manual_id": "lg-microwave-mw231uw", "page": 9, "question": "전자레인지 취소절전 버튼 누르면 뭐가 돼요?", "type": "how_to", "qid": 423}
+{"manual_id": "lg-microwave-mw231uw", "page": 11, "question": "전자레인지에 쇠로 된 그릇 넣어도 돼요?", "type": "how_to", "qid": 424}
+{"manual_id": "lg-microwave-mw231uw", "page": 15, "question": "전자레인지에 시금치 100그램 살짝 익히려면 몇 분 돌려요?", "type": "how_to", "qid": 425}
+{"manual_id": "lg-microwave-mw231uw", "page": 18, "question": "전자레인지 버튼 못 누르게 잠그려면 어떻게 해요?", "type": "how_to", "qid": 426}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 2, "question": "오븐 안에서 빙글빙글 도는 접시 크기가 몇 밀리예요?", "type": "spec_numeric", "qid": 427}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 9, "question": "광파오븐 전자레인지처럼 쓸 때는 뭘 꼭 같이 넣고 돌려야 돼요?", "type": "how_to", "qid": 428}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 15, "question": "광파오븐으로 젖병 소독시키려면 어떻게 하면 돼요?", "type": "how_to", "qid": 429}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 22, "question": "오븐에서 알아서 해주는 걸로 피자 구우려면 어떻게 해요?", "type": "how_to", "qid": 430}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 28, "question": "광파오븐 미리 안 데우고 200도로 20분 돌리려면 어떻게 해요?", "type": "how_to", "qid": 431}
+{"manual_id": "lg-microwave-mz943tl-3828w5a8234", "page": 34, "question": "밤같이 껍질 딱딱한 거 전자레인지에 돌릴 때 조심할 거 있어요?", "type": "how_to", "qid": 432}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 9, "question": "오븐으로 김 올려서 찌는 요리 할 때 무슨 물 넣어야 돼요?", "type": "how_to", "qid": 433}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 19, "question": "오븐 화면에 있는 Tag On 아이콘은 뭐 하는 거예요?", "type": "spec_numeric", "qid": 434}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 26, "question": "오븐으로 호박 270그램 말리려면 어떻게 하면 돼요?", "type": "how_to", "qid": 435}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 34, "question": "오븐으로 빵 반죽 발효시키려면 어떻게 해요?", "type": "how_to", "qid": 436}
+{"manual_id": "lg-oven-gwangpa-mfl68822505", "page": 41, "question": "오븐 안에 있는 접시 닦을 때 어떻게 관리하면 돼요?", "type": "how_to", "qid": 437}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 10, "question": "프로젝터 리모컨 몇 미터까지 떨어져서 써도 돼요?", "type": "spec_numeric", "qid": 438}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 17, "question": "프로젝터 화면 모드는 어떻게 바꿔요?", "type": "how_to", "qid": 439}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 25, "question": "프로젝터에서 소리 높은 쪽 세기는 어디서 바꿔요?", "type": "how_to", "qid": 440}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 32, "question": "프로젝터로 사진 볼 때 어떤 확장자 되고 크기는 어디까지 돼요?", "type": "spec_numeric", "qid": 441}
+{"manual_id": "lg-projector-hx300g-mfl63282804", "page": 39, "question": "프로젝터에서 디빅스 등록 번호 어디 들어가면 볼 수 있어요?", "type": "how_to", "qid": 442}
+{"manual_id": "lg-purifier-mfl71874402", "page": 3, "question": "정수기 설치할 때 조심해야 되는 거 뭐 있어요?", "type": "how_to", "qid": 443}
+{"manual_id": "lg-purifier-mfl71874402", "page": 6, "question": "정수기에서 이상한 소리 나거나 냄새, 연기 나면 어떡해요?", "type": "troubleshooting", "qid": 444}
+{"manual_id": "lg-purifier-mfl71874402", "page": 9, "question": "LG 씽큐 앱으로 정수기 어디 고장났는지 확인하려면 어떻게 해요?", "type": "how_to", "qid": 445}
+{"manual_id": "lg-purifier-mfl71874402", "page": 13, "question": "정수기 뜨거운 물 원래 기본이 몇 도로 나와요?", "type": "spec_numeric", "qid": 446}
+{"manual_id": "lg-purifier-mfl71874402", "page": 17, "question": "정수기에서 쇳물 걸러주는 필터랑 바이러스 잡는 필터는 각각 얼마 만에 갈아요?", "type": "spec_numeric", "qid": 447}
+{"manual_id": "lg-purifier-mfl71874402", "page": 20, "question": "정수기 어디 고장났는지 삐 소리로 알아보려면 무슨 버튼 꾹 눌러요?", "type": "how_to", "qid": 448}
+{"manual_id": "lg-purifier-mfl72092301", "page": 3, "question": "정수기 설치할 때 물 빠지는 호스는 어떻게 고정해요?", "type": "how_to", "qid": 449}
+{"manual_id": "lg-purifier-mfl72092301", "page": 6, "question": "정수기 물 나오는 곳 소독할 때 조심할 거 있어요?", "type": "how_to", "qid": 450}
+{"manual_id": "lg-purifier-mfl72092301", "page": 9, "question": "정수기 앱에서 조명 색깔 몇 가지로 바꿀 수 있어요?", "type": "spec_numeric", "qid": 451}
+{"manual_id": "lg-purifier-mfl72092301", "page": 13, "question": "정수기 살균할 때 밑에 컵을 얼마나 큰 걸로 받쳐야 되나요?", "type": "spec_numeric", "qid": 452}
+{"manual_id": "lg-purifier-mfl72092301", "page": 16, "question": "정수기에서 쇳물 걸러주는 필터 무슨 색이고 하루 10리터 쓰면 얼마 만에 갈아요?", "type": "spec_numeric", "qid": 453}
+{"manual_id": "lg-purifier-mfl72092301", "page": 19, "question": "정수기 이상 있나 소리로 확인하려면 어떤 버튼을 오래 누르면 돼요?", "type": "how_to", "qid": 454}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 2, "question": "스타일러 옷걸이 흔들리는 게 1분에 몇 번쯤이에요?", "type": "spec_numeric", "qid": 455}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 12, "question": "스타일러에 집에 있는 그냥 옷걸이 걸려면 뭐가 더 있어야 돼요?", "type": "how_to", "qid": 456}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 22, "question": "스타일러에 향 나게 하는 시트는 어떤 종류를 쓸 수 있어요?", "type": "how_to", "qid": 457}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 31, "question": "스타일러 니트 코스 돌리면 시간 얼마나 걸려요?", "type": "spec_numeric", "qid": 458}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 39, "question": "스타일러 안쪽 소독하는 거 안 눌러도 몇 번 쓰면 알아서 돌아가요?", "type": "spec_numeric", "qid": 459}
+{"manual_id": "lg-styler-cs4001-mfl66101211", "page": 48, "question": "스타일러 삐뚤어진 채로 그냥 쓰면 뭐가 안 좋아요?", "type": "troubleshooting", "qid": 460}
+{"manual_id": "lg-styler-mfl66101203", "page": 12, "question": "스타일러에 향 넣는 통은 뭐 할 때 쓰는 거예요?", "type": "how_to", "qid": 461}
+{"manual_id": "lg-styler-mfl66101203", "page": 21, "question": "스타일러에 먼지 걸리는 거 자주 털어줘야 되나요?", "type": "how_to", "qid": 462}
+{"manual_id": "lg-styler-mfl66101203", "page": 30, "question": "스타일러 기능성 옷 코스 돌리면 얼마나 걸려요?", "type": "spec_numeric", "qid": 463}
+{"manual_id": "lg-styler-mfl66101203", "page": 38, "question": "스타일러에서 옷이랑 안쪽 같이 소독하는 거 돌리면 몇 분 걸려요?", "type": "spec_numeric", "qid": 464}
+{"manual_id": "lg-styler-mfl66101203", "page": 46, "question": "스타일러 문 열리는 방향 바꾸려면 어떻게 해야 돼요?", "type": "how_to", "qid": 465}
+{"manual_id": "lg-styler-mfl71825955", "page": 7, "question": "스타일러 아래쪽이 물에 잠겼으면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 466}
+{"manual_id": "lg-styler-mfl71825955", "page": 15, "question": "스타일러 돌릴 때 밑으로 물 떨어지는 거 막는 부품이 뭐예요?", "type": "spec_numeric", "qid": 467}
+{"manual_id": "lg-styler-mfl71825955", "page": 20, "question": "스타일러 물통 꽉 채우면 몇 번 정도 돌릴 수 있어요?", "type": "spec_numeric", "qid": 468}
+{"manual_id": "lg-styler-mfl71825955", "page": 27, "question": "스타일러 버튼 잠그면 화면에 어떤 글자 나와요?", "type": "spec_numeric", "qid": 469}
+{"manual_id": "lg-styler-mfl71825955", "page": 32, "question": "스타일러 자리 옮기려면 몇 명이서 들어야 돼요?", "type": "spec_numeric", "qid": 470}
+{"manual_id": "lg-tv-19mn43d", "page": 13, "question": "TV 화면 앞뒤로 몇 도까지 젖힐 수 있어요?", "type": "spec_numeric", "qid": 471}
+{"manual_id": "lg-tv-19mn43d", "page": 20, "question": "TV에 영상 케이블 잘못 꽂으면 화면 어떻게 나와요?", "type": "troubleshooting", "qid": 472}
+{"manual_id": "lg-tv-19mn43d", "page": 28, "question": "TV 리모컨은 무슨 건전지 몇 볼트짜리 써요?", "type": "spec_numeric", "qid": 473}
+{"manual_id": "lg-tv-19mn43d", "page": 35, "question": "이 TV는 해상도 얼마로 맞춰야 제일 잘 나와요?", "type": "spec_numeric", "qid": 474}
+{"manual_id": "lg-tv-19mn43d", "page": 43, "question": "TV를 다른 기기로 볼륨 조절할 때 보내는 숫자 값 최소 최대가 몇이에요?", "type": "spec_numeric", "qid": 475}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 12, "question": "TV 스탠드 끼울 때 화면 안 깨지게 어떻게 해야 돼요?", "type": "how_to", "qid": 476}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 23, "question": "TV에서 빌린 영화 파일 보려면 등록을 어떻게 해야 돼요?", "type": "how_to", "qid": 477}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 38, "question": "TV 매장용으로 해놨을 때 켜지면서 나는 소리 크기 어디서 바꿔요?", "type": "how_to", "qid": 478}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 49, "question": "TV 비밀번호 바꿀 때 못 쓰는 숫자 조합 있어요?", "type": "how_to", "qid": 479}
+{"manual_id": "lg-tv-32lb555b-mfl67984502", "page": 60, "question": "컴퓨터로 티비 조종하려고 뒤에 시리얼 선 꽂으려는데 잭이 어떤 거 써야 돼요?", "type": "spec_numeric", "qid": 480}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 28, "question": "비디오 기기를 TV에 연결해서 보려면 입력을 뭘로 맞춰야 돼요?", "type": "how_to", "qid": 481}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 55, "question": "TV 화면이 자꾸 지지직거리고 신호가 약하게 뜨면 어떻게 해요?", "type": "troubleshooting", "qid": 482}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 82, "question": "TV 켜지는 시간 예약할 때 매일 반복되게 설정하려면 어떻게 해요?", "type": "how_to", "qid": 483}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 111, "question": "티비에 꽂은 유에스비 그냥 빼면 안 된다던데 어떻게 빼요?", "type": "how_to", "qid": 484}
+{"manual_id": "lg-tv-32lv3400-sac35014704", "page": 139, "question": "우리 TV 스피커 출력이 몇 와트예요?", "type": "spec_numeric", "qid": 485}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 2, "question": "이 TV에 있는 절전 기능이 뭐예요?", "type": "spec_numeric", "qid": 486}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 9, "question": "TV 놓을 때 뜨거워지지 않게 뭘 조심해야 돼요?", "type": "how_to", "qid": 487}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 17, "question": "TV를 책상 위에 놓을 때 벽이랑 얼마나 띄워야 돼요?", "type": "spec_numeric", "qid": 488}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 24, "question": "티비 소리를 사운드바로 뽑으려면 HDMI 몇 번 자리에 꽂아야 돼요?", "type": "how_to", "qid": 489}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 32, "question": "TV에 앰프 연결할 때 광케이블이랑 일반 오디오선 둘 다 꽂으면 문제 생겨요?", "type": "troubleshooting", "qid": 490}
+{"manual_id": "lg-tv-42lm5900-mfl67361219", "page": 39, "question": "HDMI로 1080p에 24헤르츠로 들어오면 3D는 어떤 방식으로 볼 수 있어요?", "type": "spec_numeric", "qid": 491}
+{"manual_id": "lg-tv-mfl05847803", "page": 2, "question": "티비 닦을 때 뭐 묻히면 안 돼요?", "type": "how_to", "qid": 492}
+{"manual_id": "lg-tv-mfl05847803", "page": 3, "question": "티비 받침대에 세워놓을 때 바람 통하게 옆에 물건이랑 몇 센티 띄워야 돼요?", "type": "spec_numeric", "qid": 493}
+{"manual_id": "lg-tv-mfl05847803", "page": 5, "question": "TV 이어폰 꽂는 구멍 크기가 몇 mm예요?", "type": "spec_numeric", "qid": 494}
+{"manual_id": "lg-tv-mfl05847803", "page": 7, "question": "AI 리모컨 TV에 어떻게 연결해요?", "type": "how_to", "qid": 495}
+{"manual_id": "lg-tv-mfl05847803", "page": 8, "question": "TV 화면에 잔상 안 남게 해주는 기능이 언제 저절로 실행돼요?", "type": "how_to", "qid": 496}
+{"manual_id": "lg-tv-sac34134130", "page": 2, "question": "티비에 화면 자국 남는 건 보통 어떤 걸 오래 틀어놨을 때 그래요?", "type": "troubleshooting", "qid": 497}
+{"manual_id": "lg-tv-sac34134130", "page": 31, "question": "비디오를 안테나선으로 TV에 연결했으면 몇 번 채널로 봐야 돼요?", "type": "how_to", "qid": 498}
+{"manual_id": "lg-tv-sac34134130", "page": 59, "question": "TV 방송 수신 잘 되는지 어떻게 확인해요?", "type": "how_to", "qid": 499}
+{"manual_id": "lg-tv-sac34134130", "page": 88, "question": "티비 켜지는 시간만 맞추고 꺼지는 건 안 맞췄는데 매일 계속 되게 하려면 어떻게 해요?", "type": "how_to", "qid": 500}
+{"manual_id": "lg-tv-sac34134130", "page": 117, "question": "USB 뺐다가 다시 쓰려면 어떻게 해야 돼요?", "type": "how_to", "qid": 501}
+{"manual_id": "lg-tv-sac34134130", "page": 145, "question": "26인치 티비는 받침대까지 다 껴서 몇 킬로예요?", "type": "spec_numeric", "qid": 502}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 3, "question": "침구청소기 쓰다가 두꺼비집 내려가면 어떻게 해요?", "type": "troubleshooting", "qid": 503}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 5, "question": "이불 청소기 돌릴 때 나오는 그 파란 불빛 눈으로 직접 보면 어떻게 돼요?", "type": "troubleshooting", "qid": 504}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 8, "question": "이불 청소기 손 떼면 빨아들이는 게 얼마나 더 가다 멈춰요?", "type": "how_to", "qid": 505}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 10, "question": "매트리스 청소할 때 이거 어떻게 써야 잘 돼요?", "type": "how_to", "qid": 506}
+{"manual_id": "lg-vacuum-bedding-vh9000-mfl67120901", "page": 14, "question": "청소기 스펀지 필터 어떻게 씻고 말려요?", "type": "how_to", "qid": 507}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 2, "question": "이 이불 청소기 전기 몇 와트짜리예요?", "type": "spec_numeric", "qid": 508}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 3, "question": "청소기 쓸 때 멀티탭에 여러 개 같이 꽂아 쓰면 안 좋아요?", "type": "troubleshooting", "qid": 509}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 5, "question": "청소기 쓰다가 정전기 때문에 이상하게 작동하면 어떻게 해요?", "type": "troubleshooting", "qid": 510}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 8, "question": "얇은 이불 청소할 때 청소기 어떻게 써야 돼요?", "type": "how_to", "qid": 511}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 11, "question": "이불 청소기에 들어있는 미세먼지 거름망은 물로 씻어도 돼요?", "type": "how_to", "qid": 512}
+{"manual_id": "lg-vacuum-bedding-vh9010-mfl67120904", "page": 13, "question": "이불 청소기 쓰다가 갑자기 딱 멈추면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 513}
+{"manual_id": "lg-vacuum-mfl67010601", "page": 2, "question": "이 청소기 전기 얼마나 먹어요?", "type": "spec_numeric", "qid": 514}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 7, "question": "로봇청소기에서 이상한 소리 나거나 냄새나 연기 나면 어떡해요?", "type": "troubleshooting", "qid": 515}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 13, "question": "씽큐로 로봇청소기 청소 모드 바꾸려면 뭐라고 말해야 돼요?", "type": "how_to", "qid": 516}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 18, "question": "로봇청소기 돌리기 전에 바닥에 뭐 치워놔야 돼요?", "type": "how_to", "qid": 517}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 24, "question": "로봇청소기에서 먼지 모이는 통은 어떻게 씻어요?", "type": "how_to", "qid": 518}
+{"manual_id": "lg-vacuum-mfl69826115", "page": 30, "question": "로봇청소기가 빨아들이는 힘이 약해지면 어디를 봐야 돼요?", "type": "troubleshooting", "qid": 519}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 11, "question": "청소로봇 물통에 그냥 물 말고 다른 거 넣으면 안 돼요?", "type": "how_to", "qid": 520}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 24, "question": "로봇청소기에 물걸레용 세정액 부을 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 521}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 34, "question": "씽큐 앱에서 걸레 자동으로 빨아주는 거 어떻게 설정해요?", "type": "how_to", "qid": 522}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 46, "question": "청소로봇 걸레판이랑 걸레는 어떻게 씻고 관리해요?", "type": "how_to", "qid": 523}
+{"manual_id": "lg-vacuum-mfl71751942", "page": 56, "question": "청소로봇이 충전이 안 되는데 왜 그런 거예요?", "type": "troubleshooting", "qid": 524}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 2, "question": "이 청소기 몸통만 무게가 몇 킬로예요?", "type": "spec_numeric", "qid": 525}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 5, "question": "청소기 전선이랑 콘센트 꽂는 거 쓸 때 뭐 조심해야 돼요?", "type": "how_to", "qid": 526}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 8, "question": "커튼 청소할 때 청소기에 뭘 끼워서 써야 되고 세기는 어떻게 맞춰요?", "type": "how_to", "qid": 527}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 10, "question": "청소기 먼지통은 어떻게 씻고 다시 끼워요?", "type": "how_to", "qid": 528}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 13, "question": "청소기 뒤쪽 필터는 어떻게 청소하고 물로 씻어도 돼요?", "type": "how_to", "qid": 529}
+{"manual_id": "lg-vacuum-vk7901-mfl62546611", "page": 15, "question": "청소기 호스가 쪼그라들면서 소리가 엄청 심하면 어떻게 해요?", "type": "troubleshooting", "qid": 530}
+{"manual_id": "lg-washer-d1220mf", "page": 6, "question": "식기세척기에는 무슨 세제 써야 돼요?", "type": "how_to", "qid": 531}
+{"manual_id": "lg-washer-d1220mf", "page": 12, "question": "식기세척기 위 칸, 아래 칸에 그릇 어떻게 놓아야 돼요?", "type": "how_to", "qid": 532}
+{"manual_id": "lg-washer-d1220mf", "page": 17, "question": "식기세척기에서 그릇 소독해서 말려주는 거는 언제 쓰는 거고 세제도 같이 넣어요?", "type": "how_to", "qid": 533}
+{"manual_id": "lg-washer-d1220mf", "page": 24, "question": "식기세척기에 린스는 어떻게 넣고 한 번 넣으면 몇 번이나 써요?", "type": "how_to", "qid": 534}
+{"manual_id": "lg-washer-d1220mf", "page": 29, "question": "식기세척기 돌릴 때 소리가 너무 시끄러우면 뭘 확인해야 돼요?", "type": "troubleshooting", "qid": 535}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 12, "question": "드럼세탁기 화면에 어떤 기능들이 나와요?", "type": "how_to", "qid": 536}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 20, "question": "드럼세탁기 스팀 코스는 무슨 옷에 돌려도 돼요?", "type": "how_to", "qid": 537}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 30, "question": "세탁기 돌아가는 중에 빨래 더 넣거나 뭐 빠진 거 빼려고 문 열려면 어떻게 해요?", "type": "how_to", "qid": 538}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 37, "question": "드럼세탁기로 신발 말릴 때 시간은 어떻게 맞춰요?", "type": "how_to", "qid": 539}
+{"manual_id": "lg-washer-drum-fr4350eaz", "page": 45, "question": "세탁기 물 들어오는 데 있는 필터망 어떻게 빼서 닦아요?", "type": "how_to", "qid": 540}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 9, "question": "세탁기에 방수 되는 옷이나 원단 넣고 돌려도 되나요?", "type": "how_to", "qid": 541}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 16, "question": "울 옷 빨 때 물 온도랑 탈수는 어떻게 맞춰져요?", "type": "how_to", "qid": 542}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 24, "question": "세탁기 예약은 몇 시간부터 몇 시간까지 할 수 있어요?", "type": "spec_numeric", "qid": 543}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 30, "question": "세탁기로 건조할 때 조심해야 할 거 있어요?", "type": "how_to", "qid": 544}
+{"manual_id": "lg-washer-drum-mfl32605144", "page": 37, "question": "드럼세탁기 놓을 때 감전 안 되게 연결하는 선은 어디다 물리면 안 돼요?", "type": "how_to", "qid": 545}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 2, "question": "이 세탁기 몇 볼트짜리예요?", "type": "spec_numeric", "qid": 546}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 11, "question": "드럼세탁기에 세제 많이 넣으면 뭐가 안 좋아요?", "type": "troubleshooting", "qid": 547}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 19, "question": "빨래는 됐고 헹구고 물빼기만 돌리려면 어떻게 해요?", "type": "how_to", "qid": 548}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 26, "question": "60도로 스팀 나오는 거는 무슨 코스에서 골라야 돼요?", "type": "how_to", "qid": 549}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 34, "question": "세탁기 나중에 돌아가게 맞추는 거 몇 시간부터 몇 시간까지 되나요?", "type": "spec_numeric", "qid": 550}
+{"manual_id": "lg-washer-f2350naz-mfl48165918", "page": 41, "question": "물 들어오는 필터망 막히면 화면에 뭐가 깜빡여요?", "type": "error_code", "qid": 551}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 4, "question": "세탁기를 화장실이나 카펫 위, 비 눈 맞는 데 놓으면 왜 안 돼요?", "type": "troubleshooting", "qid": 552}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 11, "question": "빨래가 6킬로에서 8킬로 정도면 물세제 얼마나 부어요?", "type": "spec_numeric", "qid": 553}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 19, "question": "빨래 빨리 돌리는 모드 쓰면 물 온도가 몇 도로 나와요?", "type": "spec_numeric", "qid": 554}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 26, "question": "빨래 말리기만 하고 싶을 때 건조 버튼으로 뭘 고를 수 있어요?", "type": "how_to", "qid": 555}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 32, "question": "물 들어오는 호스가 짧은데 더 길게 늘려 쓰려면 어떻게 해요?", "type": "how_to", "qid": 556}
+{"manual_id": "lg-washer-fr2658-mfl62526870", "page": 39, "question": "세제 넣는 통은 얼마나 자주 닦아줘야 돼요?", "type": "how_to", "qid": 557}
+{"manual_id": "lg-washer-mfl47377718", "page": 5, "question": "세탁기 통 씻는 거 다 끝나면 그다음에 뭐가 알아서 돌아가요?", "type": "how_to", "qid": 558}
+{"manual_id": "lg-washer-mfl47377718", "page": 10, "question": "식기세척기에는 무슨 세제 넣어야 돼요?", "type": "how_to", "qid": 559}
+{"manual_id": "lg-washer-mfl47377718", "page": 17, "question": "식기세척기 UV살균 켜놓으면 건조 끝나고 나서 뭘 더 해줘요?", "type": "how_to", "qid": 560}
+{"manual_id": "lg-washer-mfl47377718", "page": 25, "question": "식기세척기 예약은 최대 몇 시간까지 걸 수 있어요?", "type": "spec_numeric", "qid": 561}
+{"manual_id": "lg-washer-mfl47377718", "page": 29, "question": "식기세척기에 그냥 세제나 베이킹파우더 넣으면 어떻게 돼요?", "type": "troubleshooting", "qid": 562}
+{"manual_id": "lg-washer-mfl47377718", "page": 36, "question": "설거지했는데 흰 얼룩 남고 잘 안 씻길 때, 물 뿌리는 날개 구멍 막혔는지 어떻게 봐요?", "type": "troubleshooting", "qid": 563}
+{"manual_id": "lg-washer-mfl68881001", "page": 11, "question": "문 분리되는 세탁기 모델은 물 들어오는 호스가 몇 번이라고 쓰여 있어요?", "type": "spec_numeric", "qid": 564}
+{"manual_id": "lg-washer-mfl68881001", "page": 22, "question": "진하고 걸쭉한 섬유유연제 쓸 때는 어떻게 해야 돼요?", "type": "how_to", "qid": 565}
+{"manual_id": "lg-washer-mfl68881001", "page": 32, "question": "빨래 3kg 정도 빨리 돌릴 때 세제는 얼마나 넣어야 돼요?", "type": "spec_numeric", "qid": 566}
+{"manual_id": "lg-washer-mfl68881001", "page": 41, "question": "세탁기 폰이랑 연결하려면 와이파이가 몇 기가짜리여야 돼요?", "type": "spec_numeric", "qid": 567}
+{"manual_id": "lg-washer-mfl68881001", "page": 51, "question": "드럼세탁기 안쪽 통에 녹 스는 건 어떨 때예요?", "type": "troubleshooting", "qid": 568}
+{"manual_id": "lg-washer-mfl71792807", "page": 1, "question": "이 세탁기 몇 년까지 쓰는 게 안전해요?", "type": "spec_numeric", "qid": 569}
+{"manual_id": "lg-washer-mfl71792807", "page": 9, "question": "비옷처럼 물 안 배는 옷 세탁기에 돌리면 무슨 일 생겨요?", "type": "troubleshooting", "qid": 570}
+{"manual_id": "lg-washer-mfl71792807", "page": 18, "question": "세탁기 돌아가는 중에 끄려면 전원 버튼 몇 초 누르고 있어야 돼요?", "type": "spec_numeric", "qid": 571}
+{"manual_id": "lg-washer-mfl71792807", "page": 25, "question": "옷 안 구겨지게 해주는 버튼이 따로 없는데 그거 어떻게 켜요?", "type": "how_to", "qid": 572}
+{"manual_id": "lg-washer-mfl71792807", "page": 33, "question": "세탁기 돌리다가 FF라고 뜨면 뭘 확인해야 돼요?", "type": "error_code", "qid": 573}
+{"manual_id": "lg-washer-mfl71792807", "page": 42, "question": "안 미끄러지게 까는 깔개 붙이기 전에 바닥을 어떻게 해놔야 해요?", "type": "how_to", "qid": 574}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 2, "question": "세탁기가 알아서 통 깨끗하게 해준다는 그거 무슨 일을 하는 거예요?", "type": "how_to", "qid": 575}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 8, "question": "빨래가 9킬로 넘으면 진한 세제 얼마나 넣어야 돼요?", "type": "spec_numeric", "qid": 576}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 14, "question": "빨래 빨리 돌릴 때 몇 kg까지 넣을 수 있어요?", "type": "spec_numeric", "qid": 577}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 20, "question": "세탁 예약 몇 시간부터 몇 시간까지 걸 수 있어요?", "type": "spec_numeric", "qid": 578}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 26, "question": "헹굼 꼼꼼하게 해주는 기능은 어떤 코스에서 쓸 수 있어요?", "type": "how_to", "qid": 579}
+{"manual_id": "lg-washer-t2606-mfl42224719", "page": 32, "question": "통돌이 세탁기 통에 녹 슬 수 있는 게 어떤 경우예요?", "type": "troubleshooting", "qid": 580}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 8, "question": "빨래 8키로 넘으면 농축세제 얼마나 넣어야 돼요?", "type": "spec_numeric", "qid": 581}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 13, "question": "불림 시간은 버튼으로 몇 분까지 정할 수 있어요?", "type": "spec_numeric", "qid": 582}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 20, "question": "탈수 말고 세탁이나 헹굼만 따로 돌렸을 때 물 빼려면 어떻게 해야 돼요?", "type": "how_to", "qid": 583}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 24, "question": "냉수나 온수 한쪽만 호스 연결하려면 어떻게 해야 돼요?", "type": "how_to", "qid": 584}
+{"manual_id": "lg-washer-tong-mfl32605116", "page": 29, "question": "먼지 걸러주는 망 얼마나 자주 청소해줘야 돼요?", "type": "how_to", "qid": 585}
+{"manual_id": "lg-washer-tong-t1203", "page": 9, "question": "세탁 돌아가는 중에 뚜껑 열려있으면 화면에 뭐라고 떠요?", "type": "error_code", "qid": 586}
+{"manual_id": "lg-washer-tong-t1203", "page": 16, "question": "속옷 빨 때 몇 kg까지 넣을 수 있어요?", "type": "spec_numeric", "qid": 587}
+{"manual_id": "lg-washer-tong-t1203", "page": 24, "question": "세탁이나 헹굼만 했을 때 물 빼려면 어떻게 해요?", "type": "how_to", "qid": 588}
+{"manual_id": "lg-washer-tong-t1203", "page": 34, "question": "세탁기 손잡이 안 움직이게 잠가놓고 쓰려면 어떻게 해요?", "type": "how_to", "qid": 589}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 11, "question": "정수기 뜨거운 물 빼는 방법이 뭐예요?", "type": "how_to", "qid": 590}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 14, "question": "정수기에서 뜨거운 물 나오는 기능 끄려면 어떻게 해요?", "type": "how_to", "qid": 591}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 21, "question": "정수기 밑에 물 고이는 받침 어떻게 닦아요?", "type": "how_to", "qid": 592}
+{"manual_id": "lg-waterpurifier-mfl62077011", "page": 25, "question": "정수기 불빛이 주황색으로 들어오면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 593}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 7, "question": "사운드바 서라운드 모드에서 2채널 소리 넣으면 몇 채널로 나와요?", "type": "spec_numeric", "qid": 594}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 12, "question": "사운드바 우퍼에 빨간불 파란불이 같이 깜빡이는데 이거 무슨 뜻이에요?", "type": "error_code", "qid": 595}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 17, "question": "TV랑 사운드바 같이 소리 나오게 하는 기능은 어떤 연결에서 되나요?", "type": "how_to", "qid": 596}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 22, "question": "블루투스 연결할 때 핀번호 물어보면 몇 번 눌러야 돼요?", "type": "spec_numeric", "qid": 597}
+{"manual_id": "samsung-soundbar-hwq990c-kor", "page": 27, "question": "사운드바 USB 꽂아서 최신으로 바꾸려면 어떻게 해요?", "type": "how_to", "qid": 598}
+{"manual_id": "samsung-tv-oscar-kor", "page": 39, "question": "TV에서 삼성 계정 만들려면 몇 살부터 가능해요?", "type": "spec_numeric", "qid": 599}
+{"manual_id": "samsung-tv-oscar-kor", "page": 73, "question": "티비로 사진 볼 때 뭐뭐 할 수 있어요?", "type": "how_to", "qid": 600}
+{"manual_id": "samsung-tv-oscar-kor", "page": 107, "question": "TV 잘 때 꺼지게 하는 예약 최대 몇 분까지 돼요?", "type": "spec_numeric", "qid": 601}
+{"manual_id": "samsung-tv-oscar-kor", "page": 141, "question": "티비 4096x2160에 60헤르츠로 쓰면 가로 주파수가 몇 킬로헤르츠예요?", "type": "spec_numeric", "qid": 602}
+{"manual_id": "samsung-tv-oscar-kor", "page": 179, "question": "티비 인터넷이 안 잡히는데 연결 잘 됐나 어디서 봐요?", "type": "troubleshooting", "qid": 603}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 11, "question": "바람 방향 자동으로 안 되는 에어컨은 바람 나오는 판이 최소 몇 도까지 열려요?", "type": "spec_numeric", "qid": 604}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 15, "question": "이동식 에어컨 습기 빼는 걸로 놓으면 온도 몇 도부터 몇 도까지 맞출 수 있어요?", "type": "spec_numeric", "qid": 605}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 19, "question": "이동식 에어컨 창문에 끼우는 판 늘리면 몇 cm에서 몇 cm까지 늘어나요?", "type": "spec_numeric", "qid": 606}
+{"manual_id": "winia-aircon-portable-qaoec08twa", "page": 23, "question": "에어컨 필터에 기름이 잔뜩 껴 있는데 뭘로 씻어요?", "type": "how_to", "qid": 607}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 13, "question": "이 제품 몇 년까지 쓰는 게 안전해요?", "type": "spec_numeric", "qid": 608}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 25, "question": "김치냉장고 왼쪽 칸에서 김치 익히는 기능 쓸 때 어떤 김치로 고를 수 있어요?", "type": "how_to", "qid": 609}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 37, "question": "김치냉장고 소고기 숙성 기능으로 며칠 두면 고기가 부드러워지고 맛있어져요?", "type": "spec_numeric", "qid": 610}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 50, "question": "정전됐을 때 김치냉장고 문 안 열면 몇 시간이나 차갑게 있어요?", "type": "spec_numeric", "qid": 611}
+{"manual_id": "winia-aircon-stand-ddq48jplis", "page": 65, "question": "김치냉장고에 넣었는데 김치가 금방 쉬어버려요, 어떻게 해요?", "type": "troubleshooting", "qid": 612}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 11, "question": "창문형 에어컨이 와이파이에 안 붙고 불만 계속 깜빡이는데 어떡해요?", "type": "troubleshooting", "qid": 613}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 22, "question": "창문형 에어컨 실내 쪽에 대는 받침대는 어떻게 끼워 맞춰요?", "type": "how_to", "qid": 614}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 32, "question": "창문형 에어컨 시원하게 틀 때 온도 제일 낮게는 몇 도, 높게는 몇 도까지 돼요?", "type": "spec_numeric", "qid": 615}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 41, "question": "위닉스 창문형 에어컨 자동으로 켜면 기본 온도가 몇 도예요?", "type": "spec_numeric", "qid": 616}
+{"manual_id": "winix-aircon-ewih067mmk", "page": 50, "question": "위닉스 창문형 에어컨 화면에 oF라고 뜨면 어떻게 해야 돼요?", "type": "troubleshooting", "qid": 617}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 6, "question": "위닉스 공기청정기 실내 온도 몇 도에서 몇 도 사이일 때 써야 돼요?", "type": "spec_numeric", "qid": 618}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 12, "question": "위닉스 공기청정기 놓을 때 벽에서 몇 cm 이상 떨어뜨려야 돼요?", "type": "spec_numeric", "qid": 619}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 17, "question": "위닉스 공기청정기 필터가 몇 마이크로미터짜리 먼지까지 걸러줘요?", "type": "spec_numeric", "qid": 620}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 22, "question": "공기청정기 하루 종일 켜두면 필터 몇 달에서 몇 년 만에 갈아야 돼요?", "type": "spec_numeric", "qid": 621}
+{"manual_id": "winix-airpurifier-azsh434kyk", "page": 27, "question": "공기청정기에서 먼지 감지하는 부분은 얼마 만에 한 번씩 닦아줘야 돼요?", "type": "how_to", "qid": 622}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 3, "question": "위닉스 제습기 자동으로 해놓으면 습도 몇 퍼센트에서 몇 퍼센트 사이로 맞춰줘요?", "type": "spec_numeric", "qid": 623}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 7, "question": "제습기를 45도 넘게 기울여서 옮겼는데 켜기 전에 뭐 해야 돼요?", "type": "troubleshooting", "qid": 624}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 17, "question": "위닉스 제습기 자동으로 습도 맞춰지게 하려면 어떻게 해요?", "type": "how_to", "qid": 625}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 21, "question": "제습기 물 받는 통은 며칠에 한 번씩 씻어요?", "type": "how_to", "qid": 626}
+{"manual_id": "winix-dehumidifier-dn3e170lwk", "page": 25, "question": "위닉스 제습기로 신발 말릴 때 몇 시간 넘게 계속 켜놓으면 안 돼요?", "type": "spec_numeric", "qid": 627}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 10, "question": "위닉스 건조기 버릴 때 어떻게 해야 돼요?", "type": "how_to", "qid": 628}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 20, "question": "위닉스 건조기 돌리면 안 되는 빨래가 뭐가 있어요?", "type": "how_to", "qid": 629}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 29, "question": "위닉스 건조기 기본 코스로 돌리면 남은 시간이 어떻게 나와요?", "type": "how_to", "qid": 630}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 38, "question": "위닉스 건조기 선반 놓고 말릴 수 있는 옷은 어떤 거예요?", "type": "how_to", "qid": 631}
+{"manual_id": "winix-dryer-hgxm190kvk", "page": 46, "question": "건조기 몇 번쯤 돌리면 안에 열 바꿔주는 부품 닦으라고 불 들어와요?", "type": "how_to", "qid": 632}
+{"manual_id": "winix-humidifier-wltm750jwk", "page": 1, "question": "가습기 물통에 물 몇 리터나 들어가요?", "type": "spec_numeric", "qid": 633}
+{"manual_id": "winix-purifier-pq1000s", "page": 1, "question": "위닉스 정수기 첫 번째 필터는 하루에 10리터 정도 쓰면 몇 달마다 갈아야 돼요?", "type": "spec_numeric", "qid": 634}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 9, "question": "세탁기 놓을 때 벽에서 얼마나 띄워야 돼요?", "type": "spec_numeric", "qid": 635}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 17, "question": "옷 라벨에 물 95도라고 돼 있는 세탁 그림은 무슨 뜻이에요?", "type": "how_to", "qid": 636}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 25, "question": "위닉스 세탁기에 가루세제 넣으려면 어떻게 해야 돼요?", "type": "how_to", "qid": 637}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 33, "question": "위닉스 세탁기 기본 코스에서 불림 기능 쓸 수 있어요?", "type": "how_to", "qid": 638}
+{"manual_id": "winix-washer-tmwe250kvk", "page": 41, "question": "위닉스 세탁기 세제 넣는 곳 얼마나 자주 청소해야 돼요?", "type": "how_to", "qid": 639}

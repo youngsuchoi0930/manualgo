@@ -12,6 +12,13 @@ TTS도 브라우저(speechSynthesis)가 처리하므로 서버는 텍스트만 �
   라이브에선 10을 쓴다(재정렬 772ms · 검색 총 907ms, 생성까지 합쳐 ~3s).
   GPU가 없으면 재정렬이 8초를 넘어 음성 UX가 불가하니 RERANK=0으로 끄는 것이 낫다.
 
+융합 가중치(실사용자 640문항, 튜닝/홀드아웃 분할로 확정 — §README 11)
+  스코핑 시 BM25를 끄고 dense 후보만 리랭커에 넘긴다(BM25_WEIGHT_SCOPED=0):
+  실사용자 말투에선 BM25가 무너져(R@1 -94%) 후보 10자리를 노이즈로 채우기 때문.
+  홀드아웃 320에서 R@1 +3.1pp·R@5 +6.9pp 유의, 카테고리 스코프에선 중립(손해 없음).
+  글로벌은 BM25 유지(BM25_WEIGHT=1.0) — 6,426청크 전체에선 후보 다양성 기여가 남아 있고
+  BM25 제거가 오히려 최하위였다.
+
 스코핑: 칩으로 제품을 고르면 그 매뉴얼로 좁히고(R@1 0.820), 안 고르면 **글로벌**로 찾는다.
   질문에서 카테고리를 추정해 자동으로 좁히는 AgenticRetriever는 쓰지 않는다 — 코퍼스가
   96종·18카테고리로 넓어지자 키워드 분류가 76%로 떨어졌고, 그 조건에서 자동 스코핑은
@@ -47,7 +54,12 @@ class Orchestrator:
 
         pool = int(os.environ.get("RERANK_POOL") or 10)
         # 칩 선택(manual_ids)이 있으면 그 매뉴얼로, 없으면 글로벌 — 자동 카테고리 추정은 안 한다
-        self._retriever = HybridRetriever(reranker=reranker, rerank_pool=pool)
+        self._retriever = HybridRetriever(
+            reranker=reranker,
+            rerank_pool=pool,
+            bm25_weight=float(os.environ.get("BM25_WEIGHT") or 1.0),          # 글로벌: 융합 유지
+            bm25_weight_scoped=float(os.environ.get("BM25_WEIGHT_SCOPED") or 0.0),  # 스코핑: dense 단독
+        )
         self._pipeline = RagPipeline(self._retriever)
 
     def list_manuals(self) -> list[str]:
